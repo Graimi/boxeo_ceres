@@ -1,24 +1,25 @@
 :root {
   /* COLOR PALETTE */
-  --cb-color-black: #1e1934;
-  --cb-color-blue: #525bb9;
-  --cb-color-blue-light: #5f68d1;
-  --cb-color-blue-dark: #211559;
-  --cb-color-blue-opaque: #2115592a;
-  --cb-color-green: #c3e740;
-  --cb-color-purple: #9f6aba;
-  --cb-color-white: #f7f7f9;
+  --cb-color-transparent: transparent;
+  --cb-color-black: #191800;
+  --cb-color-yellow: #dbd748;
+  --cb-color-white: #f2f2f2;
+  --cb-color-white--light: #fffffe;
+  --cb-color-grey: #c3c6ce;
+  --cb-color-grey--dark: #6e6e73;
+  --cb-color-green: #25d366;
 
   /* TYPOGRAPHY TYPE */
-  --cb-typography-heading: 'Unica One';
-  --cb-typography-body: 'Roboto Mono', sans-serif;
-  --cb-typography-paragraph: 'Roboto Condensed', sans-serif;
+  --cb-typography-heading: 'Antonio', sans-serif;
+  --cb-typography-logo: 'Antonio', sans-serif;
+  --cb-typography-body: 'Rubik', sans-serif;
+  /* --cb-typography-paragraph: 'Roboto Condensed', sans-serif; */
 
   /* FONT WEIGHT */
   --cb-weight-h1: 700;
-  --cb-weight-h2: 400;
-  --cb-weight-h3: 200;
-  --cb-weight-p: 200;
+  --cb-weight-h2: 700;
+  --cb-weight-h3: 500;
+  --cb-weight-p: 300;
 
   /* FONT SIZE */
   --cb-typography-h1: 48px;
@@ -33,7 +34,7 @@
   --cb-typography-p-leading: 1.5;
 
   /* IMG SIZE */
-  --cb-img-enormous: 96px;
+  --cb-img-enormous: 200px;
   --cb-img-big: 80px;
   --cb-img-medium: 64px;
   --cb-img-small: 32px;
@@ -42,7 +43,7 @@
   /* PADDING */
   --cb-padding-container: 20px;
   --cb-padding-card: 15px;
-  --cb-padding-cta: 7px;
+  --cb-padding-cta: 15px;
 
   /* GAP */
   --cb-gap-container: 20px;
@@ -56,11 +57,11 @@
   --cb-border-width-card: 2px;
 
   /* BORDER STYLE */
-  --cb-border-card-style: var(--cb-border-width-card) solid var(--cb-color-blue);
+  /* --cb-border-card-style: var(--cb-border-width-card) solid var(--cb-color-blue);
   --cb-border-cta-style: var(--cb-border-width-card) solid var(--cb-color-blue);
   --cb-border-window-style: 4px solid var(--cb-color-blue-opaque);
   --cb-border-sudoku-blue: 1px solid var(--cb-color-blue);
-  --cb-border-sudoku-green: 1px solid var(--cb-color-green);
+  --cb-border-sudoku-green: 1px solid var(--cb-color-green); */
 }
 
 /* Box sizing rules */
@@ -85,7 +86,7 @@ dd {
 }
 
 h1 {
-  color: var(--cb-color-blue-dark);
+  color: var(--cb-color-black);
   font-family: var(--cb-typography-heading);
   font-size: var(--cb-typography-h1);
   font-weight: var(--cb-weight-h1);
@@ -94,7 +95,7 @@ h1 {
 }
 
 h2 {
-  color: var(--cb-color-blue-dark);
+  color: var(--cb-color-black);
   font-family: var(--cb-typography-body);
   font-size: var(--cb-typography-h2);
   font-weight: var(--cb-weight-h2);
@@ -102,7 +103,7 @@ h2 {
 }
 
 h3 {
-  color: var(--cb-color-white);
+  color: var(--cb-color-black);
   font-family: var(--cb-typography-body);
   font-size: var(--cb-typography-h3);
   font-weight: var(--cb-weight-h3);
@@ -110,7 +111,7 @@ h3 {
 }
 
 p {
-  color: var(--cb-color-green);
+  color: var(--cb-color-black);
   font-family: var(--cb-typography-paragraph);
   font-size: var(--cb-typography-p);
   font-weight: var(--cb-weight-p);
@@ -132,7 +133,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   /* Centramos el contenido del body */

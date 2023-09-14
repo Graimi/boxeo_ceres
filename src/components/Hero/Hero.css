@@ -1,0 +1,93 @@
+/* ✅ */
+/* Diseños generales, con el z-index conseguimos ocultar el botón whatsApp */
+.cb-hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1677605857/ceres-box/ring_bfgytd.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    padding: var(--cb-padding-big);
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Se aplica el filtro para mejorar la visualización */
+  .cb-hero-logo {
+    width: var(--cb-img-enormous);
+    filter: drop-shadow(0 0 8px var(--cb-color-black));
+  }
+  
+  /* Estilos específicos del texto principal */
+  .cb-hero-description {
+    /* font-size: 80px; */
+    font-weight: var(--cb-typography-weight-500);
+    -webkit-text-stroke: var(--cb-text-stroke-white);
+    color: var(--cb-color-white);
+    filter: drop-shadow(0 0 8px var(--cb-color-yellow));
+    max-width: 90%;  
+}
+
+  /* Estilos específicos del CTA */
+  .cb-hero-CTA {
+    text-align: center;
+    background-color: var(--cb-color-yellow);
+    padding: var(--cb-padding-cta);
+    border-radius: var(--cb-radius-general);
+  }
+  
+  /* Se aplica el filtro para mejorar la visualización */
+  .cb-hero-next {
+    width: var(--cb-img-medium);
+    /* filter: drop-shadow(0 0 8px var(--cb-color-black)); */
+  }
+  
+  /* TABLET DISPLAY */
+  /* @media screen and (min-width: 376px) and (max-width: 768px) {
+
+    .cb-section-hero {
+      min-height: 100vh;
+    }
+  
+    .cb-hero-logo {
+      width: %;
+    }
+  
+    .cb-hero-description {
+      font-size: calc(var(--cb-typography-size-extra) - 1rem);
+      font-weight: var(--cb-typography-weight-500);
+    }
+  
+    .cb-hero-CTA {
+      font-size: calc(var(--cb-typography-size-h3) - 0.1rem);
+    }
+  
+    .cb-hero-next {
+      width: calc(var(--cb-width-small) - 0.25rem);
+    }
+  } */
+
+  /* MOBILE DISPLAY */
+  /* @media screen and (max-width: 376px) {
+    .cb-hero-logo {
+      margin-top: 5rem;
+      width: 18px;
+    }
+  
+    .cb-hero-description {
+      font-size: calc(var(--cb-typography-size-extra) - 1.5rem);
+      font-weight: var(--cb-typography-weight-500);
+    }
+  
+    .cb-hero-CTA {
+      font-size: calc(var(--cb-typography-size-h3) - 0.2rem);
+    }
+  
+    .cb-hero-next {
+      width: calc(var(--cb-width-small) - 8px);
+    }
+  } */
