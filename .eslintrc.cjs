@@ -4,8 +4,8 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'plugin:react/recommended',
     'airbnb',
+    'plugin:react/recommended',
   ],
   overrides: [
   ],
@@ -17,5 +17,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    'prettier/prettier': 'error',
+    'react/prop-types': 'off',
   },
 };
