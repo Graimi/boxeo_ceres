@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-to-interactive-role */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import './Navbar.css';
 
 import React, { useEffect, useState } from 'react';
@@ -24,47 +26,46 @@ function Header() {
     setIsNavbarVisible(true);
   };
 
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      toggleNavbar();
+    }
+  };
+
   return (
-    <div
-      className={`bc__section__header__layout bc__layout__flex ${isNavbarVisible ? 'visible' : ''}`}
-    >
+    <div className={`cb-header ${isNavbarVisible ? 'visible' : ''}`}>
       <a href="#hero">
-        <h3 className="bc__header__logo">NORBA BOX</h3>
+        <h3 className="cb-header-logo">BOXEO CERES</h3>
       </a>
       {/* HAMBURGUER */}
       <label
-        className="bc__hamburguer__label"
+        className="cb-hamburguer-label material-symbols-outlined"
         htmlFor="hamburger"
-        onClick={toggleNavbarOnHamburgerClick}
+        onClick={toggleNavbar}
+        onKeyDown={handleKeyPress}
+        role="button"
+        tabIndex="0"
       >
-        &#9776;
+        {navbarOpen ? 'close' : 'menu'}
       </label>
-      <input type="checkbox" name="bc__hamburguer" className="bc__hamburguer" id="hamburger" />
+      <input type="checkbox" name="cb-hamburguer" className="cb-hamburguer" id="hamburger" />
       {/* NAVIGATOR */}
-      <nav className={`bc__section__navbar ${isNavbarVisible ? 'visible' : ''}`}>
-        <ul className="bc__navbar__header bc__layout__flex">
+      <nav className={`cb-section-navbar ${navbarOpen ? 'visible' : ''}`}>
+        <ul className="cb-navbar-list">
           <li>
-            <a className="bc__navbar__inicio" href="#hero">
-              Inicio
-            </a>
+            <a href="#hero">Inicio</a>
           </li>
           <li>
-            <a className="bc__navbar__shop" href="#next">
-              Tienda
-            </a>
+            <a href="#schedule">Horario</a>
           </li>
           <li>
-            <a
-              href="https://api.whatsapp.com/send?phone=34638560723&text=Hola!%20%C2%BFTienes%20alguna%20duda%20con%20los%20productos%3F"
-              target="_blank"
-              rel="noreferrer"
-              className="bc__contact__button"
-            >
-              <span className="bc__contact__text--plain">&nbsp;contacto&nbsp;</span>
-              <span className="bc__contact__text--hover" aria-hidden="true">
-                &nbsp;contacto&nbsp;
-              </span>
-            </a>
+            <a href="#contact">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -89,13 +90,13 @@ headerSection.innerHTML += headerTemplate({
 });
 
 // A partir de aquí creamos el código para la invisible navbar
-const navBar = document.querySelector('.bc__section__header__layout');
+const navBar = document.querySelector('.cb-section-header-layout');
 const heroSection = document.querySelector('#hero');
 const invisibleNav = () => {
   // No estoy seguro de por qué ha funcionado con .scrollY cuando debería ser con .scrollX, pura casualidad
   // Se ha añadido el 80 para que la navbar aparezca tan pronto como se mueva la venta para no superponer los datos
   if (window.scrollY * 80 > heroSection.offsetHeight) {
-    navBar.style.backgroundColor = 'var(--bc__color--black)';
+    navBar.style.backgroundColor = 'var(--cb-color--black)';
   }
   if (window.scrollY * 80 < heroSection.offsetHeight) {
     navBar.style.backgroundColor = 'transparent';
@@ -104,9 +105,9 @@ const invisibleNav = () => {
 const functionInvisibleNav = () => window.addEventListener('scroll', invisibleNav);
 
 // Creamos la siguiente función para que no se vean en transparente las opciones cuando pinchemos en la hamburguesa
-const hamburger = document.querySelector('.bc__hamburguer__label');
+const hamburger = document.querySelector('.cb-hamburguer-label');
 const hamburgerToggle = () => {
-  navBar.style.backgroundColor = 'var(--bc__color--black)';
+  navBar.style.backgroundColor = 'var(--cb-color--black)';
 };
 
 hamburger.addEventListener('click', hamburgerToggle);
