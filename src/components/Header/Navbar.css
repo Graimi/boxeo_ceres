@@ -6,131 +6,135 @@
     z-index: 2;
   } */
 
-  .visible {
-    /* background-color: aliceblue; */
-  }
+.visible {
+  background-color: var(--cb-color-black);
+}
 
-  /* Diseños específicos del header */
-  .cb-header {
-    position: fixed;
-    width: 100%;
-    top: 0%;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    text-transform: uppercase;
-    font-size: var(--cb-typography-h3);
-    font-weight: var(--cb-typography--weight--500);
-    word-spacing: var(--cb-typography--spacing--content);
-    min-height: var(--cb-height--header);
-    padding: var(--cb-padding-container);
-    /* Con lo siguiente preparamos la invisible navbar junto con JS */
-    background-color: var(--cb-color-black);
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  /* Diseños para poner el nombre del logo hueco */
-  .cb-header-logo {
-    font-family: var(--cb-typography-logo);
-    color: var(--cb-color-white);
-  }
-  
-  /* Diseños para la navbar en desktop */
-  .cb-navbar-list {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: var(--cb-gap--medium);
-  }
-  
-  /* Diseño para quitar la hamburguesa, estamos en desktop first */
-  .cb-hamburguer-label,
-  .cb-hamburguer {
-    display: none;
-  }
+/* Diseños específicos del header */
+.cb-header {
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  text-transform: uppercase;
+  /* Con lo siguiente preparamos la invisible navbar junto con JS */
+  /* background-color: var(--cb-color-black); */
+  transition: background-color 0.3s ease-in-out;
+}
 
-  .cb-hamburguer-label{
-    color: var(--cb-color-white);
-    cursor: pointer;
-  }
+/* Diseños para poner el nombre del logo hueco */
+.cb-header-logo {
+  font-family: var(--cb-typography-logo);
+  color: var(--cb-color-white);
+}
+
+/* Diseño para quitar la hamburguesa, estamos en desktop first */
+.cb-hamburguer-label,
+.cb-hamburguer {
+  display: none;
+}
+
+.cb-hamburguer-label {
+  color: var(--cb-color-white);
+  cursor: pointer;
+}
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 90
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 90;
 }
-  
-  /* TABLET DISPLAY */
-  @media screen and (min-width: 23.5rem) and (max-width: 48rem) {
-    /* ✅ */
-    /* Se cambia el display del header para adapatarlo a tablet */
-    .cb-header {
-      display: block;
-      min-height: 5vh;
-    }
-  
-    /* Se centra el texto del logo */
-    .cb-header-logo {
-      text-align: center;
-      margin: auto;
-    }
-  
-    /* Se fija "a mano" la posición de la hamburguesa */
-    .cb-hamburguer-label {
-      display: block;
-      position: absolute;
-      top: 1.55rem;
-      right: 3.5rem;
-    }
-  
-    /* Por defecto la nav no se ve */
-    .cb-section-navbar {
-      display: none;
-    }
-  
-    /* CHECKED -> Aparece la nav */
-    .cb-hamburguer:checked + .cb-section-navbar {
-      display: block;
+
+/* Diseños para la navbar en desktop */
+.cb-navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--cb-gap-container);
+  color: var(--cb-color-yellow);
+  padding: 0; 
+}
+
+.cb-navbar-list a{
+  font-weight: var(--cb-typography-weight-p);
+  font-family: var(--cb-typography-paragraph);
+  color: var(--cb-color-white);
+}
+
+/* TABLET DISPLAY */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  /* ✅ */
+  /* Se cambia el display del header para adapatarlo a tablet */
+  .cb-header {
+    display: block;
+    /* min-height: 5vh; */
       padding: var(--cb-padding-container);
-    }
-  
-    /* Dirección de los items del nav */
-    .cb-navbar-list {
-      flex-direction: column;
-    }
   }
-  
-  /* MOBILE DISPLAY */
-  @media screen and (max-width: 23.5rem) {
-    /* ✅ */
-    /* Se cambia la dirección del header para adapatarlo a movil */
-    .cb-header {
-      flex-direction: column;
-      gap: var(--cb-gap-container);
-    }
-  
-    /* Se fija la posición de la hamburguesa */
-    .cb-hamburguer-label {
-      display: inline-block;
-    }
-  
-    /* Por defecto la nav no se ve */
-    .cb-section-navbar {
-      display: none;
-    }
-  
-    /* CHECKED -> Aparece la nav */
-    .cb-hamburguer:checked ~ .cb-section-navbar {
-      display: block;
-    }
-  
-    /* Dirección de los items del nav */
-    .cb-navbar-list {
-      flex-direction: column;
-    }
+
+  /* Se centra el texto del logo */
+  .cb-header-logo {
+    text-align: center;
+    margin: auto;
   }
-  
+
+  /* Se fija "a mano" la posición de la hamburguesa */
+  .cb-hamburguer-label {
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 56px;
+  }
+
+  /* Por defecto la nav no se ve */
+  .cb-navbar {
+    display: none;
+  }
+
+  /* CHECKED -> Aparece la nav */
+  .cb-hamburguer:checked + .cb-navbar {
+    display: block;
+    /* padding: var(--cb-padding-container); */
+  }
+
+  /* Dirección de los items del nav */
+  .cb-navbar-list {
+    flex-direction: column;
+  }
+}
+
+/* MOBILE DISPLAY */
+@media screen and (max-width: 376px) {
+  /* ✅ */
+  /* Se cambia la dirección del header para adapatarlo a movil */
+  .cb-header {
+    flex-direction: column;
+    gap: var(--cb-gap-container);
+    padding: var(--cb-padding-container);
+  }
+
+  /* Se fija la posición de la hamburguesa */
+  .cb-hamburguer-label {
+    display: inline-block;
+  }
+
+  /* Por defecto la nav no se ve */
+  .cb-navbar {
+    display: none;
+  }
+
+  /* CHECKED -> Aparece la nav */
+  .cb-hamburguer:checked ~ .cb-navbar {
+    display: block;
+  }
+
+  /* Dirección de los items del nav */
+  .cb-navbar-list {
+    flex-direction: column;
+  }
+}

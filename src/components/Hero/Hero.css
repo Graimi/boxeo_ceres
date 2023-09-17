@@ -42,7 +42,7 @@
   
   /* Se aplica el filtro para mejorar la visualización */
   .cb-hero-next {
-    width: var(--cb-img-medium);
+    width: var(--cb-img-small);
     /* filter: drop-shadow(0 0 8px var(--cb-color-black)); */
   }
   
@@ -72,22 +72,22 @@
   } */
 
   /* MOBILE DISPLAY */
-  /* @media screen and (max-width: 376px) {
+  @media screen and (max-width: 376px) {
     .cb-hero-logo {
       margin-top: 5rem;
-      width: 18px;
+      width: calc(var(--cb-img-enormous) - 10%);
     }
   
-    .cb-hero-description {
+    /* .cb-hero-description {
       font-size: calc(var(--cb-typography-size-extra) - 1.5rem);
       font-weight: var(--cb-typography-weight-500);
     }
   
     .cb-hero-CTA {
       font-size: calc(var(--cb-typography-size-h3) - 0.2rem);
-    }
+    } */
   
-    .cb-hero-next {
-      width: calc(var(--cb-width-small) - 8px);
-    }
-  } */
+    /* .cb-hero-next {
+      width: calc(var(--cb-img-small) - 10%);
+    } */
+  }

@@ -19,7 +19,7 @@
   --cb-typography-logo: 'Collegue', sans-serif;
   --cb-typography-heading: 'Antonio', sans-serif;
   --cb-typography-body: 'Rubik', sans-serif;
-  /* --cb-typography-paragraph: 'Roboto Condensed', sans-serif; */
+  --cb-typography-paragraph: 'Rubik', sans-serif;
 
   /* FONT WEIGHT */
   --cb-weight-h1: 700;
@@ -147,7 +147,7 @@ body {
   align-items: center;
   justify-content: center;
   /* Damos estilos al background */
-  background-color: rgba(0, 0, 0, 0.849);
+  background-color: var(--cb-color-white);
 }
 
 /* A elements that don't have a class get default styles */

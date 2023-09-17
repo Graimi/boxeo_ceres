@@ -6,9 +6,10 @@ import React, { useEffect, useState } from 'react';
 
 function Header() {
   const [isNavbarVisible, setIsNavbarVisible] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   const handleNavbarVisibility = () => {
-    if (window.scrollY > 80) {
+    if (window.scrollY > 10) {
       setIsNavbarVisible(true);
     } else {
       setIsNavbarVisible(false);
@@ -22,12 +23,7 @@ function Header() {
     };
   }, []);
 
-  const toggleNavbarOnHamburgerClick = () => {
-    setIsNavbarVisible(true);
-  };
-
-  const [navbarOpen, setNavbarOpen] = useState(false);
-
+  // Función para cambiar el icono
   const toggleNavbar = () => {
     setNavbarOpen(!navbarOpen);
   };
@@ -39,7 +35,7 @@ function Header() {
   };
 
   return (
-    <div className={`cb-header ${isNavbarVisible ? 'visible' : ''}`}>
+    <div className={`cb-header ${isNavbarVisible || navbarOpen ? 'visible' : ''}`}>
       <a href="#hero">
         <h3 className="cb-header-logo">BOXEO CERES</h3>
       </a>
@@ -56,7 +52,7 @@ function Header() {
       </label>
       <input type="checkbox" name="cb-hamburguer" className="cb-hamburguer" id="hamburger" />
       {/* NAVIGATOR */}
-      <nav className={`cb-section-navbar ${navbarOpen ? 'visible' : ''}`}>
+      <nav className="cb-navbar">
         <ul className="cb-navbar-list">
           <li>
             <a href="#hero">Inicio</a>
