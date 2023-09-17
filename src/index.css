@@ -137,18 +137,7 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
-body {
-  /* min-height: 100vh; */
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  /* Centramos el contenido del body */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* Damos estilos al background */
-  background-color: var(--cb-color-white);
-}
+
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {

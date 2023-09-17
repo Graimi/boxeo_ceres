@@ -5,11 +5,10 @@ import Header from './components/Header/Navbar';
 
 function App() {
   return (
-    <div className="app">
+    <div id="app">
       <Header />
-      <Hero />
-      {/* <Hero /> */}
-      <body id="body">
+      <body>
+        <Hero />
         <h1>Working out</h1>
       </body>
     </div>
