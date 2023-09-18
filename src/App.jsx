@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Hero from './components/Hero/Hero';
 import Header from './components/Header/Navbar';
+import Footer from './components/Footer/Footer';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -9,8 +11,9 @@ function App() {
       <Header />
       <body>
         <Hero />
-        <h1>Working out</h1>
+        <Contact />
       </body>
+      <Footer />
     </div>
   );
 }
