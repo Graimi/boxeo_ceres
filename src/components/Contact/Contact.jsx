@@ -4,7 +4,7 @@ import MapComponent from '../Map/Map';
 
 function Contact() {
   return (
-    <div className="cb-contact">
+    <div className="cb-contact" id="contact">
       <h1>CONTACTO</h1>
       <div className="cb-contact-section">
         <article className="cb-contact-info">
