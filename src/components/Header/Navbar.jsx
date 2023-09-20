@@ -55,13 +55,19 @@ function Header() {
       <nav className="cb-navbar">
         <ul className="cb-navbar-list">
           <li>
-            <a href="#hero">Inicio</a>
+            <a href="#">El club</a>
           </li>
           <li>
-            <a href="#schedule">Horario</a>
+            <a href="#">Clases</a>
           </li>
           <li>
-            <a href="#contact">Contacto</a>
+            <a href="#">Horario</a>
+          </li>
+          <li>
+            <a href="#">Precios</a>
+          </li>
+          <li>
+            <a href="#">Contacto</a>
           </li>
         </ul>
       </nav>

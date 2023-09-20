@@ -9,7 +9,7 @@ function Contact() {
       <div className="cb-contact-section">
         <article className="cb-contact-info">
           <h3>
-            ¿Te gustaría probar? <br /> Primera clase gratis y sin compromiso
+            ¿Te gustaría probar? <br /> Reserva tu primera <br /> clase gratis
           </h3>
           <a href="" target="_blank" rel="noopener">
             <h3 className="cb-contact-cta">Reserva</h3>

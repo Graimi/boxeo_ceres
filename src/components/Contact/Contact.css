@@ -1,26 +1,27 @@
 .cb-contact {
-padding: var(--cb-padding-container);
+  padding: var(--cb-padding-container);
 }
 
 .cb-contact-section {
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    padding: var(--cb-padding-container);
-/* gap: var(--cb-gap-container); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: var(--cb-padding-container);
+  gap: var(--cb-gap-container);
 }
 
 .cb-contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--cb-padding-container);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--cb-padding-container);
 }
 
 .cb-contact-cta {
-    width: fit-content;
-    text-align: center;
-    background-color: var(--cb-color-yellow);
-    padding: var(--cb-padding-cta);
-    border-radius: var(--cb-radius-general);
+  width: fit-content;
+  text-align: center;
+  background-color: var(--cb-color-yellow);
+  padding: var(--cb-padding-cta);
+  border-radius: var(--cb-radius-general);
 }
