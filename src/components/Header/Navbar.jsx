@@ -64,7 +64,7 @@ function Header() {
             <a href="#">Horario</a>
           </li>
           <li>
-            <a href="#">Precios</a>
+            <a href="#">Tarifas</a>
           </li>
           <li>
             <a href="#contact">Contacto</a>

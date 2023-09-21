@@ -24,7 +24,7 @@
   
   /* Estilos específicos del texto principal */
   .cb-hero-description {
-    /* font-size: 80px; */
+    font-size: 80px;
     font-weight: var(--cb-typography-weight-500);
     -webkit-text-stroke: var(--cb-text-stroke-white);
     color: var(--cb-color-white);

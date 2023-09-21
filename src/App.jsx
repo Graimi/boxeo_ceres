@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import Header from './components/Header/Navbar';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
+import Schedule from './components/Schedule/Schedule';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <body>
         <Hero />
+        <Schedule />
         <Contact />
       </body>
       <Footer />

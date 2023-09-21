@@ -1,0 +1,32 @@
+.cb-schedule {
+    display: flex;
+    flex-direction: column;
+    padding: var(--cb-padding-container);
+    gap: var(--cb-gap-container);
+}
+
+.cb-schedule-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.cb-schedule-table th,
+.cb-schedule-table td {
+  border: 2px solid yellow; /* Cambia el color a amarillo */
+  padding: 8px;
+  text-align: center;
+  /* color: var(--cb-color-black); */
+  font-family: var(--cb-typography-paragraph);
+  font-weight: var(--cb-weight-p);
+  line-height: var(--cb-typography-p-leading);
+}
+
+.cb-schedule-table th {
+  background-color: yellow; /* Cambia el fondo de las celdas de encabezado a amarillo */
+  font-weight: bold;
+  /* color: var(--cb-color-black); */
+  font-family: var(--cb-typography-heading);
+  font-size: var(--cb-typography-h3);
+}
