@@ -6,7 +6,7 @@ function Hero() {
     <div className="cb-hero">
       <img
         className="cb-hero-logo"
-        src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1677605671/Ceres%20Box/logo_rhedbl.png"
+        src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1695465535/Ceres%20Box/Logo_sin_fondo_oxxqwk.png"
         alt="logo del gimnasio"
       />
       <h1 className="cb-hero-description">SE TU MEJOR VERSIÓN</h1>

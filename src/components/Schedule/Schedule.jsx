@@ -27,10 +27,16 @@ function Schedule() {
           </tr>
           <tr>
             <td>9:30 a 10:30</td>
-            <td>Only Woman Boxeo Recreativo</td>
+            <td>
+              Only Woman <br /> Boxeo Recreativo
+            </td>
             <td>12 de Saco</td>
-            <td>Only Woman Boxeo Recreativo</td>
-            <td>Only Woman Functional Boxing</td>
+            <td>
+              Only Woman <br /> Boxeo Recreativo
+            </td>
+            <td>
+              Only Woman <br /> Functional Boxing
+            </td>
           </tr>
           <tr>
             <td>11:00 a 12:00</td>

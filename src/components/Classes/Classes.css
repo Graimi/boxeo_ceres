@@ -1,0 +1,51 @@
+.cb-classes {
+    display: flex;
+    flex-direction: column;
+    padding: var(--cb-padding-container);
+    gap: var(--cb-gap-container);
+}
+
+.cb-cards {
+    display: flex;
+    margin: auto;
+    gap: 5px;
+    padding: .4em;
+    width: 500px;
+    height: 254px;
+    border-radius: 4px;
+    background: #000000;
+  }
+  
+  .cb-cards span {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: #212121;
+    border: 1px solid #ff5a91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .cb-cards span:hover {
+    flex: 4;
+  }
+  
+  .cb-cards span p {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #ff568e;
+    letter-spacing: .1em;
+  }
+  
+  .cb-cards span:hover p {
+    transform: rotate(0);
+  }
