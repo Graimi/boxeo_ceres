@@ -13,7 +13,13 @@
   --cb-color-white--light: #fffffe;
   --cb-color-grey: #c3c6ce;
   --cb-color-grey--dark: #6e6e73;
-  --cb-color-green: #25d366;
+  --cb-color-green-wp: #25d366;
+  --cb-color-pastel-blue: #94D8FF;
+  --cb-color-pastel-pink: #FF94D7;
+  --cb-color-pastel-green: #94FFAC;
+  --cb-color-pastel-yellow: #EDFF94;
+  --cb-color-pastel-orange: #FFD194;
+  --cb-color-pastel-red: #FF9494;
 
   /* TYPOGRAPHY TYPE */
   --cb-typography-logo: 'Collegue', sans-serif;
@@ -40,7 +46,7 @@
   --cb-typography-p-leading: 1.5;
 
   /* IMG SIZE */
-  --cb-img-enormous: 200px;
+  --cb-img-enormous: 180px;
   --cb-img-big: 80px;
   --cb-img-medium: 64px;
   --cb-img-small: 32px;
