@@ -18,63 +18,63 @@ function Schedule() {
         </thead>
         <tbody>
           <tr>
-            <td>8:00 a 9:00</td>
-            <td>Boxeo Recreativo</td>
-            <td>12 de Saco</td>
-            <td>Boxeo Recreativo</td>
-            <td>Functional Boxing</td>
-            <td rowSpan="4">CERRADO</td>
+            <td>8:00 - 9:00</td>
+            <td className="cb-schedule-mid">Boxeo Recreativo</td>
+            <td className="cb-schedule-twelve">12 de Saco</td>
+            <td className="cb-schedule-mid">Boxeo Recreativo</td>
+            <td className="cb-schedule-functional">Functional Boxing</td>
+            <td rowSpan="4" />
           </tr>
           <tr>
-            <td>9:30 a 10:30</td>
-            <td>
+            <td>9:30 - 10:30</td>
+            <td className="cb-schedule-mid">
+              <span className=".cb-schedule-woman">Only Woman</span> <br /> Boxeo Recreativo
+            </td>
+            <td className="cb-schedule-twelve">12 de Saco</td>
+            <td className="cb-schedule-mid">
               Only Woman <br /> Boxeo Recreativo
             </td>
-            <td>12 de Saco</td>
-            <td>
-              Only Woman <br /> Boxeo Recreativo
-            </td>
-            <td>
+            <td className="cb-schedule-functional">
               Only Woman <br /> Functional Boxing
             </td>
           </tr>
           <tr>
-            <td>11:00 a 12:00</td>
-            <td>Boxeo Recreativo</td>
-            <td>12 de Saco</td>
-            <td>Boxeo Recreativo</td>
-            <td>Functional Boxing</td>
+            <td>11:00 - 12:00</td>
+            <td className="cb-schedule-mid">Boxeo Recreativo</td>
+            <td className="cb-schedule-twelve">12 de Saco</td>
+            <td className="cb-schedule-mid">Boxeo Recreativo</td>
+            <td className="cb-schedule-functional">Functional Boxing</td>
           </tr>
           <tr>
-            <td>17:00 a 18:00</td>
-            <td>-</td>
-            <td>Boxeo Educativo Infantil</td>
-            <td>-</td>
-            <td>Boxeo Educativo Infantil</td>
+            <td>17:00 - 18:00</td>
+            <td />
+            <td className="cb-schedule-child">Boxeo Educativo Infantil</td>
+            <td />
+            <td className="cb-schedule-child">Boxeo Educativo Infantil</td>
           </tr>
           <tr>
-            <td>18:00 a 19:00</td>
-            <td>12 de Saco</td>
-            <td>-</td>
-            <td>12 de Saco</td>
-            <td>-</td>
-            <td>Trabajo en Ring Iniciados</td>
+            <td>18:00 - 19:00</td>
+            <td className="cb-schedule-twelve">12 de Saco</td>
+            <td />
+            <td className="cb-schedule-twelve">12 de Saco</td>
+            <td />
+            <td className="cb-schedule-mid">Trabajo en Ring Iniciados</td>
           </tr>
           <tr>
-            <td>19:00 a 20:00</td>
-            <td>Boxeo Avanzado y Competición</td>
-            <td>Boxeo Recreativo</td>
-            <td>Boxeo Avanzado y Competición</td>
-            <td>Boxeo Recreativo</td>
-            <td>Functional Boxing</td>
+            <td>19:00 - 20:00</td>
+            <td className="cb-schedule-advance">Boxeo Avanzado y Competición</td>
+            <td className="cb-schedule-mid">Boxeo Recreativo</td>
+            <td className="cb-schedule-advance">Boxeo Avanzado y Competición</td>
+            <td className="cb-schedule-mid">Boxeo Recreativo</td>
+            <td className="cb-schedule-functional">Functional Boxing</td>
           </tr>
           <tr>
-            <td>20:15 a 21:15</td>
-            <td>Boxeo Recreativo</td>
-            <td>Boxeo Avanzado y Competición</td>
-            <td>Boxeo Recreativo</td>
-            <td>Boxeo Avanzado y Competición</td>
-            <td>Trabajo en Ring Avanzados y Competición</td>
+            <td>20:15 - 21:15</td>
+            <td className="cb-schedule-mid">Boxeo Recreativo</td>
+            <td className="cb-schedule-advance">Boxeo Avanzado y Competición</td>
+            <td className="cb-schedule-mid">Boxeo Recreativo</td>
+            <td className="cb-schedule-advance">Boxeo Avanzado y Competición</td>
+            <td className="cb-schedule-advance">Trabajo en Ring Avanzados y Competición</td>
           </tr>
         </tbody>
       </table>
@@ -83,6 +83,7 @@ function Schedule() {
       </p>
       <p>Sábado entrenamientos "Grandes Figuras del Boxeo" según disponibilidad</p>
       <p>ENTRENAMIENTO LIBRE BOXEO Y CROSS TRAINING EN HORARIO DE APERTURA</p>
+   AÑADIR EN OTRAS VIEWS SOLO LOS COLORES Y LAS LEYENDAS ARRIBA O DEBAJO, LOS DIAS DE LA SEMANA CON L M X;
     </div>
   );
 }
