@@ -3,7 +3,7 @@ import React from 'react';
 
 function Schedule() {
   return (
-    <div className="cb-schedule">
+    <div className="cb-schedule" id="schedule">
       <h1>Horario</h1>
       <table className="cb-schedule-table">
         <thead>
@@ -23,7 +23,7 @@ function Schedule() {
             <td>12 de Saco</td>
             <td>Boxeo Recreativo</td>
             <td>Functional Boxing</td>
-            <td rowSpan="4" >CERRADO</td>
+            <td rowSpan="4">CERRADO</td>
           </tr>
           <tr>
             <td>9:30 a 10:30</td>
@@ -72,6 +72,11 @@ function Schedule() {
           </tr>
         </tbody>
       </table>
+      <p>
+        <strong>SESIONES DE 1 HORA</strong>
+      </p>
+      <p>Sábado entrenamientos "Grandes Figuras del Boxeo" según disponibilidad</p>
+      <p>ENTRENAMIENTO LIBRE BOXEO Y CROSS TRAINING EN HORARIO DE APERTURA</p>
     </div>
   );
 }

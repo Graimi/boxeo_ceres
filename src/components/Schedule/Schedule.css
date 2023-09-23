@@ -30,3 +30,7 @@
   font-family: var(--cb-typography-heading);
   font-size: var(--cb-typography-h3);
 }
+
+.cb-schedule p{
+    font-weight: bold;
+}

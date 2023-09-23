@@ -58,10 +58,10 @@ function Header() {
             <a href="#">El club</a>
           </li>
           <li>
-            <a href="#">Clases</a>
+            <a href="#classes">Clases</a>
           </li>
           <li>
-            <a href="#">Horario</a>
+            <a href="#schedule">Horario</a>
           </li>
           <li>
             <a href="#">Tarifas</a>
