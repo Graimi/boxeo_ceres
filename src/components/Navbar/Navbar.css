@@ -80,7 +80,7 @@
   .cb-hamburguer-label {
     display: block;
     position: absolute;
-    top: 22px;
+    top: 32px;
     right: 56px;
   }
 
@@ -92,7 +92,7 @@
   /* CHECKED -> Aparece la nav */
   .cb-hamburguer:checked + .cb-navbar {
     display: block;
-    /* padding: var(--cb-padding-container); */
+    padding-top: var(--cb-padding-card);
   }
 
   /* Dirección de los items del nav */

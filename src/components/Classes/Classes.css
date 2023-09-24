@@ -3,6 +3,7 @@
     flex-direction: column;
     padding: var(--cb-padding-container);
     gap: var(--cb-gap-container);
+    max-width: 100%;
 }
 
 .cb-cards {
