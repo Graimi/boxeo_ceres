@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Collegue'; /* Nombre de la fuente */
-  src: url('C:\Users\jamil\Desktop\curso-pmba-fullstack\Proyects\boxeo_ceres\College_Block_2.0.otf') format('opentype'); /* Ruta al archivo OTF */
+  src: url('College_Block_2.0.otf') format('opentype'); /* Ruta al archivo OTF */
   /* Puedes incluir más formatos de fuente si deseas agregar compatibilidad con navegadores diferentes */
 }
 
