@@ -34,6 +34,13 @@ function Header() {
     }
   };
 
+  // Función para desmarcar el check
+  const unCkecked = () => {
+    const checkbox = document.getElementById('hamburger');
+    checkbox.checked = false;
+    toggleNavbar();
+  };
+
   return (
     <div className={`cb-header ${isNavbarVisible || navbarOpen ? 'visible' : ''}`}>
       <a href="#hero">
@@ -55,19 +62,29 @@ function Header() {
       <nav className="cb-navbar">
         <ul className="cb-navbar-list">
           <li>
-            <a href="#">El club</a>
+            <a href="#" onClick={unCkecked}>
+              El club
+            </a>
           </li>
           <li>
-            <a href="#classes">Clases</a>
+            <a href="#classes" onClick={unCkecked}>
+              Clases
+            </a>
           </li>
           <li>
-            <a href="#schedule">Horario</a>
+            <a href="#schedule" onClick={unCkecked}>
+              Horario
+            </a>
           </li>
           <li>
-            <a href="#">Tarifas</a>
+            <a href="#" onClick={unCkecked}>
+              Tarifas
+            </a>
           </li>
           <li>
-            <a href="#contact">Contacto</a>
+            <a href="#contact" onClick={unCkecked}>
+              Contacto
+            </a>
           </li>
         </ul>
       </nav>

@@ -6,12 +6,13 @@
     flex-direction: column;
     text-align: center;
     justify-content: space-evenly;
+    width: 100%;
+    min-height: 100vh;
+    padding: var(--cb-padding-container);
     background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695466572/Ceres%20Box/ring_xaqqi1.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    min-height: 100vh;
-    padding: var(--cb-padding-big);
     position: relative;
     z-index: 1;
   }
@@ -47,8 +48,12 @@
   }
   
   /* TABLET DISPLAY */
-  /* @media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .cb-hero-description {
+      font-size: calc(var(--cb-typography-h1));
+    }
 
+  /* 
     .cb-section-hero {
       min-height: 100vh;
     }
@@ -68,21 +73,21 @@
   
     .cb-hero-next {
       width: calc(var(--cb-width-small) - 0.25rem);
-    }
-  } */
+    }*/
+  } 
 
   /* MOBILE DISPLAY */
   @media screen and (max-width: 376px) {
     .cb-hero-logo {
-      margin-top: 5rem;
+      margin-top: 80px;
       width: calc(var(--cb-img-enormous) - 10%);
     }
   
-    /* .cb-hero-description {
-      font-size: calc(var(--cb-typography-size-extra) - 1.5rem);
-      font-weight: var(--cb-typography-weight-500);
+    .cb-hero-description {
+      font-size: calc(var(--cb-typography-h1));
     }
   
+     /*
     .cb-hero-CTA {
       font-size: calc(var(--cb-typography-size-h3) - 0.2rem);
     } */
