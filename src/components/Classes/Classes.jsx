@@ -8,6 +8,7 @@ function Classes() {
       <article className="cb-cards">
         <span className="cb-card-child">
           <p>Boxeo Educativo Infantil</p>
+          
         </span>
         <span className="cb-card-woman">
           <p>Only woman</p>

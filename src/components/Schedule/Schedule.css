@@ -10,13 +10,19 @@
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  /* width: min-content; */
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 8px;
+}
+
+.table-small-view {
+  display: none;
 }
 
 .cb-schedule-table th,
 .cb-schedule-table td {
   /* border: 2px solid yellow; */
-  padding: 8px;
+  padding: 9px;
   text-align: center;
   /* color: var(--cb-color-black); */
   font-family: var(--cb-typography-paragraph);
@@ -25,27 +31,31 @@
 }
 
 /* Estilo para la primera columna */
-.cb-schedule-table td:first-child,
-.cb-schedule-table th:first-child {
-  width: 15%; /* Ajusta el valor del ancho según tus necesidades */
+.table-big-view td:first-child,
+.table-big-view th:first-child {
+  width: 18%; /* Ajusta el valor del ancho según tus necesidades */
+}
+
+
+
+.cb-schedule-table td {
+  border-radius: var(--cb-radius-general);
+}
+
+.cb-schedule-table th {
+  font-weight: bold;
+  font-family: var(--cb-typography-heading);
+  font-size: var(--cb-typography-h3);
 }
 
 /* Estilo para las demás celdas de la tabla */
-.cb-schedule-table td,
-.cb-schedule-table th {
-  /* width: 15%; Ajusta el valor del ancho según tus necesidades */
+.table-big-view td {
+  height: 50px;
 }
 
-.cb-schedule-table td {
-  border-radius: 5px;
-}
-
-.cb-schedule-table th {
-  /* background-color: yellow; */
-  font-weight: bold;
-  /* color: var(--cb-color-black); */
-  font-family: var(--cb-typography-heading);
-  font-size: var(--cb-typography-h3);
+.cb-schedule p {
+  /* font-weight: bold; */
+  /* color: rgba(255, 255, 255, 0.801); */
 }
 
 .cb-schedule-child {
@@ -54,6 +64,11 @@
 
 .cb-schedule-woman {
   background-color: var(--cb-color-pastel-pink);
+  /* font-weight: 700; */
+  color: rgba(var(--cb-color-pastel-pink), 0.9);
+  color: rgba(255, 255, 255, 0.76);
+  border-radius: var(--cb-radius-general);
+  padding: 2px;
 }
 
 .cb-schedule-twelve {
@@ -72,6 +87,93 @@
   background-color: var(--cb-color-pastel-red);
 }
 
-.cb-schedule p {
-  font-weight: bold;
+.cb-schedule-ring {
+  /* background-color: rgba(255, 255, 255, 0.199); */
+  color: rgba(255, 255, 255, 0.849);
+  border-radius: var(--cb-radius-general);
+  /* opacity: 0.5; */
 }
+
+/* .cb-schedule td {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.788);
+} */
+
+.cb-schedule-leyend {
+  display: none;
+}
+
+.cb-schedule-leyend p {
+  padding: var(--cb-padding-card);
+  border-radius: var(--cb-radius-general);
+}
+
+.cb-schedule-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cb-gap-card);
+  font-style: italic;
+}
+
+/* TABLET DISPLAY */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .table-big-view {
+    display: none;
+  }
+
+  .table-small-view {
+    display: initial;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 20px;
+  }
+
+  /* Estilo para la primera columna */
+  .table-small-view td:first-child,
+  .table-small-view th:first-child {
+    width: 30px;
+  }
+
+  .table-small-view td {
+    width: 18%;
+  }
+
+  /* Estilo para las demás celdas de la tabla */
+.table-small-view td {
+  height: min-content;
+}
+
+  .table-small-view td,
+  .table-small-view th {
+    padding: 5px;
+  }
+
+  .cb-schedule-woman {
+    background-color: var(--cb-color-pastel-pink);
+    /* font-weight: 700; */
+    /* color: var(--cb-color-pastel-pink); */
+    color: black;
+    margin: 5px;
+    /* color: rgba(255, 255, 255, 0.76); */
+    /* border-radius: var(--cb-radius-general); */
+  }
+
+  .cb-schedule-leyend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--cb-gap-card);
+  }
+}
+
+  /* MOBILE DISPLAY */
+  @media screen and (max-width: 376px) {
+    .table-small-view {
+      border-spacing: 6px;
+    }
+  }
