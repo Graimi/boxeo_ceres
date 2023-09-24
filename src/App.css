@@ -1,21 +1,44 @@
-#root {
+
+
+/* #root {
   width: 100%;
-  /* width: 100vh; */
-  /* max-height: 100%; */
+  width: 100vh;
+  max-height: 100%;
   margin: 0 auto;
   text-align: center;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  align-items: center; */
-}
+  align-items: center;
+} */
 
-/* Set core body defaults */
+/* #app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
 body {
-  /* min-height: 100vh; */
-  /* width: 100%; */
-  /* width: 100vh; */
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: var(--cb-color-white);
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  /* Damos estilos al background */
-  background-color: var(--cb-color-white);
+}
+
+
+#root {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100vw;
+}
+
+#root, #app {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
