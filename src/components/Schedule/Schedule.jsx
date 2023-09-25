@@ -29,14 +29,14 @@ function Schedule() {
           <tr>
             <td>9:30 - 10:30</td>
             <td className="cb-schedule-mid">
-              Boxeo Recreativo<p className="cb-schedule-woman">Woman</p>
+              Boxeo Recreativo<p className="cb-schedule-woman">Only Woman</p>
             </td>
             <td className="cb-schedule-twelve">12 de Saco</td>
             <td className="cb-schedule-mid">
-              Boxeo Recreativo<p className="cb-schedule-woman">Woman</p>
+              Boxeo Recreativo<p className="cb-schedule-woman">Only Woman</p>
             </td>
             <td className="cb-schedule-functional">
-              Functional Boxing<p className="cb-schedule-woman">Woman</p>
+              Functional Boxing<p className="cb-schedule-woman">Only Woman</p>
             </td>
           </tr>
           <tr>
