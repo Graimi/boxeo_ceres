@@ -35,14 +35,14 @@ function Classes() {
         </span>
         <span className="cb-card-functional">
           <p>Functional Boxing</p>
-          <div className="cb-card-">
+          <div className="cb-card-hide">
             <p>Circuitos funcionales específicos para el acondicionamiento físico del Boxeo</p>
             <p>SIN CONTACTO</p>
           </div>
         </span>
         <span className="cb-card-mid">
           <p>Boxeo Recreativo</p>
-          <div className="cb-card-">
+          <div className="cb-card-hide">
             <p>Actividad deportiva dirigida para adolescentes y adultos</p>
             <p>CONTACTO CONTROLADO</p>
           </div>
