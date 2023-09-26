@@ -18,14 +18,14 @@ function Classes() {
         </span>
         <span className="cb-card-woman">
           <p>Only woman</p>
-          <div className="cb-card-">
+          <div className="cb-card-hide">
             <p>Clase dirigida solo a mujeres</p>
             <p>SIN CONTACTO O CONTROLADO</p>
           </div>
         </span>
         <span className="cb-card-twelve">
           <p>12 de Saco</p>
-          <div className="cb-card-">
+          <div className="cb-card-hide">
             <p>
               12 asaltos de golpeo al saco guiados por un entrenador virtual que nos lleva al
               aprendizaje de la técnica de los golpes y la fuerza
