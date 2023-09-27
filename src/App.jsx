@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
 import Schedule from './components/Schedule/Schedule';
 import Classes from './components/Classes/Classes';
+import Rates from './components/Rates/Rates';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <Classes />
       <Schedule />
+      <Rates />
       <Contact />
       <Footer />
     </div>
