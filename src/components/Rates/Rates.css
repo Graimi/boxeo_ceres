@@ -1,0 +1,51 @@
+.cb-rates {
+    display: flex;
+    flex-direction: column;
+    padding: var(--cb-padding-container);
+    gap: var(--cb-gap-container);
+    max-width: 100%;
+}
+
+.cb-rates span {
+    gap: var(--cb-gap-container);
+    max-width: 100%;
+    border-radius: var(--cb-radius-general);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Columnas que hacen wrap automáticamente */
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.cb-rates span article {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 20px;
+    padding: var(--cb-padding-card);
+    gap: var(--cb-gap-card);
+    max-width: 100%;
+    background-color: white;
+    box-shadow: inset 0px 0px 3px var(--cb-color-grey);
+    border-radius: var(--cb-radius-general);
+}
+
+.cb-monthly {
+    grid-row: span 2;
+}
+
+.cb-fee {
+    /* display: flex;
+    flex-basis: 100%;
+    margin-right: 0; */
+    /* grid-column: span 2; */
+  }
+
+      /* REST DISPLAY */
+@media screen and (max-width: 768px) {
+    .cb-rates span {
+        /* Columnas que hacen wrap automáticamente */
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
