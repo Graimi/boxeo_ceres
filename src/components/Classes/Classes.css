@@ -53,6 +53,7 @@ background-attachment: contain;
 
   .cb-cards:hover .cb-card-hide {
     display: block;
+    /* transition: all 1s; */
   }
 
   .cb-cards span p {
@@ -60,7 +61,7 @@ background-attachment: contain;
     padding: var(--cb-padding-card);
     text-align: center;
     transform: rotate(-90deg);
-    transition: all 1s;
+    /* transition: all 1s; */
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--cb-color-white);
@@ -75,6 +76,7 @@ background-attachment: contain;
   
   .cb-cards span:hover p {
     transform: rotate(0);
+    transition: all 1s;
   }
 
   .cb-card-child {

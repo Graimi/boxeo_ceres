@@ -28,6 +28,7 @@
   font-family: var(--cb-typography-paragraph);
   font-weight: var(--cb-weight-p);
   line-height: var(--cb-typography-p-leading);
+  /* letter-spacing: 1px; */
 }
 
 /* Estilo para la primera columna */
@@ -35,8 +36,6 @@
 .table-big-view th:first-child {
   width: 18%; /* Ajusta el valor del ancho según tus necesidades */
 }
-
-
 
 .cb-schedule-table td {
   border-radius: var(--cb-radius-general);
@@ -88,9 +87,11 @@
 }
 
 .cb-schedule-ring {
-  /* background-color: rgba(255, 255, 255, 0.199); */
+  background-color: rgba(255, 255, 255, 0.347);
   color: rgba(255, 255, 255, 0.849);
+  color: black;
   border-radius: var(--cb-radius-general);
+  letter-spacing: 1px;
   /* opacity: 0.5; */
 }
 
