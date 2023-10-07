@@ -48,7 +48,7 @@
   /* TEXT STROKE STYLE */
   --cb-text-stroke--white: 0.48px var(--cb-color-white);
   --cb-text-stroke--black: 0.64px var(--cb-color-black);
-  --cb-text-stroke--yellow: 0.88px var(--cb-color-yellow);
+  --cb-text-stroke--yellow: 0.5px var(--cb-color-yellow);
 
   /* IMG SIZE */
   --cb-img-enormous: 180px;

@@ -1,154 +1,138 @@
 /* Estilos generales */
-.bc__section__footer {
+.cb-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  padding: 40px;
+  gap: 30px;
+  background-color: var(--cb-color-black);
+}
+
+/* Estilos para el texto del footer */
+.cb-footer p {
+  color: var(--cb-color-yellow);
+  font-size: 15px;
+}
+
+/* Estilos para las secciones */
+.cb-footer-website {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  /* gap: 4%; */
+  /* border-bottom: var(--cb-color-yellow) 1.6px solid; */
+}
+
+.cb-footer-website {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos individuales de los grupos ubicación, teléfono e instagram */
+.cb-footer-location,
+.cb-footer-img {
+  display: flex;
+  align-items: center;
+}
+
+/* Dirección del texto de address en desktop first */
+.cb-location-address p {
+  text-align: right;
+}
+
+/* Estilo del logo */
+.cb-slogan-boxer {
+  font-family: var(--cb-typography-logo);
+  font-size: var(--cb-typography-h3);
+  -webkit-text-stroke: var(--cb-text-stroke--yellow);
+  color: var(--cb-color-transparent);
+}
+
+/* Estilo del eslogan */
+.cb-slogan-text {
+  background-color: var(--cb-color-yellow);
+  padding: 5px;
+  border-radius: var(--cb-radius-general);
+  text-align: center;
+  font-family: var(--cb-typography-logo);
+}
+
+.cb-footer-designer p {
+  font-size: 12px;
+}
+
+.cb-footer-designer p a {
+  font-weight: 500;
+  color: var(--cb-color-yellow);
+}
+
+.cb-footer-designer div {
+  display: flex;
+  justify-content: center;
+}
+
+.cb-footer-designer div img {
+  width: 18px;
+}
+
+/* Padding de los iconos del footer */
+.cb-footer-img,
+.cb-contact-phone,
+.cb-footer-location,
+.cb-contact-instagram {
+  padding: 8px;
+  gap: 10px;
+}
+
+/* TABLET DISPLAY */
+@media screen and (max-width: 48rem) {
+  /* ✅ */
+  /* Se cambia el display del footer para adapatarlo a tablet */
+  .cb-footer-website {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    width: 100%;
-    /* min-height: var(--bc__height--footer); */
-    padding: var(--cb-padding-container);
-    gap: var(--cb-gap-container);
-    font-size: var(--cb-typography-p);
-    font-weight: var(--cb-weight-p);
-    color: var(--cb-color-yellow);
-    background-color: var(--cb-color-black);
-    background-size: cover;
-    background-position-x: center;
   }
-  
-  /* Estilos específicos sobre la info del gym */
-  .bc__footer__web {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 0.3rem;
-    gap: var(--cb-gap-container);
-    border-bottom: var(--cb-color-yellow) 0.1rem solid;
-  }
-  
-  /* Estilos individuales de los grupos ubicación, teléfono e instagram */
-  .bc__footer__location,
-  .bc__contact__phone,
-  .bc__contact__instagram {
-    flex-direction: row;
-    gap: var(--cb-gap-cta);
-  }
-  
-  /* Dirección del texto en desktop first */
-  .bc__location__address p {
-    text-align: right;
-    color: var(--cb-color-yellow);
-  }
-  
-  /* Estilo del texto Kike de Manuel */
-  .bc__slogan__boxer {
+
+  /* Estilos específicos de los grupos del footer */
+  .cb-footer-location {
+    flex-direction: column-reverse;
     text-align: center;
-    font-family: var(--cb-typography-logo);
-    font-size: var(--cb-typography-h3);
-    -webkit-text-stroke: var(--cb-text-stroke--yellow);
-    color: var(--cb-color-transparent);
+    order: 1;
   }
-  
-  /* Estilo del eslogan */
-  .bc__slogan__text {
-    background-color: var(--cb-color-yellow);
-    color: var(--cb-color-black);
-    padding: 5px;
-    border-radius: var(--cb-radius-general);
+
+  .cb-footer-contact {
+    display: flex;
+  }
+
+  .cb-location-address,
+  .cb-location-address p {
     text-align: center;
-    font-family: var(--cb-typography-logo);
   }
-  
-  /* Padding de los iconos del footer */
-  .bc__contact__phone,
-  .bc__footer__location,
-  .bc__contact__instagram,
-  .bc__social__linkedin,
-  .bc__social__github {
-    padding: var(--cb-padding-cta);
+
+  /* Se establece el order para que prevalezca en la parte superior el eslogan */
+  .cb-footer-slogan {
+    order: 0;
+    padding-bottom: 40px;
   }
-  
-  /* TABLET DISPLAY */
-  @media screen and (min-width: 23.5rem) and (max-width: 48rem) {
-    /* ✅ */
-    /* Se cambia el display del footer para adapatarlo a tablet */
-    .bc__footer__web {
-      display: flex;
-      flex-direction: column;
-      margin: var(--bc__margin--small);
-    }
-  
-    /* Estilos específicos de los grupos del footer */
-  
-    .bc__footer__location {
-      flex-direction: column-reverse;
-      text-align: center;
-      order: 1;
-      margin-top: var(--bc__margin--small);
-    }
-  
-    .bc__footer__contact {
-      display: flex;
-    }
-  
-    .bc__location__address {
-      text-align: center;
-    }
-  
-    /* Se establece el order para que prevalezca en la parte superior el eslogan */
-    .bc__footer__slogan {
-      order: 0;
-    }
-  
-    .bc__footer__contact {
-      order: 2;
-    }
-  
-    .bc__contact__phone,
-    .bc__contact__instagram {
-      flex-direction: column;
-      margin: var(--bc__margin--small);
-    }
+
+  .cb-footer-contact {
+    order: 2;
   }
-  
-  /* MOBILE DISPLAY */
-  @media screen and (max-width: 23.5rem) {
-    /* ✅ */
-    /* Se cambia el display del footer para adapatarlo a movil */
-    .bc__footer__web {
-      display: flex;
-      flex-direction: column;
-      margin: var(--bc__margin--small);
-    }
-  
-    /* Estilos específicos de los grupos del footer */
-  
-    .bc__footer__location {
-      flex-direction: column-reverse;
-      text-align: center;
-      order: 1;
-      margin-top: var(--bc__margin--small);
-    }
-  
-    .bc__location__address {
-      text-align: center;
-    }
-  
-    /* Se establece el order para que prevalezca en la parte superior el eslogan */
-    .bc__footer__slogan {
-      order: 0;
-    }
-  
-    .bc__footer__contact {
-      order: 2;
-    }
-  
-    .bc__contact__phone,
-    .bc__contact__instagram {
-      flex-direction: column;
-      margin: var(--bc__margin--small);
-    }
+
+  .cb-footer-img {
+    flex-direction: column;
   }
-  
+}
+
+/* MOBILE DISPLAY */
+@media screen and (max-width: 23.5rem) {
+  .cb-footer-contact {
+    flex-direction: column;
+  }
+}

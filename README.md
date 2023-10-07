@@ -3,13 +3,24 @@
 GENERAL
 Ver porque no se ve correctamente la fuente collegue
 Añadir whatsapp, cambiar lo que pone
-Adaptar medias queries
 Describir código
 Poner una barra divisoria entre apartados
+Cambiar a section los article si corresponde
+
+MEDIAS QUERUES
+Navbar -> Revisar
+Hero -> Hacer
+Club -> Hacer
+Clases -> Hacer
+Horario -> Hacer
+Tarifas -> Hacer
+Contacto -> Hacer
+Footer -> Hecho
 
 NAVBAR
 Enlazar los a para que vayan donde se desea
 Al pinchar en página restar el tamaño del navbar
+efecto con hover
 
 HERO
 Ver si poner un tipo de letra hueca en vez de la brillante
@@ -34,4 +45,8 @@ contacto hacer 50 50 con grid
 Añadir galería imágenes
 
 FOOTER
-Probar con original
+Ver si dar algún estilo diferenciador a mi parte
+Añadir clase a img
+
+WHATSAPP
+Crear botón whatsapp
