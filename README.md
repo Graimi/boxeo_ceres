@@ -9,6 +9,7 @@ Poner una barra divisoria entre apartados
 
 NAVBAR
 Enlazar los a para que vayan donde se desea
+Al pinchar en página restar el tamaño del navbar
 
 HERO
 Ver si poner un tipo de letra hueca en vez de la brillante

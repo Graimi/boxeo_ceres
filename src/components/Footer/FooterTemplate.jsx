@@ -1,8 +1,9 @@
+import './Footer.css';
 import React from 'react';
 
 function footerTemplate(footer) {
   return (
-    <div>
+    <div className="bc__section__footer">
       <section className="bc__footer__web">
         <section className="bc__footer__location bc__layout__flex">
           <div className="bc__location__address">
@@ -16,7 +17,7 @@ function footerTemplate(footer) {
           </div>
           <img
             className="bc__location__img"
-            src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1677605855/ceres-box/location_oy3ano.png"
+            src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1696670250/Ceres%20Box/location_oy3ano_peiznt.png"
             alt="icono de location"
           />
         </section>
@@ -63,7 +64,6 @@ function footerTemplate(footer) {
           />
         </a>
       </section>
-      ;
     </div>
   );
 }

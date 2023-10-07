@@ -10,16 +10,16 @@
   --cb-color-black: #191800;
   --cb-color-yellow: #dbd748;
   --cb-color-white: #f2f2f2;
-  --cb-color-white--light: #fffffe;
+  --cb-color-white-light: #fffffe;
   --cb-color-grey: #c3c6ce;
-  --cb-color-grey--dark: #6e6e73;
+  --cb-color-grey-dark: #6e6e73;
   --cb-color-green-wp: #25d366;
-  --cb-color-pastel-blue: #94D8FF;
-  --cb-color-pastel-pink: #FF94D7;
-  --cb-color-pastel-green: #94FFAC;
+  --cb-color-pastel-blue: #94d8ff;
+  --cb-color-pastel-pink: #ff94d7;
+  --cb-color-pastel-green: #94ffac;
   --cb-color-pastel-yellow: #a094ff;
   --cb-color-pastel-orange: #ffc894;
-  --cb-color-pastel-red: #FF9494;
+  --cb-color-pastel-red: #ff9494;
 
   /* TYPOGRAPHY TYPE */
   --cb-typography-logo: 'Collegue', sans-serif;
@@ -44,6 +44,11 @@
   --cb-typography-h2-leading: 1.2;
   --cb-typography-h3-leading: 1.2;
   --cb-typography-p-leading: 1.5;
+
+  /* TEXT STROKE STYLE */
+  --cb-text-stroke--white: 0.48px var(--cb-color-white);
+  --cb-text-stroke--black: 0.64px var(--cb-color-black);
+  --cb-text-stroke--yellow: 0.88px var(--cb-color-yellow);
 
   /* IMG SIZE */
   --cb-img-enormous: 180px;

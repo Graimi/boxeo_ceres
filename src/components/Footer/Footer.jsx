@@ -4,13 +4,13 @@ import footerTemplate from './FooterTemplate';
 
 function Footer() {
   return footerTemplate({
-    webName: 'NORBA BOX',
-    address1: 'Calle Falsa 123',
-    address2: '10005 Cáceres',
+    webName: 'BOXEO CERES',
+    address1: 'Calle Nicolás Copérnico 3',
+    address2: '10004 Cáceres',
     slogan: 'FUERZA Y VALOR',
-    phone: '676 67 67 67',
-    instagramLink: '#',
-    instagramUser: 'norbabox',
+    phone: '605 89 53 54',
+    instagramLink: 'https://www.instagram.com/escueladeboxeoceres/',
+    instagramUser: 'escueladeboxeoceres',
     author: 'Graimi',
     linkedinLink: 'https://www.linkedin.com/in/floreslujan/',
     githubLink: 'https://github.com/Graimi'

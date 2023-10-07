@@ -1,21 +1,17 @@
-.cb-footer {
-    background-color: var(--cb-color-black);
-}
-
-/* ✅ */
 /* Estilos generales */
 .bc__section__footer {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    min-height: var(--bc__height--footer);
-    padding: var(--bc__padding--big);
-    gap: var(--bc__gap--small);
-    font-size: var(--bc__typography--size--footer);
-    font-weight: var(--bc__typography--weight--300);
-    color: var(--bc__color--yellow);
-    background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1677605856/ceres-box/footer_zwwxpn.png);
-    background-color: var(--bc__color--white);
+    width: 100%;
+    /* min-height: var(--bc__height--footer); */
+    padding: var(--cb-padding-container);
+    gap: var(--cb-gap-container);
+    font-size: var(--cb-typography-p);
+    font-weight: var(--cb-weight-p);
+    color: var(--cb-color-yellow);
+    background-color: var(--cb-color-black);
     background-size: cover;
     background-position-x: center;
   }
@@ -28,8 +24,8 @@
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 0.3rem;
-    gap: var(--bc__gap--small);
-    border-bottom: var(--bc__color--yellow) 0.1rem solid;
+    gap: var(--cb-gap-container);
+    border-bottom: var(--cb-color-yellow) 0.1rem solid;
   }
   
   /* Estilos individuales de los grupos ubicación, teléfono e instagram */
@@ -37,30 +33,32 @@
   .bc__contact__phone,
   .bc__contact__instagram {
     flex-direction: row;
-    gap: var(--bc__gap--small);
+    gap: var(--cb-gap-cta);
   }
   
   /* Dirección del texto en desktop first */
-  .bc__location__address {
+  .bc__location__address p {
     text-align: right;
+    color: var(--cb-color-yellow);
   }
   
   /* Estilo del texto Kike de Manuel */
   .bc__slogan__boxer {
     text-align: center;
-    font-size: var(--bc__typography--size--h3);
-    -webkit-text-stroke: var(--bc__text__stroke--yellow);
-    color: var(--bc__color--transparent);
+    font-family: var(--cb-typography-logo);
+    font-size: var(--cb-typography-h3);
+    -webkit-text-stroke: var(--cb-text-stroke--yellow);
+    color: var(--cb-color-transparent);
   }
   
   /* Estilo del eslogan */
   .bc__slogan__text {
-    background-color: var(--bc__color--yellow);
-    color: var(--bc__color--black);
-    padding: var(--bc__padding--small);
-    border-radius: var(--bc__border__radius--small);
+    background-color: var(--cb-color-yellow);
+    color: var(--cb-color-black);
+    padding: 5px;
+    border-radius: var(--cb-radius-general);
     text-align: center;
-    font-family: var(--bc__typography--family--logo);
+    font-family: var(--cb-typography-logo);
   }
   
   /* Padding de los iconos del footer */
@@ -69,7 +67,7 @@
   .bc__contact__instagram,
   .bc__social__linkedin,
   .bc__social__github {
-    padding: var(--bc__padding--small);
+    padding: var(--cb-padding-cta);
   }
   
   /* TABLET DISPLAY */
