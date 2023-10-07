@@ -6,6 +6,7 @@ Añadir whatsapp, cambiar lo que pone
 Describir código
 Poner una barra divisoria entre apartados
 Cambiar a section los article si corresponde
+Actualizar información de trabajo
 
 MEDIAS QUERUES
 Navbar -> Revisar
@@ -46,7 +47,7 @@ Añadir galería imágenes
 
 FOOTER
 Ver si dar algún estilo diferenciador a mi parte
-Añadir clase a img
+✅ Añadir clase a img
 
 WHATSAPP
 Crear botón whatsapp

@@ -22,16 +22,21 @@
   justify-content: center;
   justify-items: center;
   align-items: center;
-  /* gap: 4%; */
   /* border-bottom: var(--cb-color-yellow) 1.6px solid; */
 }
 
 .cb-footer-website {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  grid-template-columns: repeat(1, 20fr 1fr 20fr); 
   align-items: center;
   justify-items: center;
   justify-content: space-between;
+}
+
+/* Damos un tamaño mínimo a la clase */
+.cb-footer-company {
+  min-width: 200px;
 }
 
 /* Estilos individuales de los grupos ubicación, teléfono e instagram */
@@ -42,20 +47,20 @@
 }
 
 /* Dirección del texto de address en desktop first */
-.cb-location-address p {
+.cb-footer-location div p {
   text-align: right;
 }
 
 /* Estilo del logo */
-.cb-slogan-boxer {
+.cb-company-name {
   font-family: var(--cb-typography-logo);
   font-size: var(--cb-typography-h3);
   -webkit-text-stroke: var(--cb-text-stroke--yellow);
   color: var(--cb-color-transparent);
 }
 
-/* Estilo del eslogan */
-.cb-slogan-text {
+/* Estilo del ecompany */
+.cb-company-slogan {
   background-color: var(--cb-color-yellow);
   padding: 5px;
   border-radius: var(--cb-radius-general);
@@ -110,13 +115,13 @@
     display: flex;
   }
 
-  .cb-location-address,
-  .cb-location-address p {
+  .cb-footer-location div,
+  .cb-footer-location div p {
     text-align: center;
   }
 
-  /* Se establece el order para que prevalezca en la parte superior el eslogan */
-  .cb-footer-slogan {
+  /* Se establece el order para que prevalezca en la parte superior el ecompany */
+  .cb-footer-company {
     order: 0;
     padding-bottom: 40px;
   }
