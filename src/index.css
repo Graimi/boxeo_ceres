@@ -46,7 +46,7 @@
   --cb-typography-p-leading: 1.5;
 
   /* TEXT STROKE STYLE */
-  --cb-text-stroke--white: 0.48px var(--cb-color-white);
+  --cb-text-stroke--white: 0.7px var(--cb-color-white);
   --cb-text-stroke--black: 0.64px var(--cb-color-black);
   --cb-text-stroke--yellow: 0.5px var(--cb-color-yellow);
 

@@ -21,7 +21,8 @@ Footer -> Hecho
 NAVBAR
 Enlazar los a para que vayan donde se desea
 Al pinchar en página restar el tamaño del navbar
-efecto con hover
+✅ efecto con hover
+Probar cambiando el stroke
 
 HERO
 Ver si poner un tipo de letra hueca en vez de la brillante

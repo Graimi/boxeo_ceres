@@ -51,13 +51,23 @@
   justify-content: center;
   gap: var(--cb-gap-container);
   color: var(--cb-color-yellow);
-  padding: 0; 
+  padding: 0;
 }
 
-.cb-navbar-list a{
+.cb-navbar-list a {
   font-weight: var(--cb-typography-weight-p);
   font-family: var(--cb-typography-paragraph);
   color: var(--cb-color-white);
+}
+
+.cb-navbar a {
+  transition: all cubic-bezier(0.75, 5, 0.165, 1);
+  /* -webkit-text-stroke: var(--cb-text-stroke--white); */
+}
+
+.cb-navbar a:hover {
+  -webkit-text-stroke: var(--cb-text-stroke--white);
+  color: var(--cb-color-transparent);
 }
 
 /* TABLET DISPLAY */
@@ -67,7 +77,7 @@
   .cb-header {
     display: block;
     /* min-height: 5vh; */
-      padding: var(--cb-padding-container);
+    padding: var(--cb-padding-container);
   }
 
   /* Se centra el texto del logo */
