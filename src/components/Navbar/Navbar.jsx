@@ -62,7 +62,7 @@ function Header() {
       <nav className="cb-navbar">
         <ul className="cb-navbar-list">
           <li>
-            <a href="#" onClick={unCkecked}>
+            <a href="#club" onClick={unCkecked}>
               El club
             </a>
           </li>
@@ -77,7 +77,7 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href="#" onClick={unCkecked}>
+            <a href="#rates" onClick={unCkecked}>
               Tarifas
             </a>
           </li>

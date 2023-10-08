@@ -7,12 +7,14 @@ import Contact from './components/Contact/Contact';
 import Schedule from './components/Schedule/Schedule';
 import Classes from './components/Classes/Classes';
 import Rates from './components/Rates/Rates';
+import Club from './components/Club/Club';
 
 function App() {
   return (
     <div id="app">
       <Header />
       <Hero />
+      <Club />
       <Classes />
       <Schedule />
       <Rates />

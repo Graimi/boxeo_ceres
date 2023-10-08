@@ -6,9 +6,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  flex-flow: row wrap;
+  flex-flow: wrap;
   padding: var(--cb-padding-container);
   gap: var(--cb-gap-container);
+}
+
+.cb-contact-section article {
+ /* max-width: 400px; */
 }
 
 .cb-contact-info {

@@ -3,7 +3,7 @@ import React from 'react';
 
 function Rates() {
   return (
-    <div className="cb-rates">
+    <div className="cb-rates" id="rates">
       <h1>Tarifas</h1>
       <span>
         <article className="cb-monthly">

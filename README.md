@@ -41,6 +41,7 @@ TARIFAS
 Estilo del texto
 
 CONTACTO
+Añadir enlace para WhatsApp
 contacto que vaya al mapita
 contacto hacer 50 50 con grid
 Añadir galería imágenes
