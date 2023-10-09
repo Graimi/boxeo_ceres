@@ -9,10 +9,7 @@ function Classes() {
         <span className="cb-card-child">
           <p>Boxeo Educativo Infantil</p>
           <div className="cb-card-hide">
-            <p>
-              Actividad deportiva dirigida para niños y niñas de 8 a 14 años *Sujeto a calendario
-              escolar
-            </p>
+            <p>Para niños y niñas de 8 a 14 años *Sujeto a calendario escolar</p>
             <p>SIN CONTACTO</p>
           </div>
         </span>
@@ -26,11 +23,11 @@ function Classes() {
         <span className="cb-card-twelve">
           <p>12 de Saco</p>
           <div className="cb-card-hide">
-            {/* <p>
+            <p>
               12 asaltos de golpeo al saco guiados por un entrenador virtual que nos lleva al
               aprendizaje de la técnica de los golpes y la fuerza
             </p>
-            <p>SIN CONTACTO</p> */}
+            <p>SIN CONTACTO</p>
           </div>
         </span>
         <span className="cb-card-functional">

@@ -61,6 +61,7 @@ function Schedule() {
             <td />
             <td className="cb-schedule-mid">
               Iniciados <br />
+              <img src="https://cdn-icons-png.flaticon.com/128/6315/6315699.png" alt="" srcset="" />
               <p className="cb-schedule-ring">Ring</p>
             </td>
           </tr>
