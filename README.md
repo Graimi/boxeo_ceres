@@ -7,6 +7,7 @@ Describir código
 Poner una barra divisoria entre apartados
 Cambiar a section los article si corresponde
 Actualizar información de trabajo
+Hacer favcion de igual tamaño
 
 MEDIAS QUERUES
 Navbar -> Revisar

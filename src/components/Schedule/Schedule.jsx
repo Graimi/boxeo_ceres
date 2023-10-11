@@ -61,7 +61,6 @@ function Schedule() {
             <td />
             <td className="cb-schedule-mid">
               Iniciados <br />
-              <img src="https://cdn-icons-png.flaticon.com/128/6315/6315699.png" alt="" srcset="" />
               <p className="cb-schedule-ring">Ring</p>
             </td>
           </tr>
@@ -85,7 +84,7 @@ function Schedule() {
           </tr>
         </tbody>
       </table>
-      <table className="cb-schedule-table table-small-view">
+      {/* <table className="cb-schedule-table table-small-view">
         <thead>
           <tr>
             <th>HORA</th>
@@ -161,7 +160,7 @@ function Schedule() {
             </td>
           </tr>
         </tbody>
-      </table>
+      </table> */}
       <article className="cb-schedule-leyend">
         <p className="cb-schedule-woman">Only Woman</p>
         <p className="cb-schedule-child">Boxeo Educativo Infantil</p>

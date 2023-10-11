@@ -87,12 +87,17 @@
 }
 
 .cb-schedule-ring {
-  background-color: rgba(255, 255, 255, 0.347);
+  /* background-color: rgba(255, 255, 255, 0.347); */
   color: rgba(255, 255, 255, 0.849);
   color: black;
   border-radius: var(--cb-radius-general);
   letter-spacing: 1px;
   /* opacity: 0.5; */
+}
+
+.cb-schedule-ring-img {
+  width: 40px;
+  margin: auto;
 }
 
 /* .cb-schedule td {
