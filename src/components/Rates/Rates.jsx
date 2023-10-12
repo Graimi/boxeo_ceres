@@ -8,7 +8,7 @@ function Rates() {
       <span>
         <article className="cb-rates-monthly">
           <h3>Mensualidades</h3>
-          <table className="cb-rates-table ">
+          <table className="cb-rates-table">
             <thead>
               <tr>
                 <th>Días x semana</th>
@@ -18,29 +18,29 @@ function Rates() {
             <tbody>
               <tr>
                 <td>1 día</td>
-                <td>25€</td>
+                <td>25</td>
               </tr>
               <tr>
                 <td>2 días</td>
-                <td>40€</td>
+                <td>40</td>
               </tr>
               <tr>
                 <td>3 días</td>
-                <td>45€</td>
+                <td>45</td>
               </tr>
               <tr>
                 <td>4 días</td>
-                <td>50€</td>
+                <td>50</td>
               </tr>
               <tr>
                 <td>5 días</td>
-                <td>55€</td>
+                <td>55</td>
               </tr>
               <tr className="cb-rates-child">
                 <td>
                   Boxeo Educativo <br /> Infantil
                 </td>
-                <td>35€</td>
+                <td>35</td>
               </tr>
             </tbody>
           </table>
@@ -52,23 +52,19 @@ function Rates() {
             <tbody>
               <tr>
                 <td>Tráete un amigo</td>
-                <td>%</td>
+                <td>X</td>
               </tr>
               <tr>
                 <td>Universitarios</td>
-                <td>%</td>
+                <td>X</td>
               </tr>
               <tr>
                 <td>Permanencia trimestral</td>
-                <td>%</td>
+                <td>X</td>
               </tr>
             </tbody>
           </table>
         </article>
-        {/* <article className="cb-fee">
-          <h3>Matrícula</h3>
-          <p>15€</p>
-        </article> */}
       </span>
     </div>
   );
