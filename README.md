@@ -8,6 +8,7 @@ Poner una barra divisoria entre apartados
 Cambiar a section los article si corresponde
 Actualizar información de trabajo
 Hacer favcion de igual tamaño
+cta hover diferente
 
 MEDIAS QUERUES
 Navbar -> Revisar
@@ -41,6 +42,7 @@ poner iconos en el horario en vez de ring y mujer
 
 TARIFAS
 Estilo del texto
+¿Amarillo pastel o general?
 
 CONTACTO
 Añadir enlace para WhatsApp
