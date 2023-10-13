@@ -5,7 +5,7 @@ function Rates() {
   return (
     <div className="cb-rates" id="rates">
       <h1>Tarifas</h1>
-      <span>
+      <section>
         <article className="cb-rates-monthly">
           <h3>Mensualidades</h3>
           <table className="cb-rates-table">
@@ -65,7 +65,7 @@ function Rates() {
             </tbody>
           </table>
         </article>
-      </span>
+      </section>
     </div>
   );
 }
