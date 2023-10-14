@@ -31,6 +31,9 @@ Ver si poner un tipo de letra hueca en vez de la brillante
 
 CLUB
 Probar idea canva
+Cambiar texto
+Añadir flecha
+Ver efecto hover
 
 CLASES
 Editar contenido

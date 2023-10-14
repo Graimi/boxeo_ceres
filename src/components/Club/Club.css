@@ -49,13 +49,18 @@
   white-space: nowrap;
 }
 
+.cb-club-reason-title::after {
+  content: url('');
+  font-size: var(--cb-typography-p);
+}
+
 .cb-club-reason-description {
   display: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: fit-content;
+  top: 100%;
+  left: 0%;
+  /* transform: translate(-10%, -50%); */
+  width: 500px;
   height: fit-content;
   background-color: white;
   /* border: solid black; */
@@ -67,8 +72,8 @@
 /* El efecto hover */
 .cb-club-reason:hover {
   /* background-color: lightgray; */
-  transform: translateX(10px);
-  transition: all 1s;
+  transform: translatey(10px);
+  transition: all 0.3s;
 }
 
 .cb-club-reason:hover .cb-club-reason-description {
