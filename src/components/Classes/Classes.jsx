@@ -3,7 +3,7 @@ import React from 'react';
 
 function Classes() {
   return (
-    <div className="cb-classes" id="classes">
+    <div className="cb-classes cb-page-shared" id="classes">
       <h1>CLASES</h1>
       <article className="cb-cards">
         <span className="cb-card-child">

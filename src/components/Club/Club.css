@@ -1,0 +1,75 @@
+.cb-club {
+  /* background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739107/Ceres%20Box/child2_vao4zj.png); */
+}
+
+.cb-club-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100vh;
+  gap: 30px;
+}
+
+.cb-club-reasons {
+  display: flex;
+  gap: var(--cb-gap-container);
+}
+
+.cb-club-reasons-list {
+  display:flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.cb-club-reason{
+  width: fit-content;
+  text-align: center;
+  height: min-content;
+  background-color: var(--cb-color-yellow);
+  padding: var(--cb-padding-cta);
+  padding: 7px;
+  border-radius: var(--cb-radius-general);
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+}
+
+.cb-club-reasons-hide {
+  display: none;
+}
+
+.cb-club-federation {
+  display: flex;
+}
+
+.cb-club-federation img {
+  width: 100px;
+}
+
+
+
+.reason {
+  
+}
+
+.title {
+  font-size: 20px;
+}
+
+.description {
+  font-size: 16px;
+}
+
+/* El efecto hover */
+.reason:hover {
+  background-color: lightgray;
+  transition: all 1s;
+}
+
+.description {
+  display: none;
+}
+
+.reason:hover .description {
+  display: block;
+}

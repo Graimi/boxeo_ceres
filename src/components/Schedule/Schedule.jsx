@@ -4,7 +4,7 @@ import React from 'react';
 
 function Schedule() {
   return (
-    <div className="cb-schedule" id="schedule">
+    <div className="cb-schedule cb-page-shared" id="schedule">
       <h1>Horario</h1>
       <table className="cb-schedule-table table-big-view">
         <thead>

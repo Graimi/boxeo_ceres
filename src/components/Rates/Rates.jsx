@@ -3,7 +3,7 @@ import React from 'react';
 
 function Rates() {
   return (
-    <div className="cb-rates" id="rates">
+    <div className="cb-rates cb-page-shared" id="rates">
       <h1>Tarifas</h1>
       <section>
         <article className="cb-rates-monthly">

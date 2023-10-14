@@ -8,7 +8,7 @@
   /* COLOR PALETTE */
   --cb-color-transparent: transparent;
   --cb-color-black: #191800;
-  --cb-color-yellow: #F8EE18;
+  --cb-color-yellow: #f8ee18;
   --cb-color-white: #f2f2f2;
   --cb-color-white-light: #fffffe;
   --cb-color-grey: #c3c6ce;
@@ -193,12 +193,19 @@ input[type='number']::-webkit-outer-spin-button {
   margin: 0;
 }
 
-footer {
-  /* color: var(--cb-color-green);
-  font-family: var(--cb-typography-body);
-  font-size: var(--cb-typography-h3);
-  font-weight: 300;
-  line-height: var(--cb-typography-h3-leading); */
+/* Agrupamos los estilos compartidos de los contenedores */
+.cb-page-shared {
+  display: flex;
+  flex-direction: column;
+  padding: var(--cb-padding-container);
+  padding-top: calc(var(--cb-padding-container) * 2.2);
+  gap: var(--cb-gap-container);
+  max-width: 100%;
+}
+
+/* Damos un padding mayor al título de cada página */
+.cb-page-shared h1 {
+  padding-bottom: 15px;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

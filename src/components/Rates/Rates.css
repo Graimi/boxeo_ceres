@@ -1,12 +1,3 @@
-/* Damos estilos generales a la página*/
-.cb-rates {
-  display: flex;
-  flex-direction: column;
-  padding: var(--cb-padding-container);
-  gap: var(--cb-gap-container);
-  max-width: 100%;
-}
-
 /* Estilamos la sección de las tablas */
 .cb-rates section {
   display: grid;
