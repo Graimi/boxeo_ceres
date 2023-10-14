@@ -20,11 +20,3 @@
   align-items: center;
   gap: var(--cb-padding-container);
 }
-
-.cb-contact-cta {
-  width: fit-content;
-  text-align: center;
-  background-color: var(--cb-color-yellow);
-  padding: var(--cb-padding-cta);
-  border-radius: var(--cb-radius-general);
-}
