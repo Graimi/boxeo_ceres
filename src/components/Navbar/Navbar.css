@@ -56,7 +56,7 @@
 
 .cb-navbar-list a {
   font-weight: var(--cb-typography-weight-p);
-  font-family: var(--cb-typography-paragraph);
+  font-family: var(--cb-typography-body);
   color: var(--cb-color-white);
 }
 

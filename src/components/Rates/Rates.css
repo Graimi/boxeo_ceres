@@ -19,7 +19,7 @@
   border-radius: var(--cb-radius-general);
   /* Estilamos el texto */
   color: var(--cb-color-black);
-  font-family: var(--cb-typography-paragraph);
+  font-family: var(--cb-typography-body);
   font-size: var(--cb-typography-p);
   font-weight: var(--cb-weight-p);
   line-height: var(--cb-typography-p-leading);

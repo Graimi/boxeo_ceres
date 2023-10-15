@@ -26,7 +26,6 @@
   --cb-typography-logo: 'Collegue', sans-serif;
   --cb-typography-heading: 'Antonio', sans-serif;
   --cb-typography-body: 'Rubik', sans-serif;
-  --cb-typography-paragraph: 'Rubik', sans-serif;
 
   /* FONT WEIGHT */
   --cb-weight-h1: 700;
@@ -133,7 +132,7 @@ h3 {
 
 p {
   color: var(--cb-color-black);
-  font-family: var(--cb-typography-paragraph);
+  font-family: var(--cb-typography-body);
   font-size: var(--cb-typography-p);
   font-weight: var(--cb-weight-p);
   line-height: var(--cb-typography-p-leading);

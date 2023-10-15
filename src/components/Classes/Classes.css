@@ -13,29 +13,26 @@
   justify-content: center;
   align-items: center;
   height: 280px;
-  /* width: 120px; */
-  width: 1200px;
+  width: 120px;
+  /* width: 1200px; */
   overflow: hidden;
   cursor: pointer;
-  border-radius: var(--cb-radius-general);
-  transition: all 0.4s;
+  transition: all 0.5s;
   flex: 1;
   border-radius: var(--cb-radius-general);
-  box-shadow: inset 0 1px 7px 0;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  border: 1px solid var(--cb-color-pastel-blue);
-  border: 1.5px solid var(--cb-color-pastel-blue);
-  box-shadow: inset 0 1px 7px 0 var(--cb-color-pastel-blue);
-  box-shadow: 0 1px 10px 0 var(--cb-color-pastel-blue);
-  background-color: aqua;
+  box-shadow: inset 0 1px 7px 0 var(--cb-color-pastel-red);
+  background-color: black;
 }
 
 .cb-card-hover {
   display: none;
   flex-direction: column;
-  gap: 15px;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 10px;
 }
 
 .cb-cards span:hover {
@@ -49,82 +46,71 @@
 }
 
 .cb-cards span:hover .cb-card-hover {
-  display:flex;
+  display: flex;
   /* transform: rotate(90deg); */
 }
 
 .cb-cards span p {
+  padding: var(--cb-padding-card);
+
+  letter-spacing: 2px;
+  color: var(--cb-color-white);
+  font-family: var(--cb-typography-body);
+  font-size: var(--cb-typography-p);
+}
+
+.cb-card-title {
   min-width: 200px;
-  /* padding: var(--cb-padding-card); */
+  transform: rotate(-90deg);
+  font-weight: 500;
+  backdrop-filter: blur(5px);
+  height: 100%;
+}
+
+.cb-card-hover p {
+  /* min-width: 200px;
+  padding: var(--cb-padding-card);
   text-align: center;
-  /* transform: rotate(-90deg); */
   text-transform: uppercase;
-  /* letter-spacing: 2px; */
+  letter-spacing: 2px;
   color: var(--cb-color-white);
   font-family: var(--cb-typography-heading);
   font-size: 20px;
   font-style: italic;
-  font-weight: 700;
-}
-
-.cb-card-child,
-.cb-card-woman,
-.cb-card-twelve,
-.cb-card-functional,
-.cb-card-mid,
-.cb-card-advance {
-  /* border-radius: var(--cb-radius-general);
-  box-shadow: inset 0 1px 7px 0;
-  background-position: center;
-  background-size: contain; */
-  /* background-repeat: no-repeat; */
+  font-weight: 700; */
 }
 
 #cb-card-boxeo-educativo-infantil {
-  border: 1px solid var(--cb-color-pastel-blue);
-  box-shadow: inset 0 1px 7px 0 var(--cb-color-pastel-blue);
-  background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739107/Ceres%20Box/child2_vao4zj.png);
   /* background-position: 310px; */
   background-size: 450px;
 }
 
-.cb-card-woman {
-  border: 1.5px solid var(--cb-color-pastel-pink);
-  box-shadow: inset 0 1px 7px 0 var(--cb-color-pastel-pink);
-  background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739600/Ceres%20Box/woman_dvlczk.png);
-  background-position: 230px;
+#cb-card-only-woman {
+  /* background-position: 230px; */
   background-size: 280px;
 }
 
-.cb-card-twelve {
-  border: 1.5px solid var(--cb-color-pastel-green);
-  box-shadow: 0 1px 10px 0 var(--cb-color-pastel-green);
-  background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695737787/Ceres%20Box/12saco_ef2emq.jpg);
-  background-position: 245px;
-  background-size: 300px;
+#cb-card-12-de-saco {
+  background-position: -85px;
+  /* background-position:  center center -150px; */
+  background-size: 330px;
 }
 
-.cb-card-functional {
-  box-shadow: 0 1px 10px 0;
-  box-shadow: 0 1px 10px 0 var(--cb-color-pastel-purple);
-  background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739405/Ceres%20Box/funct_manue9.png);
-  background-position: 235px;
+#cb-card-functional-boxing {
   background-size: 380px;
+  backdrop-filter: 10px;
+  backdrop-filter: blur(10px);
 }
 
-.cb-card-mid {
-  box-shadow: 0 1px 10px 0;
-  box-shadow: 0 1px 10px 0 var(--cb-color-pastel-orange);
-  background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739166/Ceres%20Box/adv_a6kfxf.jpg);
-  background-position: 240px;
-  background-size: 420px;
+.cb-card-hover {
+  backdrop-filter: blur(5px);
 }
 
-.cb-card-advance {
-  box-shadow: 0 1px 10px 0;
-  box-shadow: 0 1px 10px 0 var(--cb-color-pastel-red);
-  border: 1.5px solid var(--cb-color-pastel-red);
-  background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695673940/Ceres%20Box/pexels-cottonbro-studio-4761668_n8y9g4.jpg);
-  background-position: 290px;
-  background-size: 300px;
+#cb-card-boxeo-recreativo {
+  background-position: -120px;
+  background-size: 440px;
+}
+
+#cb-card-boxeo-avanzado-y-competición {
+  background-size: 320px;
 }

@@ -1,37 +1,53 @@
 export const ClassesData = [
   {
-    Class: 'Boxeo Educativo Infantil',
+    Class: 'BOXEO EDUCATIVO INFANTIL',
     Description: 'Para niños y niñas de 8 a 14 años, sujeta al calendario escolar',
-    Contact: 'SIN CONTACTO'
+    Contact: 'SIN CONTACTO',
+    BackgroundImage:
+      'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739107/Ceres%20Box/child2_vao4zj.png)',
+    Color: 'var(--cb-color-pastel-blue)'
   },
   {
-    Class: 'Only woman',
+    Class: 'ONLY WOMAN',
     Description: 'Clase exclusivamente destinada a mujeres',
-    Contact: 'SIN CONTACTO O CONTROLADO'
+    Contact: 'SIN CONTACTO O CONTROLADO',
+    BackgroundImage:
+      'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739600/Ceres%20Box/woman_dvlczk.png)',
+    Color: 'var(--cb-color-pastel-pink)'
   },
   {
-    Class: '12 de Saco',
+    Class: '12 DE SACO',
     Description:
       'Sesión de 12 asaltos de golpeo al saco guiados para mejorar la técnica de los golpes y la fuerza',
-    Contact: 'SIN CONTACTO'
+    Contact: 'SIN CONTACTO',
+    BackgroundImage:
+      'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695737787/Ceres%20Box/12saco_ef2emq.jpg)',
+    Color: 'var(--cb-color-pastel-green)'
   },
   {
-    Class: 'Functional Boxing',
-    Description:
-      'Circuitos funcionales específicos para el acondicionamiento físico del Boxeo. Entrenamiento con circuitos funcionales diseñados específicamente para mejorar el acondicionamiento físico en el contexto del boxeo',
-    Contact: 'SIN CONTACTO'
+    Class: 'FUNCTIONAL BOXING',
+    Description: 'Circuitos funcionales específicos para el acondicionamiento físico del Boxeo',
+    Contact: 'SIN CONTACTO',
+    BackgroundImage:
+      'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739405/Ceres%20Box/funct_manue9.png)',
+    Color: 'var(--cb-color-pastel-purple)'
   },
   {
-    Class: 'Boxeo Recreativo',
+    Class: 'BOXEO RECREATIVO',
     Description:
       'Actividad deportiva dirigida a adolescentes y adultos, con un enfoque en el control del contacto',
-    Contact: 'CONTACTO CONTROLADO'
+    Contact: 'CONTACTO CONTROLADO',
+    BackgroundImage:
+      'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739166/Ceres%20Box/adv_a6kfxf.jpg)',
+    Color: 'var(--cb-color-pastel-orange)'
   },
   {
-    Class: 'Boxeo Avanzado y Competición',
-    Description:
-      'Clases dirigidas a adolescentes y adultos con experiencia en boxeo, centradas en el contacto deportivo',
-    Contact: 'CONTACTO DEPORTIVO'
+    Class: 'BOXEO AVANZADO Y COMPETICIÓN',
+    Description: 'Clases dirigidas a adolescentes y adultos con experiencia en boxeo',
+    Contact: 'CONTACTO DEPORTIVO',
+    BackgroundImage:
+      'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695673940/Ceres%20Box/pexels-cottonbro-studio-4761668_n8y9g4.jpg)',
+    Color: 'var(--cb-color-pastel-red)'
   }
 ];
 

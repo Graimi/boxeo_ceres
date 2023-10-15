@@ -5,7 +5,14 @@ import { ClassesData } from '../../Data/ClassesData';
 // Función para añadir la data de las clases
 function ImportClasses() {
   return ClassesData.map((detail) => (
-    <span id={`cb-card-${detail.Class.toLowerCase().replace(/ /g, '-')}`}>
+    <span
+      id={`cb-card-${detail.Class.toLowerCase().replace(/ /g, '-')}`}
+      style={{
+        backgroundImage: detail.BackgroundImage,
+        boxShadow: `0 1px 10px 0 ${detail.Color || 'var(--cb-color-pastel-red)'}`,
+        border: `1.5px solid ${detail.Color || 'var(--cb-color-pastel-red)'}`
+      }}
+    >
       <p className="cb-card-title">{detail.Class}</p>
       <div className="cb-card-hover">
         <p>{detail.Class}</p>

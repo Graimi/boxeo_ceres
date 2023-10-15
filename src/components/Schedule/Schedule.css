@@ -18,7 +18,7 @@
   padding: 9px;
   text-align: center;
   /* color: transparent; */
-  font-family: var(--cb-typography-paragraph);
+  font-family: var(--cb-typography-body);
   font-weight: var(--cb-weight-p);
   line-height: var(--cb-typography-p-leading);
   /* letter-spacing: 1px; */
