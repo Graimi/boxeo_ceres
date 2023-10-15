@@ -1,8 +1,8 @@
 .cb-club {
   background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1697285740/Ceres%20Box/ring_background_eptqzx.png);
   background-repeat: no-repeat;
-  background-size: 600px;
-  background-position: 450px 200px;
+  background-size: 500px;
+  background-position: right center;
 }
 
 /* Estilo del logo */
@@ -114,9 +114,24 @@
 /* REST DISPLAY */
 @media screen and (max-width: 768px) {
 
+  .cb-club {
+    background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1697285740/Ceres%20Box/ring_background_eptqzx.png);
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-position: center;
+    z-index: 1;
+  }
+
   .cb-club-title {
     white-space: wrap;
+    z-index: 0;
+    white-space: normal;
+    max-width: 50%;
+    font-size: 70px;
+    z-index: 0;
   }
+
+
 
   .cb-club {
     align-items: center;
@@ -129,4 +144,5 @@
   .cb-club-reasons-list {
   justify-content: center
 }
+
 }
