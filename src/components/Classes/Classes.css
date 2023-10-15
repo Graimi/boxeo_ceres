@@ -9,19 +9,33 @@
 
 .cb-cards span {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 280px;
-  width: 120px;
+  /* width: 120px; */
+  width: 1200px;
   overflow: hidden;
   cursor: pointer;
   border-radius: var(--cb-radius-general);
   transition: all 0.4s;
   flex: 1;
+  border-radius: var(--cb-radius-general);
+  box-shadow: inset 0 1px 7px 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid var(--cb-color-pastel-blue);
+  border: 1.5px solid var(--cb-color-pastel-blue);
+  box-shadow: inset 0 1px 7px 0 var(--cb-color-pastel-blue);
+  box-shadow: 0 1px 10px 0 var(--cb-color-pastel-blue);
+  background-color: aqua;
 }
 
-.cb-card-hide {
+.cb-card-hover {
   display: none;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .cb-cards span:hover {
@@ -29,16 +43,21 @@
   /* transform: rotate(90deg); */
 }
 
-.cb-cards span:hover .cb-card-hide {
+.cb-cards span:hover .cb-card-title {
+  display: none;
+  /* transform: rotate(90deg); */
+}
+
+.cb-cards span:hover .cb-card-hover {
   display:flex;
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
 }
 
 .cb-cards span p {
   min-width: 200px;
   /* padding: var(--cb-padding-card); */
   text-align: center;
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
   text-transform: uppercase;
   /* letter-spacing: 2px; */
   color: var(--cb-color-white);
@@ -54,17 +73,18 @@
 .cb-card-functional,
 .cb-card-mid,
 .cb-card-advance {
-  border-radius: var(--cb-radius-general);
+  /* border-radius: var(--cb-radius-general);
   box-shadow: inset 0 1px 7px 0;
   background-position: center;
-  background-size: contain;
+  background-size: contain; */
+  /* background-repeat: no-repeat; */
 }
 
-.cb-card-child {
+#cb-card-boxeo-educativo-infantil {
   border: 1px solid var(--cb-color-pastel-blue);
   box-shadow: inset 0 1px 7px 0 var(--cb-color-pastel-blue);
   background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739107/Ceres%20Box/child2_vao4zj.png);
-  background-position: 310px;
+  /* background-position: 310px; */
   background-size: 450px;
 }
 
