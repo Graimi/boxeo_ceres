@@ -17,7 +17,7 @@
   /* border: 2px solid yellow; */
   padding: 9px;
   text-align: center;
-  /* color: var(--cb-color-black); */
+  /* color: transparent; */
   font-family: var(--cb-typography-paragraph);
   font-weight: var(--cb-weight-p);
   line-height: var(--cb-typography-p-leading);
@@ -50,11 +50,11 @@
   /* color: rgba(255, 255, 255, 0.801); */
 }
 
-.cb-schedule-child {
+.cb-schedule-boxeo-educativo-infantil {
   background-color: var(--cb-color-pastel-blue);
 }
 
-.cb-schedule-woman {
+.cb-schedule-only-woman {
   background-color: var(--cb-color-pastel-pink);
   /* font-weight: 700; */
   color: rgba(var(--cb-color-pastel-pink), 0.9);
@@ -63,26 +63,26 @@
   padding: 2px;
 }
 
-.cb-schedule-twelve {
+.cb-schedule-12-de-saco {
   background-color: var(--cb-color-pastel-green);
 }
 
-.cb-schedule-functional {
+.cb-schedule-functional-boxing {
   background-color: var(--cb-color-pastel-purple);
 }
 
-.cb-schedule-mid {
+.cb-schedule-boxeo-recreativo {
   background-color: var(--cb-color-pastel-orange);
 }
 
-.cb-schedule-advance {
+.cb-schedule-boxeo-avanzado-y-competición {
   background-color: var(--cb-color-pastel-red);
 }
 
 .cb-schedule-ring {
-  /* background-color: rgba(255, 255, 255, 0.347); */
+  background-color: rgba(255, 255, 255, 0.347);
   color: rgba(255, 255, 255, 0.849);
-  color: black;
+  color: rgb(166, 35, 35);
   border-radius: var(--cb-radius-general);
   letter-spacing: 1px;
   /* opacity: 0.5; */
@@ -114,10 +114,16 @@
   font-style: italic;
 }
 
-/* TABLET DISPLAY */
+/* REST DISPLAY */
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  .table-big-view {
-    display: none;
+  /* Quitamos el color del texto al contenido */
+  .cb-schedule-table tbody {
+    color: transparent;
+  }
+
+  /* Devolvemos el color a la parte de las horas */
+  .cb-schedule-table tbody tr td:first-child {
+    color: black;
   }
 
   .table-small-view {
@@ -172,7 +178,5 @@
 
   /* MOBILE DISPLAY */
   @media screen and (max-width: 376px) {
-    .table-small-view {
-      border-spacing: 6px;
-    }
+
   }

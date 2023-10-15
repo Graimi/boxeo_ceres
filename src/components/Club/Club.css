@@ -110,3 +110,23 @@
 .cb-club-federation img {
   width: 100px;
 }
+
+/* REST DISPLAY */
+@media screen and (max-width: 768px) {
+
+  .cb-club-title {
+    white-space: wrap;
+  }
+
+  .cb-club {
+    align-items: center;
+  }
+
+  .cb-club-section {
+    align-items: center;
+  }
+
+  .cb-club-reasons-list {
+  justify-content: center
+}
+}
