@@ -2,7 +2,7 @@ import './Club.css';
 import React, { useState } from 'react';
 import ClubData from '../../Data/ClubData';
 
-// El componente que muestra cada título y descripción
+// Función que genera los elementos de las razones
 function Reason({ title, description }) {
   // El estado que indica si el ratón está sobre el elemento o no
   const [hovered, setHovered] = useState(false);
@@ -29,8 +29,8 @@ function Club() {
     <div className="cb-club cb-page-shared" id="club">
       <h1>El Club</h1>
       <section className="cb-club-section">
-        <h2>Boxeo Ceres</h2>
-        <h2>Fuerza y Valor</h2>
+        <h2 className="cb-club-title">Boxeo Ceres</h2>
+        <h2 className="cb-club-slogan">Fuerza y Valor</h2>
         <article className="cb-club-reasons">
           <ul className="cb-club-reasons-list">
             {ClubData.map((reason) => (
@@ -38,7 +38,7 @@ function Club() {
             ))}
           </ul>
         </article>
-        <h3>Tu club de Boxeo en Cáceres</h3>
+        <h3 className="cb-club-city">Tu club de Boxeo en Cáceres</h3>
         <article className="cb-club-federation">
           <img
             src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697210715/Ceres%20Box/image-removebg-preview_1_t7mv2k.png"

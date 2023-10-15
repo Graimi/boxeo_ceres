@@ -1,6 +1,20 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
+
 import './Schedule.css';
 import React from 'react';
+import ScheduleData from '../../Data/ScheduleData';
+
+// función para añadir los datos
+function ImportClasses() {
+  return ScheduleData.map((scheduleItem) => (
+    <tr key={scheduleItem.hour}>
+      <td>{scheduleItem.hour}</td>
+      {scheduleItem.classes.map((className) => (
+        <td className={`cb-schedule-${className.toLowerCase().replace(/ /g, '-')}`}>{className}</td>
+      ))}
+    </tr>
+  ));
+}
 
 function Schedule() {
   return (
@@ -18,13 +32,13 @@ function Schedule() {
           </tr>
         </thead>
         <tbody>
+          <ImportClasses />
           <tr>
             <td>8:00 - 9:00</td>
             <td className="cb-schedule-mid">Boxeo Recreativo</td>
             <td className="cb-schedule-twelve">12 de Saco</td>
             <td className="cb-schedule-mid">Boxeo Recreativo</td>
             <td className="cb-schedule-functional">Functional Boxing</td>
-            <td rowSpan="4" />
           </tr>
           <tr>
             <td>9:30 - 10:30</td>

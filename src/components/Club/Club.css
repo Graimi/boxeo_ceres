@@ -3,8 +3,26 @@
   background-repeat: no-repeat;
   background-size: 600px;
   background-position: 450px 200px;
+}
 
-  /* background-size: 300px; */
+/* Estilo del logo */
+.cb-club-title {
+  font-family: var(--cb-typography-logo);
+  font-weight: 600;
+  font-size: var(--cb-typography-h1);
+  font-size: 90px;
+  -webkit-text-stroke: var(--cb-text-stroke--black);
+  color: var(--cb-color-transparent);
+}
+
+/* Estilo del eslogan */
+.cb-club-slogan {
+  /* background-color: var(--cb-color-yellow); */
+  /* padding: 10px; */
+  display: none;
+  border-radius: var(--cb-radius-general);
+  text-align: center;
+  font-family: var(--cb-typography-logo);
 }
 
 .cb-club-section {
@@ -78,6 +96,11 @@
 
 .cb-club-reason:hover .cb-club-reason-description {
   display: block;
+}
+
+.cb-club-city {
+  font-weight: var(--cb-weight-p);
+  font-style: italic;
 }
 
 .cb-club-federation {
