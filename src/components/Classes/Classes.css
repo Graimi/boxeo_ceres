@@ -32,7 +32,9 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  margin: 10px;
+  /* margin: 10px; */
+  padding: 10px;
+  backdrop-filter: blur(5px);
 }
 
 .cb-cards span:hover {
@@ -63,21 +65,24 @@
   min-width: 200px;
   transform: rotate(-90deg);
   font-weight: 500;
-  backdrop-filter: blur(5px);
-  height: 100%;
 }
 
-.cb-card-hover p {
-  /* min-width: 200px;
-  padding: var(--cb-padding-card);
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--cb-color-white);
-  font-family: var(--cb-typography-heading);
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 700; */
+.cb-card-class {
+  font-weight: 500;
+}
+
+.cb-card-description {
+}
+
+.cb-card-contact {
+  background-color: red;
+  /* margin: 20px; */
+  word-break: keep-all;
+  align-items: center;
+  justify-content: center;
+  width: min-content;
+  border-radius: var(--cb-border-width-card);
+  font-weight: 400;
 }
 
 #cb-card-boxeo-educativo-infantil {
@@ -99,11 +104,7 @@
 #cb-card-functional-boxing {
   background-size: 380px;
   backdrop-filter: 10px;
-  backdrop-filter: blur(10px);
-}
-
-.cb-card-hover {
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(10px); */
 }
 
 #cb-card-boxeo-recreativo {
@@ -114,3 +115,4 @@
 #cb-card-boxeo-avanzado-y-competición {
   background-size: 320px;
 }
+

@@ -54,6 +54,7 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 
 ### Hero
 - [] Ver si es adecuado utilizar un tipo de letra hueca en lugar de uno brillante.
+- [] Inscríbete a misma dirección que wp
 
 ---
 

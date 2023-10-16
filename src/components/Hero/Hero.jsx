@@ -13,14 +13,20 @@ function Hero() {
       <a href="#body">
         <h3 className="cb-hero-CTA cta">Inscríbete</h3>
       </a>
-      <a href="#body">
-        <img
+
+      <img
+        className="cb-hero-mouse-move"
+        src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697486500/Ceres%20Box/mouse-move_jq4vcm.png"
+        alt="mouse-move"
+      />
+      {/* <a href="#club"> */}
+      {/* <img
           id="next"
           className="cb-hero-next"
           src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1695466757/Ceres%20Box/flecha_m2v4bn.png"
           alt="flecha"
-        />
-      </a>
+        /> */}
+      {/* </a> */}
     </div>
   );
 }

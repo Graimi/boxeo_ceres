@@ -14,10 +14,11 @@ function ImportClasses() {
       }}
     >
       <p className="cb-card-title">{detail.Class}</p>
+
       <div className="cb-card-hover">
-        <p>{detail.Class}</p>
-        <p>{detail.Description}</p>
-        <p>{detail.Contact}</p>
+        <p className="cb-card-class">{detail.Class}</p>
+        <p className="cb-card-description">{detail.Description}</p>
+        <p className="cb-card-contact">{detail.Contact}</p>
       </div>
     </span>
   ));
