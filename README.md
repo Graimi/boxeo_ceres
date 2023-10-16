@@ -49,6 +49,7 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 - [✅] Enlazar los enlaces `a` para que vayan a las secciones deseadas.
 - [✅] Al hacer clic en una página, reducir el tamaño de la barra de navegación.
 - [✅] Aplicar efecto `hover`.
+- [] Poner de color amarillo cuando el fondo es transparente
 
 ---
 

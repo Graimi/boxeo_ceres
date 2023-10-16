@@ -29,6 +29,7 @@
 
 .cb-card-hover {
   display: none;
+  align-items: center;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
@@ -55,7 +56,7 @@
 .cb-cards span p {
   padding: var(--cb-padding-card);
 
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--cb-color-white);
   font-family: var(--cb-typography-body);
   font-size: var(--cb-typography-p);
@@ -69,17 +70,17 @@
 
 .cb-card-class {
   font-weight: 500;
+  filter: drop-shadow(0 0 7px var(--cb-color-pastel-red));
 }
 
 .cb-card-description {
 }
 
 .cb-card-contact {
-  background-color: red;
+  color: red;
+  background-color: var(--cb-color-pastel-red);
   /* margin: 20px; */
   word-break: keep-all;
-  align-items: center;
-  justify-content: center;
   width: min-content;
   border-radius: var(--cb-border-width-card);
   font-weight: 400;

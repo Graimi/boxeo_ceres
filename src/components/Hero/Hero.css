@@ -26,11 +26,13 @@
 /* Estilos específicos del texto principal */
 .cb-hero-description {
   font-size: 80px;
-  font-weight: var(--cb-typography-weight-500);
-  -webkit-text-stroke: var(--cb-text-stroke-white);
-  color: var(--cb-color-white);
-  filter: drop-shadow(0 0 8px var(--cb-color-yellow));
-  max-width: 90%;
+  /* font-weight: var(--cb-typography-weight-300);
+  filter: drop-shadow(0 0 3px var(--cb-color-yellow));
+  color: var(--cb-color-white); */
+
+  filter: drop-shadow(0 0 4px var(--cb-color-yellow));
+  -webkit-text-stroke: var(--cb-text-stroke--white);
+  color: transparent;
 }
 
 /* Estilos específicos del CTA */

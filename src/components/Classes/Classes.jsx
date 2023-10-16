@@ -9,16 +9,37 @@ function ImportClasses() {
       id={`cb-card-${detail.Class.toLowerCase().replace(/ /g, '-')}`}
       style={{
         backgroundImage: detail.BackgroundImage,
-        boxShadow: `0 1px 10px 0 ${detail.Color || 'var(--cb-color-pastel-red)'}`,
-        border: `1.5px solid ${detail.Color || 'var(--cb-color-pastel-red)'}`
+        boxShadow: `0 1px 6px 0 ${detail.Color}`,
+        border: `1.5px solid ${detail.Color}`
       }}
     >
-      <p className="cb-card-title">{detail.Class}</p>
+      <p
+        className="cb-card-title"
+        style={{
+          filter: `drop-shadow(0 0 10px ${detail.Color})`
+        }}
+      >
+        {detail.Class}
+      </p>
 
       <div className="cb-card-hover">
-        <p className="cb-card-class">{detail.Class}</p>
+        <p
+          className="cb-card-class"
+          style={{
+            filter: `drop-shadow(0 0 10px ${detail.Color})`
+          }}
+        >
+          {detail.Class}
+        </p>
         <p className="cb-card-description">{detail.Description}</p>
-        <p className="cb-card-contact">{detail.Contact}</p>
+        <p
+          className="cb-card-contact"
+          style={{
+            backgroundColor: `${detail.Color}`
+          }}
+        >
+          {detail.Contact}
+        </p>
       </div>
     </span>
   ));
