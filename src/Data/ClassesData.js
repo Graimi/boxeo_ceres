@@ -4,7 +4,8 @@ export const ClassesData = [
     Description: 'Para niños y niñas de 8 a 14 años, sujeta al calendario escolar',
     Contact: 'SIN CONTACTO',
     BackgroundImage:
-      'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739107/Ceres%20Box/child2_vao4zj.png)',
+      'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1697574224/Ceres%20Box/child-new_djuipy.png)',
+    // 'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739107/Ceres%20Box/child2_vao4zj.png)',
     Color: 'var(--cb-color-pastel-blue)',
     OpacColor: 'var(--cb-color-opac-blue)'
   },
@@ -23,7 +24,7 @@ export const ClassesData = [
       'Sesión de 12 asaltos de golpeo al saco guiados para mejorar la técnica de los golpes y la fuerza',
     Contact: 'SIN CONTACTO',
     BackgroundImage:
-      'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695737787/Ceres%20Box/12saco_ef2emq.jpg)',
+      'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1697573786/Ceres%20Box/Ceres_BOX_3_swrt90.png)',
     Color: 'var(--cb-color-pastel-green)',
     OpacColor: 'var(--cb-color-opac-green)'
   },

@@ -98,6 +98,8 @@
 #cb-card-boxeo-educativo-infantil {
   /* background-position: 310px; */
   background-size: 450px;
+  
+  backdrop-filter:contrast(40%);
 }
 
 #cb-card-only-woman {
@@ -106,9 +108,9 @@
 }
 
 #cb-card-12-de-saco {
-  background-position: -85px;
+  background-position: -67px;
   /* background-position:  center center -150px; */
-  background-size: 330px;
+  background-size: 660px;
 }
 
 #cb-card-functional-boxing {
