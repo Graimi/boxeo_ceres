@@ -35,7 +35,7 @@ function ImportClasses() {
         <p
           className="cb-card-contact"
           style={{
-            backgroundColor: `${detail.Color}`
+            backgroundColor: `${detail.OpacColor}`
           }}
         >
           {detail.Contact}

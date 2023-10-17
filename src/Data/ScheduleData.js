@@ -7,6 +7,7 @@ export const ScheduleData = [
   {
     hour: '8:00',
     classes: ['Boxeo Recreativo', '12 de Saco', 'Boxeo Recreativo', 'Functional Boxing']
+  
   },
   {
     hour: '9:30',

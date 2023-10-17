@@ -56,10 +56,10 @@
 .cb-cards span p {
   padding: var(--cb-padding-card);
 
-  letter-spacing: 1px;
+  letter-spacing: 1.3px;
   color: var(--cb-color-white);
   font-family: var(--cb-typography-body);
-  font-size: var(--cb-typography-p);
+  /* font-size: var(--cb-typography-p); */
 }
 
 .cb-card-title {
@@ -78,11 +78,20 @@
 
 .cb-card-contact {
   color: red;
-  background-color: var(--cb-color-pastel-red);
+  /* background-color: rgba(var(--cb-color-pastel-red), 0.8);
+  background: linear-gradient(to bottom, transparent, var(--cb-color-pastel-red));
+  background: linear-gradient(to right, transparent 0%, transparent 100%),
+              var(--cb-color-pastel-red); */
+  color: #FFDDC1; /* Un tono de naranja pastel */
+  background-color: #7fff6b3a;
+  /* background-color: var(--cb-color-pastel-red); */
+  /* opacity: 0.2; */
   /* margin: 20px; */
-  word-break: keep-all;
+  white-space: nowrap;
   width: min-content;
   border-radius: var(--cb-border-width-card);
+  border-radius: 10px;
+  font-size: 14px;
   font-weight: 400;
 }
 

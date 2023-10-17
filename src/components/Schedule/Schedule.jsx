@@ -39,7 +39,7 @@ function Schedule() {
             <ImportDays />
           </tr>
         </thead>
-        <tbody>
+        <tbody className="cb-schedule-tbody">
           <ImportClasses />
         </tbody>
       </table>

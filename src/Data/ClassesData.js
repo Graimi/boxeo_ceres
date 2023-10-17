@@ -5,7 +5,8 @@ export const ClassesData = [
     Contact: 'SIN CONTACTO',
     BackgroundImage:
       'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739107/Ceres%20Box/child2_vao4zj.png)',
-    Color: 'var(--cb-color-pastel-blue)'
+    Color: 'var(--cb-color-pastel-blue)',
+    OpacColor: 'var(--cb-color-opac-blue)'
   },
   {
     Class: 'ONLY WOMAN',
@@ -13,7 +14,8 @@ export const ClassesData = [
     Contact: 'SIN CONTACTO O CONTROLADO',
     BackgroundImage:
       'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739600/Ceres%20Box/woman_dvlczk.png)',
-    Color: 'var(--cb-color-pastel-pink)'
+    Color: 'var(--cb-color-pastel-pink)',
+    OpacColor: 'var(--cb-color-opac-pink)'
   },
   {
     Class: '12 DE SACO',
@@ -22,7 +24,8 @@ export const ClassesData = [
     Contact: 'SIN CONTACTO',
     BackgroundImage:
       'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695737787/Ceres%20Box/12saco_ef2emq.jpg)',
-    Color: 'var(--cb-color-pastel-green)'
+    Color: 'var(--cb-color-pastel-green)',
+    OpacColor: 'var(--cb-color-opac-green)'
   },
   {
     Class: 'FUNCTIONAL BOXING',
@@ -30,7 +33,8 @@ export const ClassesData = [
     Contact: 'SIN CONTACTO',
     BackgroundImage:
       'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739405/Ceres%20Box/funct_manue9.png)',
-    Color: 'var(--cb-color-pastel-purple)'
+    Color: 'var(--cb-color-pastel-purple)',
+    OpacColor: 'var(--cb-color-opac-purple)'
   },
   {
     Class: 'BOXEO RECREATIVO',
@@ -39,7 +43,8 @@ export const ClassesData = [
     Contact: 'CONTACTO CONTROLADO',
     BackgroundImage:
       'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739166/Ceres%20Box/adv_a6kfxf.jpg)',
-    Color: 'var(--cb-color-pastel-orange)'
+    Color: 'var(--cb-color-pastel-orange)',
+    OpacColor: 'var(--cb-color-opac-orange)'
   },
   {
     Class: 'BOXEO AVANZADO Y COMPETICIÓN',
@@ -47,7 +52,8 @@ export const ClassesData = [
     Contact: 'CONTACTO DEPORTIVO',
     BackgroundImage:
       'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695673940/Ceres%20Box/pexels-cottonbro-studio-4761668_n8y9g4.jpg)',
-    Color: 'var(--cb-color-pastel-red)'
+    Color: 'var(--cb-color-pastel-red)',
+    OpacColor: 'var(--cb-color-opac-red)'
   }
 ];
 

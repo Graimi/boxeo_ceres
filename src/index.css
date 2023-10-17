@@ -21,6 +21,13 @@
   --cb-color-pastel-yellow: #fdff94;
   --cb-color-pastel-orange: #ffc894;
   --cb-color-pastel-red: #f2b6b6;
+  --cb-color-opac-blue: #6bc6ff3a;
+  --cb-color-opac-pink: #ff6b6b3a;
+  --cb-color-opac-green: #ff6b6b3a;
+  --cb-color-opac-purple: #ff6b6b3a;
+  --cb-color-opac-yellow: #ff6b6b3a;
+  --cb-color-opac-orange: #ffd36b3a;
+  --cb-color-opac-red: #ff6b6b3a;
 
   /* TYPOGRAPHY TYPE */
   --cb-typography-logo: 'Collegue', sans-serif;

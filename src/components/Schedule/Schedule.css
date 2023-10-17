@@ -19,9 +19,31 @@
   text-align: center;
   /* color: transparent; */
   font-family: var(--cb-typography-body);
-  font-weight: var(--cb-weight-p);
+  /* font-weight: var(--cb-weight-p); */
   line-height: var(--cb-typography-p-leading);
   /* letter-spacing: 1px; */
+  
+  /* color: rgba(255, 255, 255, 0.874); */
+}
+
+/* Damos color diferente a la columna de las horas */
+.cb-schedule-tbody tr td:first-child {
+  color: var(--cb-color-black);
+}
+
+.cb-schedule-tbody tr td {
+  /* border: 2px solid yellow; */
+  padding: 9px;
+  text-align: center;
+  /* color: transparent; */
+  font-family: var(--cb-typography-body);
+  /* font-weight: var(--cb-weight-p); */
+  line-height: var(--cb-typography-p-leading);
+  /* letter-spacing: 1px; */
+  
+  color: rgba(255, 255, 255, 0.821);
+  color: black;
+  font-weight: 800;
 }
 
 /* Estilo para la primera columna */
@@ -77,6 +99,11 @@
 
 .cb-schedule-boxeo-avanzado-y-competición {
   background-color: var(--cb-color-pastel-red);
+  /* background-color: #ff6b6b3a; */
+  color: #6c0101;
+  /* font-weight: 700; */
+  color: rgba(255, 255, 255, 0.874);
+  /* color: rgba(237, 20, 20, 0.592); */
 }
 
 .cb-schedule-ring {
