@@ -1,122 +1,105 @@
+/* Estilos para distribuir las cards */
 .cb-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
   padding: 10px;
-  /* margin: auto; */
 }
 
+/* Estilos comunes para las cards */
 .cb-cards span {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 280px;
   width: 120px;
-  /* width: 1200px; */
   overflow: hidden;
   cursor: pointer;
   transition: all 0.5s;
-  flex: 1;
+  transition:cubic-bezier(0.23, 1, 0.320, 1) 1s;
   border-radius: var(--cb-radius-general);
   background-position: center;
-  background-size: contain;
   background-repeat: no-repeat;
-  box-shadow: inset 0 1px 7px 0 var(--cb-color-pastel-red);
   background-color: black;
 }
 
+/* Estilos de la card en hover */
 .cb-card-hover {
   display: none;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  /* margin: 10px; */
   padding: 10px;
   backdrop-filter: blur(5px);
 }
 
+/* Estilos para hacer más grande la card en hover */
 .cb-cards span:hover {
   flex: 4;
-  /* transform: rotate(90deg); */
 }
 
+/* Estilos para quitar el título de la card */
 .cb-cards span:hover .cb-card-title {
   display: none;
-  /* transform: rotate(90deg); */
 }
 
+/* Estilos para aparecer el ampliamento de la card */
 .cb-cards span:hover .cb-card-hover {
   display: flex;
-  /* transform: rotate(90deg); */
 }
 
+/* Estilos comunes para el texto de las cards */
 .cb-cards span p {
   padding: var(--cb-padding-card);
-
-  letter-spacing: 1.3px;
   color: var(--cb-color-white);
   font-family: var(--cb-typography-body);
-  /* font-size: var(--cb-typography-p); */
+  letter-spacing: 1.5px;
 }
 
+/* Estilo para el título de la card */
 .cb-card-title {
   min-width: 200px;
+  font-weight: var(--cb-weight-h3);
   transform: rotate(-90deg);
-  font-weight: 500;
 }
 
+/* Estilos para el encabezado de la tarjeta en hover */
 .cb-card-class {
-  font-weight: 500;
+  font-weight: var(--cb-weight-h3);
   filter: drop-shadow(0 0 7px var(--cb-color-pastel-red));
 }
 
-.cb-card-description {
-}
-
+/* Estilos para el bloque de contacto */
 .cb-card-contact {
-  color: red;
-  /* background-color: rgba(var(--cb-color-pastel-red), 0.8);
-  background: linear-gradient(to bottom, transparent, var(--cb-color-pastel-red));
-  background: linear-gradient(to right, transparent 0%, transparent 100%),
-              var(--cb-color-pastel-red); */
-  color: #FFDDC1; /* Un tono de naranja pastel */
-  background-color: #7fff6b3a;
-  /* background-color: var(--cb-color-pastel-red); */
-  /* opacity: 0.2; */
-  /* margin: 20px; */
-  white-space: nowrap;
-  width: min-content;
   border-radius: var(--cb-border-width-card);
   border-radius: 10px;
   font-size: 14px;
   font-weight: 400;
+  white-space: nowrap;
 }
 
+/* Establecemos las posiciones de las imágenes */
+
 #cb-card-boxeo-educativo-infantil {
-  /* background-position: 310px; */
   background-size: 450px;
-  
-  backdrop-filter:contrast(40%);
 }
 
 #cb-card-only-woman {
-  /* background-position: 230px; */
   background-size: 280px;
 }
 
 #cb-card-12-de-saco {
   background-position: -67px;
-  /* background-position:  center center -150px; */
   background-size: 660px;
 }
 
 #cb-card-functional-boxing {
   background-size: 380px;
   backdrop-filter: 10px;
-  /* backdrop-filter: blur(10px); */
 }
 
 #cb-card-boxeo-recreativo {
@@ -127,4 +110,3 @@
 #cb-card-boxeo-avanzado-y-competición {
   background-size: 320px;
 }
-
