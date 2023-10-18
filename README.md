@@ -68,10 +68,10 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 ---
 
 ### Clases
-- [] Diseñar correctamente las cards
-- [] Crear dataset de las clases
-- [] Map para recorrer el dataset
-- [] Hacer que solo se expanda la descripción de la clase al pasar el cursor por encima.
+- [✅] Diseñar correctamente las cards
+- [✅] Crear dataset de las clases
+- [✅] Map para recorrer el dataset
+- [✅] Hacer que solo se expanda la descripción de la clase al pasar el cursor por encima.
 
 ---
 

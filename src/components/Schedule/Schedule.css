@@ -29,21 +29,19 @@
 /* Damos color diferente a la columna de las horas */
 .cb-schedule-tbody tr td:first-child {
   color: var(--cb-color-black);
+  box-shadow: none;
 }
 
 .cb-schedule-tbody tr td {
-  /* border: 2px solid yellow; */
   padding: 9px;
   text-align: center;
-  /* color: transparent; */
   font-family: var(--cb-typography-body);
-  /* font-weight: var(--cb-weight-p); */
   line-height: var(--cb-typography-p-leading);
-  /* letter-spacing: 1px; */
-  
-  color: rgba(255, 255, 255, 0.821);
-  color: black;
-  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--cb-color-black);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 /* Estilo para la primera columna */
