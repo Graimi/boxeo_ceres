@@ -11,7 +11,7 @@ function Hero() {
       />
       <h1 className="cb-hero-description">SE TU MEJOR VERSIÓN</h1>
       <a href="#body">
-        <h3 className="cb-hero-CTA cta">Inscríbete</h3>
+        <h3 className="cta">Inscríbete</h3>
       </a>
 
       <img

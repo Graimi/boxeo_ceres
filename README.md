@@ -15,7 +15,7 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 - [] Cambiar a section los article si corresponde
 - [] Actualizar información de trabajo en el proyecto portfolio
 - [✅] Hacer favicon de igual tamaño
-- [] Hacer diseño bonito de los CTA
+- [✅] Hacer diseño bonito de los CTA
 
 ### MEDIAS QUERIES
 

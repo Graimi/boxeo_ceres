@@ -2,7 +2,7 @@
 export const ScheduleDays = ['L', 'M', 'X', 'J', 'V'];
 
 // Añadimos los datos del calendario
-// Aquellos que tienen un + añadido es para darles una clase nueva
+// Si hay que añadir algún texto más a alguno usar ::after
 export const ScheduleData = [
   // {
   //   hour: '8:00',
@@ -37,7 +37,7 @@ export const ScheduleData = [
   },
   {
     hour: '19:00',
-    classes: ['Boxeo Avanzado', 'Boxeo Recreativo', 'Boxeo Avanzado', 'Boxeo Recreativo', 'Ring*']
+    classes: ['Boxeo Avanzado', 'Boxeo Recreativo', 'Boxeo Avanzado', 'Boxeo Recreativo', 'Ring']
   },
   {
     hour: '20:15',

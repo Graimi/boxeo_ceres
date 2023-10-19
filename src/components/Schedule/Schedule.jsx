@@ -19,10 +19,7 @@ function ImportClasses() {
         const individualClasses = combinedClass
           .split('+')
           .map((className) => `cb-schedule-${className.toLowerCase().replace(/ /g, '-')}`);
-        // Dividimos aquel texto que tenga un + y lo preparamos para coger solo la primera ocurrencia
-        const individualNaming = combinedClass.split('+')[0];
-
-        return <td className={individualClasses.join(' ')}>{individualNaming}</td>;
+        return <td className={individualClasses.join(' ')}>{combinedClass}</td>;
       })}
     </tr>
   ));
@@ -53,7 +50,7 @@ function Schedule() {
       </article>
       <article className="cb-schedule-info">
         <p>* Las clases tienen una duración de 1 hora</p>
-        <p>Sábado entrenamientos "Grandes Figuras del Boxeo" según disponibilidad</p>
+        <p>Sábado entrenamientos &quot;Grandes Figuras del Boxeo&quot; según disponibilidad</p>
         <p>Entremaniento Libre de Boxeo y Cross Training en horario de apertura</p>
       </article>
     </div>

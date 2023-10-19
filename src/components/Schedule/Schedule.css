@@ -8,10 +8,6 @@
   border-spacing: 8px;
 }
 
-.table-small-view {
-  display: none;
-}
-
 .cb-schedule-table th,
 .cb-schedule-table td {
   /* border: 2px solid yellow; */
@@ -47,28 +43,32 @@
 /* Estilo para la primera columna */
 .table-big-view td:first-child,
 .table-big-view th:first-child {
-  width: 18%; /* Ajusta el valor del ancho según tus necesidades */
+  width: 18%;
 }
 
-.cb-schedule-table td {
-  border-radius: var(--cb-radius-general);
-}
+  /* Devolvemos el color a la parte de las horas */
+  .cb-schedule-table tbody tr td:first-child {
+    color: black;
+    width: 18%;
+  }
 
+
+
+/* Estilos para la columna de encabezado */
 .cb-schedule-table th {
   font-weight: bold;
   font-family: var(--cb-typography-heading);
   font-size: var(--cb-typography-h3);
 }
 
-/* Estilo para las demás celdas de la tabla */
-.table-big-view td {
+/* Borde para las celdas internas */
+.cb-schedule-table td {
+  border-radius: var(--cb-radius-general);
   height: 50px;
 }
 
-.cb-schedule p {
-  /* font-weight: bold; */
-  /* color: rgba(255, 255, 255, 0.801); */
-}
+
+/* Establecemos los colores de fondo de las clases */
 
 .cb-schedule-boxeo-educativo-infantil {
   background-color: var(--cb-color-pastel-blue);
@@ -76,11 +76,6 @@
 
 .cb-schedule-only-woman {
   background-color: var(--cb-color-pastel-pink);
-  /* font-weight: 700; */
-  color: rgba(var(--cb-color-pastel-pink), 0.9);
-  color: rgba(255, 255, 255, 0.76);
-  border-radius: var(--cb-radius-general);
-  padding: 2px;
 }
 
 .cb-schedule-12-de-saco {
@@ -95,33 +90,13 @@
   background-color: var(--cb-color-pastel-orange);
 }
 
-.cb-schedule-boxeo-avanzado-y-competición {
+.cb-schedule-boxeo-avanzado {
   background-color: var(--cb-color-pastel-red);
-  /* background-color: #ff6b6b3a; */
-  color: #6c0101;
-  /* font-weight: 700; */
-  color: rgba(255, 255, 255, 0.874);
-  /* color: rgba(237, 20, 20, 0.592); */
 }
 
 .cb-schedule-ring {
-  background-color: rgba(255, 255, 255, 0.347);
-  color: rgba(255, 255, 255, 0.849);
-  color: rgb(166, 35, 35);
-  border-radius: var(--cb-radius-general);
-  letter-spacing: 1px;
-  /* opacity: 0.5; */
+  background-color: var(--cb-color-pastel-ring);
 }
-
-.cb-schedule-ring-img {
-  width: 40px;
-  margin: auto;
-}
-
-/* .cb-schedule td {
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.788);
-} */
 
 .cb-schedule-leyend {
   display: none;

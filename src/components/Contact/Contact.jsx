@@ -12,7 +12,7 @@ function Contact() {
             ¿Te gustaría probar? <br /> Reserva tu primera <br /> clase gratis
           </h3>
           <a href="" target="_blank" rel="noreferrer">
-            <h3 className="cb-contact-cta cta">Reserva</h3>
+            <h3 className="cta">Reserva</h3>
           </a>
         </article>
         <article className="cb-contact-map">
