@@ -47,11 +47,11 @@
   --cb-typography-h3-leading: 1.2;
   --cb-typography-p-leading: 1.5;
 
-    /* FONT WEIGHT */
-    --cb-weight-h1: 700;
-    --cb-weight-h2: 700;
-    --cb-weight-h3: 500;
-    --cb-weight-p: 300;
+  /* FONT WEIGHT */
+  --cb-weight-h1: 700;
+  --cb-weight-h2: 700;
+  --cb-weight-h3: 500;
+  --cb-weight-p: 300;
 
   /* TEXT STROKE STYLE */
   --cb-text-stroke--white: 1.5px var(--cb-color-white);
@@ -226,7 +226,7 @@ input[type='number']::-webkit-outer-spin-button {
   text-transform: uppercase;
   font-weight: 500;
   background-color: var(--cb-color-yellow);
-  box-shadow:  0px 0px 15px var(--cb-color-pastel-yellow);
+  box-shadow: 0px 0px 15px var(--cb-color-pastel-yellow);
   border: 2px solid var(--cb-color-pastel-yellow);
   color: var(--cb-color-black);
 }
@@ -234,14 +234,13 @@ input[type='number']::-webkit-outer-spin-button {
 /* Estilos para el CTA en hover */
 .cta:hover {
   transition: all 0.3s ease-in-out;
-  transition: cubic-bezier(0.23, 1, 0.320, 1) 0.5s;
-  transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+  transition: cubic-bezier(0.23, 1, 0.32, 1) 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
   background-color: var(--cb-color-black);
   border: 1px solid var(--cb-color-pastel-yellow);
   box-shadow: 0px 0px 10px var(--cb-color-yellow);
   color: var(--cb-color-yellow);
 }
-
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
