@@ -1,5 +1,5 @@
+/* Estilos generales de la tabla */
 .cb-schedule-table {
-  /* border-collapse: collapse; */
   margin: 0 auto;
   align-items: center;
   justify-content: center;
@@ -8,65 +8,28 @@
   border-spacing: 8px;
 }
 
-.cb-schedule-table th,
-.cb-schedule-table td {
-  /* border: 2px solid yellow; */
-  padding: 9px;
-  text-align: center;
-  /* color: transparent; */
-  font-family: var(--cb-typography-body);
-  /* font-weight: var(--cb-weight-p); */
-  line-height: var(--cb-typography-p-leading);
-  /* letter-spacing: 1px; */
-  
-  /* color: rgba(255, 255, 255, 0.874); */
-}
-
-/* Damos color diferente a la columna de las horas */
-.cb-schedule-tbody tr td:first-child {
-  color: var(--cb-color-black);
-  box-shadow: none;
-}
-
-.cb-schedule-tbody tr td {
-  padding: 9px;
-  text-align: center;
-  font-family: var(--cb-typography-body);
-  line-height: var(--cb-typography-p-leading);
-  letter-spacing: 0.5px;
-  color: var(--cb-color-black);
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-/* Estilo para la primera columna */
-.table-big-view td:first-child,
-.table-big-view th:first-child {
-  width: 18%;
-}
-
-  /* Devolvemos el color a la parte de las horas */
-  .cb-schedule-table tbody tr td:first-child {
-    color: black;
-    width: 18%;
-  }
-
-
-
-/* Estilos para la columna de encabezado */
+/* Estilamos la primera fila de la tabla */
 .cb-schedule-table th {
-  font-weight: bold;
+  padding: 9px;
+  text-align: center;
   font-family: var(--cb-typography-heading);
   font-size: var(--cb-typography-h3);
+  line-height: var(--cb-typography-p-leading);
+  font-weight: var(--cb-weight-h2);
 }
 
-/* Borde para las celdas internas */
-.cb-schedule-table td {
+/* Estilamos las celdas */
+.cb-schedule-tbody tr td {
+  padding: 9px;
+  color: var(--cb-color-black);
+  text-align: center;
+  font-family: var(--cb-typography-body);
+  font-weight: var(--cb-weight-h3);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   border-radius: var(--cb-radius-general);
-  height: 50px;
 }
-
 
 /* Establecemos los colores de fondo de las clases */
 
@@ -95,18 +58,21 @@
 }
 
 .cb-schedule-ring {
-  background-color: var(--cb-color-pastel-ring);
+  background-color: var(--cb-color-pastel-grey);
 }
 
+/* Ocultamos en esta vista la leyenda */
 .cb-schedule-leyend {
   display: none;
 }
 
+/* Estilamos el texto de la leyenda */
 .cb-schedule-leyend p {
   padding: var(--cb-padding-card);
   border-radius: var(--cb-radius-general);
 }
 
+/* Estilamos el apartado de información */
 .cb-schedule-info {
   display: flex;
   flex-direction: column;
@@ -116,58 +82,28 @@
 
 /* REST DISPLAY */
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  /* Quitamos el color del texto al contenido */
-  .cb-schedule-table tbody {
-    color: transparent;
+  /* Aumentamos el espaciado de las celdas para hacerlo más visual */
+  .cb-schedule-table {
+    border-spacing: 10px;
+  }
+
+  /* Quitamos el texto de las celdas */
+  .cb-schedule-tbody tr td {
+    font-size: 0;
   }
 
   /* Devolvemos el color a la parte de las horas */
-  .cb-schedule-table tbody tr td:first-child {
-    color: black;
+  .cb-schedule-tbody tr td:first-child {
+    font-size: var(--cb-typography-p);
   }
 
-  .table-small-view {
-    display: initial;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    table-layout: fixed;
-    width: 100%;
-    border-spacing: 12px;
+  /* Damos un espacio suficiente a la primera columna */
+  .cb-schedule-table td:first-child,
+  .cb-schedule-table th:first-child {
+    width: 65px;
   }
 
-  /* Estilo para la primera columna */
-  .table-small-view td:first-child,
-  .table-small-view th:first-child {
-    width: 30px;
-  }
-
-  .table-small-view td {
-    width: 18%;
-  }
-
-  /* Estilo para las demás celdas de la tabla */
-.table-small-view td {
-  height: min-content;
-}
-
-  .table-small-view td,
-  .table-small-view th {
-    padding: 5px;
-  }
-
-  .cb-schedule-woman {
-    background-color: var(--cb-color-pastel-pink);
-    /* font-weight: 700; */
-    /* color: var(--cb-color-pastel-pink); */
-    color: black;
-    margin: 5px;
-    /* color: rgba(255, 255, 255, 0.76); */
-    /* border-radius: var(--cb-radius-general); */
-  }
-
+  /* Damos vista al leyend */
   .cb-schedule-leyend {
     display: flex;
     flex-wrap: wrap;
@@ -176,7 +112,16 @@
   }
 }
 
-  /* MOBILE DISPLAY */
-  @media screen and (max-width: 376px) {
-
+/* MOBILE DISPLAY */
+@media screen and (max-width: 376px) {
+  /* Reducimos el espacio entre casillas */
+  .cb-schedule-table {
+    border-spacing: 6px;
   }
+
+  /* Reducimos el padding */
+  .cb-schedule-table td,
+  .cb-schedule-table th {
+    padding: 2px;
+  }
+}

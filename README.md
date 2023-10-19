@@ -32,7 +32,7 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 - [] Hacer
 
 #### Horario
-- [] Hacer
+- [✅] Hacer
 
 #### Tarifas
 - [] Hacer
@@ -75,10 +75,8 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 ---
 
 ### Horario
-- [] Ver si es posible reducir el tamaño de la fuente de las horas en la vista móvil.
-- [] Hacer más ancho la parte las horas
-- [] Reemplazar los íconos "ring" y "mujer" por íconos reales.
-- [] Mostrar el horario actual.
+- [✅] Hacer más ancho la parte las horas
+- [✅] Mostrar el horario actual.
 
 ---
 

@@ -46,7 +46,8 @@ function Schedule() {
         <p className="cb-schedule-12-de-saco">12 de Saco</p>
         <p className="cb-schedule-functional-boxing">Functional Boxing</p>
         <p className="cb-schedule-boxeo-recreativo">Boxeo Recreativo</p>
-        <p className="cb-schedule-boxeo-avanzado-y-competición">Boxeo Avanzado y Competición</p>
+        <p className="cb-schedule-boxeo-avanzado">Boxeo Avanzado y Competición</p>
+        <p className="cb-schedule-ring">Ring</p>
       </article>
       <article className="cb-schedule-info">
         <p>* Las clases tienen una duración de 1 hora</p>
