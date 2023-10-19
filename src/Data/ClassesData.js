@@ -9,15 +9,15 @@ export const ClassesData = [
     Color: 'var(--cb-color-pastel-blue)',
     OpacColor: 'var(--cb-color-opac-blue)'
   },
-  {
-    Class: 'ONLY WOMAN',
-    Description: 'Clase exclusivamente destinada a mujeres',
-    Contact: 'SIN CONTACTO O CONTROLADO',
-    BackgroundImage:
-      'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739600/Ceres%20Box/woman_dvlczk.png)',
-    Color: 'var(--cb-color-pastel-pink)',
-    OpacColor: 'var(--cb-color-opac-pink)'
-  },
+  // {
+  //   Class: 'ONLY WOMAN',
+  //   Description: 'Clase exclusivamente destinada a mujeres',
+  //   Contact: 'SIN CONTACTO O CONTROLADO',
+  //   BackgroundImage:
+  //     'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739600/Ceres%20Box/woman_dvlczk.png)',
+  //   Color: 'var(--cb-color-pastel-pink)',
+  //   OpacColor: 'var(--cb-color-opac-pink)'
+  // },
   {
     Class: '12 DE SACO',
     Description:

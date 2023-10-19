@@ -12,10 +12,10 @@
   font-weight: 600;
   font-size: var(--cb-typography-h1);
   font-size: 90px;
-  /* -webkit-text-stroke: var(--cb-text-stroke--black); */
-  /* color: var(--cb-color-transparent); */
+  /* -webkit-text-stroke: var(--cb-text-stroke-black); */
+  /* color: transparent; */
   filter: drop-shadow(0 0 25px var(--cb-color-yellow));
-  /* -webkit-text-stroke: var(--cb-text-stroke--yellow); */
+  /* -webkit-text-stroke: var(--cb-text-stroke-yellow); */
   color: var(--cb-color-white-light);
 }
 
@@ -96,6 +96,7 @@
   /* background-color: lightgray; */
   transform: translatey(10px);
   transition: all 0.3s;
+  transform: scale(1.1);
 }
 
 .cb-club-reason:hover .cb-club-reason-description {

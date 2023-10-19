@@ -41,7 +41,7 @@ function Schedule() {
         </tbody>
       </table>
       <article className="cb-schedule-leyend">
-        <p className="cb-schedule-only-woman">Only Woman</p>
+        {/* <p className="cb-schedule-only-woman">Only Woman</p> */}
         <p className="cb-schedule-boxeo-educativo-infantil">Boxeo Educativo Infantil</p>
         <p className="cb-schedule-12-de-saco">12 de Saco</p>
         <p className="cb-schedule-functional-boxing">Functional Boxing</p>

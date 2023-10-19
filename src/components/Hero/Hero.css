@@ -31,7 +31,7 @@
   color: var(--cb-color-white); */
 
   filter: drop-shadow(0 0 4px var(--cb-color-yellow));
-  -webkit-text-stroke: var(--cb-text-stroke--white);
+  -webkit-text-stroke: var(--cb-text-stroke-white);
   color: transparent;
 }
 

@@ -55,8 +55,8 @@
 .cb-company-name {
   font-family: var(--cb-typography-logo);
   font-size: var(--cb-typography-h3);
-  -webkit-text-stroke: var(--cb-text-stroke--yellow);
-  color: var(--cb-color-transparent);
+  -webkit-text-stroke: var(--cb-text-stroke-yellow);
+  color: transparent;
 }
 
 /* Estilo del eslogan */

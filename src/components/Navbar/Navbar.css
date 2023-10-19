@@ -62,12 +62,12 @@
 
 .cb-navbar a {
   transition: all cubic-bezier(0.75, 5, 0.165, 1);
-  /* -webkit-text-stroke: var(--cb-text-stroke--white); */
+  /* -webkit-text-stroke: var(--cb-text-stroke-white); */
 }
 
 .cb-navbar a:hover {
-  -webkit-text-stroke: var(--cb-text-stroke--white);
-  color: var(--cb-color-transparent);
+  -webkit-text-stroke: var(--cb-text-stroke-white);
+  color: transparent;
 }
 
 /* TABLET DISPLAY */

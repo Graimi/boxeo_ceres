@@ -70,6 +70,8 @@
 .cb-schedule-leyend p {
   padding: var(--cb-padding-card);
   border-radius: var(--cb-radius-general);
+  /* font-size: 18px; */
+  font-weight: var(--cb-weight-h3);
 }
 
 /* Estilamos el apartado de información */

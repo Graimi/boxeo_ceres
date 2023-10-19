@@ -19,7 +19,7 @@
   overflow: hidden;
   cursor: pointer;
   transition: all 0.5s;
-  transition:cubic-bezier(0.23, 1, 0.320, 1) 1s;
+  transition: cubic-bezier(0.23, 1, 0.32, 1) 1s;
   border-radius: var(--cb-radius-general);
   background-position: center;
   background-repeat: no-repeat;
@@ -109,4 +109,24 @@
 
 #cb-card-boxeo-avanzado-y-competición {
   background-size: 320px;
+}
+
+/* Estilos para tablet y móvil */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  /* Reducimos el gap */
+  .cb-cards {
+    gap: 10px;
+  }
+
+  /* Damos forma a las card en estado normal */
+  .cb-cards span {
+    min-width: 90px;
+    max-width: 90px;
+  }
+
+  /* Damos forma a las cards con hover */
+  .cb-cards span:hover {
+    min-width: 250px;
+    max-width: 250px;
+  }
 }
