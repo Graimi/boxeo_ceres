@@ -19,7 +19,13 @@ function Reason({ title, description }) {
       onMouseLeave={() => handleHover(false)}
     >
       <p className="cb-club-reason-title">{title}</p>
-      {hovered && <p className="cb-club-reason-description">{description}</p>}
+      {hovered && (
+        <div className="cb-club-reason-card">
+          <p>{title}</p>
+          <a href="" onClick={() => handleHover(false)}><img src="" alt="" /></a>
+          <p>{description}</p>
+        </div>
+      )}
     </li>
   );
 }
@@ -37,6 +43,9 @@ function Club() {
               <Reason key={reason.title} title={reason.title} description={reason.description} />
             ))}
           </ul>
+          {/* {ClubData.map((reason) => (
+            <Reason key={reason.title} title={reason.title} description={reason.description} />
+          ))} */}
         </article>
         <h3 className="cb-club-city">Tu club de Boxeo en Cáceres</h3>
         <article className="cb-club-federation">
