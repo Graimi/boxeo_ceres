@@ -22,7 +22,9 @@ function Reason({ title, description }) {
       {hovered && (
         <div className="cb-club-reason-card">
           <p>{title}</p>
-          <a href="" onClick={() => handleHover(false)}><img src="" alt="" /></a>
+          <a href="" onClick={() => handleHover(false)}>
+            <img src="" alt="" />
+          </a>
           <p>{description}</p>
         </div>
       )}
@@ -49,14 +51,18 @@ function Club() {
         </article>
         <h3 className="cb-club-city">Tu club de Boxeo en Cáceres</h3>
         <article className="cb-club-federation">
-          <img
-            src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697210715/Ceres%20Box/image-removebg-preview_1_t7mv2k.png"
-            alt="Federación Española de Boxeo"
-          />
-          <img
-            src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697210716/Ceres%20Box/image-removebg-preview_o8runu.png"
-            alt="Federación Extremeña de Boxeo"
-          />
+          <a href="https://www.feboxeo.es/" target="_blank" rel="noreferrer">
+            <img
+              src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697210715/Ceres%20Box/image-removebg-preview_1_t7mv2k.png"
+              alt="Federación Española de Boxeo"
+            />
+          </a>
+          <a href="https://fexboxeo.es/" target="_blank" rel="noreferrer">
+            <img
+              src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697210716/Ceres%20Box/image-removebg-preview_o8runu.png"
+              alt="Federación Extremeña de Boxeo"
+            />
+          </a>
         </article>
       </section>
     </div>

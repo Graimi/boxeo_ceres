@@ -20,10 +20,7 @@
   font-weight: 600;
   font-size: var(--cb-typography-h1);
   font-size: 90px;
-  /* -webkit-text-stroke: var(--cb-text-stroke-black); */
-  /* color: transparent; */
-  filter: drop-shadow(0 0 25px var(--cb-color-yellow));
-  /* -webkit-text-stroke: var(--cb-text-stroke-yellow); */
+  filter: drop-shadow(0 0 7px var(--cb-color-yellow));
   color: var(--cb-color-white-light);
 }
 
