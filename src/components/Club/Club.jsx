@@ -37,7 +37,15 @@ function Club() {
     <div className="cb-club cb-page-shared" id="club">
       <h1>El Club</h1>
       <section className="cb-club-section">
-        <h2 className="cb-club-title">Boxeo Ceres</h2>
+        {/* <h2 className="cb-club-title">Boxeo Ceres</h2> */}
+        <div className="cb-club-title">
+          <h2>Boxeo</h2>
+          <img
+            src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697285740/Ceres%20Box/ring_background_eptqzx.png"
+            alt="ring"
+          />
+          <h2>Ceres</h2>
+        </div>
         <h2 className="cb-club-slogan">Fuerza y Valor</h2>
         <article className="cb-club-reasons">
           <ul className="cb-club-reasons-list">

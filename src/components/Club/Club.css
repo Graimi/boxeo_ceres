@@ -1,10 +1,4 @@
-.cb-club {
-  background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1697285740/Ceres%20Box/ring_background_eptqzx.png);
-  background-repeat: no-repeat;
-  background-size: 500px;
-  background-position: right center;
-}
-
+/* Estilos para repartir la sección de club */
 .cb-club-section {
   display: flex;
   flex-direction: column;
@@ -13,15 +7,38 @@
   gap: 30px;
 }
 
-/* Estilo del logo */
+/* Estilos para el apartado del título */
 .cb-club-title {
-  font-family: var(--cb-typography-logo);
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+  gap: var(--cb-gap-container);
+}
+
+/* Estilo del título */
+.cb-club-title h2 {
   font-family: var(--cb-typography-heading);
-  font-weight: 600;
-  font-size: var(--cb-typography-h1);
   font-size: 90px;
-  filter: drop-shadow(0 0 7px var(--cb-color-yellow));
+  text-transform: uppercase;
+  letter-spacing: 5px;
   color: var(--cb-color-white-light);
+  filter: drop-shadow(0 0 7px var(--cb-color-yellow));
+}
+
+/* Realizamos la ordenación del contenido de las letras y ring */
+.cb-club-title h2:last-child {
+  z-index: 2; /* El último párrafo estará al frente */
+}
+
+/* Estilo de la imagen del ring */
+.cb-club-title img {
+  position: absolute;
+  width: 350px;
+  height: fit-content;
+  /* left: 50%; */
+  right: 0%;
+  z-index: 1;
 }
 
 /* Estilo del eslogan */
@@ -46,6 +63,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
+  z-index: 2;
 }
 
 .cb-club-reason {
@@ -126,19 +144,29 @@
 
 /* REST DISPLAY */
 @media screen and (max-width: 768px) {
-  .cb-club {
-    align-items: center;
-    background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1697285740/Ceres%20Box/ring_background_eptqzx.png);
-    background-repeat: no-repeat;
-    background-size: 550px;
-    background-position: center;
-    z-index: 1;
-  }
-
   /* Cambiamos las propiedades para el efecto visual buscando en la sección */
   .cb-club-section {
     width: 100%;
     align-items: center;
+  }
+
+  /* Estilo de la imagen del ring */
+  .cb-club-title img {
+    /* left: 30%; */
+    margin: auto;
+    /* transform: translateX(-50%); */
+  }
+
+  .cb-club-title {
+    flex-direction: column;
+    justify-content: center;
+    /* max-width: 50%; */
+    font-size: 70px;
+  }
+
+  /* Centramos los elementos de la lista */
+  .cb-club-reasons-list {
+    justify-content: center;
   }
 
   .cb-club-reason-card {
@@ -150,19 +178,5 @@
     /* padding: 10px; */
     width: 250px;
     zoom: 80%;
-  }
-
-  .cb-club-title {
-    white-space: wrap;
-    z-index: 0;
-    white-space: normal;
-    max-width: 50%;
-    font-size: 70px;
-    z-index: 0;
-  }
-
-  /* Centramos los elementos de la lista */
-  .cb-club-reasons-list {
-    justify-content: center;
   }
 }

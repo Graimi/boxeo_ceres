@@ -11,10 +11,9 @@
   justify-content: space-around;
   width: 100%;
   top: 0%;
-  z-index: 2;
+  z-index: 5;
   text-transform: uppercase;
   /* Con lo siguiente preparamos la invisible navbar junto con JS */
-  /* background-color: var(--cb-color-black); */
   transition: background-color 0.3s ease-in-out;
   padding: var(--cb-padding-card);
 }
