@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   justify-items: center;
+  align-items: center;
   width: 100%;
   padding: 40px;
   gap: 30px;
@@ -28,7 +29,7 @@
 .cb-footer-website {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-  grid-template-columns: repeat(1, 20fr 1fr 20fr); 
+  grid-template-columns: repeat(1, 20fr 1fr 20fr);
   align-items: center;
   justify-items: center;
   justify-content: space-between;
@@ -66,6 +67,14 @@
   border-radius: var(--cb-radius-general);
   text-align: center;
   font-family: var(--cb-typography-logo);
+}
+
+.cb-footer-designer {
+  border-radius: var(--cb-radius-general);
+  width: fit-content;
+  padding: var(--cb-padding-card);
+  box-shadow: var(--cb-box-shadow-yellow);
+  /* border: 1px solid var(--cb-color-pastel-yellow); */
 }
 
 .cb-footer-designer p {

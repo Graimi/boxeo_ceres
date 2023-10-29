@@ -1,4 +1,3 @@
-/* ✅ */
 /* Diseños generales, con el z-index conseguimos ocultar el botón whatsApp */
 .cb-hero {
   display: flex;
@@ -26,10 +25,6 @@
 /* Estilos específicos del texto principal */
 .cb-hero-description {
   font-size: 110px;
-  /* font-weight: var(--cb-typography-weight-300);
-  filter: drop-shadow(0 0 3px var(--cb-color-yellow));
-  color: var(--cb-color-white); */
-
   filter: drop-shadow(0 0 4px var(--cb-color-yellow));
   -webkit-text-stroke: var(--cb-text-stroke-white);
   color: transparent;
@@ -43,15 +38,17 @@
   border-radius: var(--cb-radius-general);
 }
 
+/* Estilos para el ratón móvil */
 .cb-hero-mouse-move {
   position: absolute;
   max-width: var(--cb-img-medium);
-  bottom: 45px;
+  bottom: 20px;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   animation: mouse-move 2s linear infinite;
 }
 
+/* Estilos para el efecto de movimiento del ratón */
 @keyframes mouse-move {
   0%,
   50%,
@@ -71,57 +68,30 @@
 
 /* TABLET DISPLAY */
 @media screen and (min-width: 376px) and (max-width: 768px) {
-  .cb-hero {
-max-height: 100vh;
+  /* Hacemos zoom en vez de reducir los tamaños uno por uno */
+  .cb-hero img,
+  .cb-hero h1,
+  .cb-hero a {
+    zoom: 85%;
   }
-
-  .cb-hero-logo {
-    width: 130px;
-  }
-  
-  .cb-hero-description {
-    font-size: 70px;
-  }
-
-/*   
-    .cb-section-hero {
-      min-height: 100vh;
-    }
-  
-    .cb-hero-logo {
-      width: %;
-    }
-  
-    .cb-hero-description {
-      font-size: calc(var(--cb-typography-size-extra) - 1rem);
-      font-weight: var(--cb-typography-weight-500);
-    }
-  
-    .cb-hero-CTA {
-      font-size: calc(var(--cb-typography-size-h3) - 0.1rem);
-    }
-  
-    .cb-hero-next {
-      width: calc(var(--cb-width-small) - 0.25rem);
-    } */
 }
 
 /* MOBILE DISPLAY */
 @media screen and (max-width: 376px) {
-  .cb-hero {
-    justify-content: space-evenly;
-    /* gap: 35px; */
+  /* Aplicamos un zoom mayor*/
+  .cb-hero img,
+  .cb-hero h1,
+  .cb-hero a {
+    zoom: 80%;
   }
+
+  /* Debido al espacio extra de la navbar, se aumenta el margen */
   .cb-hero-logo {
-    margin-top: 20px;
-    width: 130px;
+    margin-top: 80px;
   }
 
+  /* Se reduce el tamaño de la fuente */
   .cb-hero-description {
-    font-size: 60px;
-  }
-
-  .cb-hero-mouse-move {
-    bottom: 40px;
+    font-size: 85px;
   }
 }
