@@ -15,7 +15,7 @@
   gap: 10px;
   max-width: 100%;
   background-color: var(--cb-color-white-light);
-  box-shadow: inset 0px 0px 3px var(--cb-color-grey);
+  box-shadow: var(--cb-box-shadow-grey);
   border-radius: var(--cb-radius-general);
   /* Estilamos el texto */
   color: var(--cb-color-black);

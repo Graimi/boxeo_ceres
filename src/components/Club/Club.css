@@ -26,9 +26,9 @@
   filter: drop-shadow(0 0 7px var(--cb-color-yellow));
 }
 
-/* Realizamos la ordenación del contenido de las letras y ring */
+/* Ponemos el último texto al frente */
 .cb-club-title h2:last-child {
-  z-index: 2; /* El último párrafo estará al frente */
+  z-index: 2;
 }
 
 /* Estilo de la imagen del ring */
@@ -36,30 +36,18 @@
   position: absolute;
   width: 450px;
   height: fit-content;
-  /* left: 50%; */
   right: 15%;
-  /* left: 100%; */
-  /* transform: translateX(-50%); */
   z-index: 1;
 }
 
-/* Estilo del eslogan */
-.cb-club-slogan {
-  /* background-color: var(--cb-color-yellow); */
-  /* padding: 10px; */
-  display: none;
-  border-radius: var(--cb-radius-general);
-  text-align: center;
-  font-family: var(--cb-typography-logo);
-}
-
+/* Estilamos el bloque de las razones */
 .cb-club-reasons {
   display: flex;
-  /* flex-wrap: wrap; */
   max-width: 50vh;
   gap: var(--cb-gap-container);
 }
 
+/* Estilamos la lista de las razones */
 .cb-club-reasons-list {
   display: flex;
   flex-direction: row;
@@ -68,20 +56,21 @@
   z-index: 2;
 }
 
+/* Estilamos cada razón */
 .cb-club-reason {
-  width: fit-content;
-  text-align: center;
-  height: min-content;
-  background-color: var(--cb-color-white-light);
-  box-shadow: inset 0px 0px 3px var(--cb-color-grey);
-  padding: var(--cb-padding-cta);
-  padding: 10px;
-  border-radius: var(--cb-radius-general);
-  justify-content: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: var(--cb-padding-cta);
+  width: fit-content;
+  height: min-content;
+  background-color: var(--cb-color-white-light);
+  box-shadow: var(--cb-box-shadow-grey);
+  text-align: center;
+  border-radius: var(--cb-radius-general);
 }
 
+/* Estilamos el título de cada razón */
 .cb-club-reason-title {
   display: flex;
   gap: 5px;
@@ -107,7 +96,7 @@ height: fit-content;
   transform: translate(-15%, 0%);
   border-radius: var(--cb-radius-general);
   background-color: var(--cb-color-white-light);
-  box-shadow: inset 0px 0px 3px var(--cb-color-grey);
+  box-shadow: var(--cb-box-shadow-grey);
 }
 
 .cb-club-reason-card p:first-child {
