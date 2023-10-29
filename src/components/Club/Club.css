@@ -34,10 +34,12 @@
 /* Estilo de la imagen del ring */
 .cb-club-title img {
   position: absolute;
-  width: 350px;
+  width: 450px;
   height: fit-content;
   /* left: 50%; */
-  right: 0%;
+  right: 15%;
+  /* left: 100%; */
+  /* transform: translateX(-50%); */
   z-index: 1;
 }
 
@@ -81,12 +83,18 @@
 }
 
 .cb-club-reason-title {
+  display: flex;
+  gap: 5px;
+  align-items: center;
   white-space: nowrap;
+  /* font-family: var(--cb-typography-heading);
+  font-weight: 400; */
+  letter-spacing: 0.5px;
 }
 
-.cb-club-reason-title::after {
-  content: url('');
-  font-size: var(--cb-typography-p);
+.cb-club-reason-title img {
+width: var(--cb-img-mini);
+height: fit-content;
 }
 
 .cb-club-reason-card {
@@ -150,18 +158,19 @@
     align-items: center;
   }
 
-  /* Estilo de la imagen del ring */
-  .cb-club-title img {
-    /* left: 30%; */
-    margin: auto;
-    /* transform: translateX(-50%); */
-  }
-
   .cb-club-title {
     flex-direction: column;
     justify-content: center;
     /* max-width: 50%; */
     font-size: 70px;
+  }
+
+  /* Estilo de la imagen del ring */
+  .cb-club-title img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
   }
 
   /* Centramos los elementos de la lista */
@@ -170,12 +179,6 @@
   }
 
   .cb-club-reason-card {
-    /* top: 100%; */
-    /* left: -50%; */
-    /* transform: translate(-10%, -50%); */
-    /* width: 350px; */
-    /* height: fit-content; */
-    /* padding: 10px; */
     width: 250px;
     zoom: 80%;
   }

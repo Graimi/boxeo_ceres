@@ -18,13 +18,19 @@ function Reason({ title, description }) {
       onMouseEnter={() => handleHover(true)}
       onMouseLeave={() => handleHover(false)}
     >
-      <p className="cb-club-reason-title">{title}</p>
+      <div className="cb-club-reason-title">
+        <p>{title}</p>
+        <img
+          src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1698602159/Ceres%20Box/agregar_razlvc.png"
+          alt="Más"
+        />
+      </div>
       {hovered && (
         <div className="cb-club-reason-card">
           <p>{title}</p>
-          <a href="" onClick={() => handleHover(false)}>
+          {/* <a href="" onClick={() => handleHover(false)}>
             <img src="" alt="" />
-          </a>
+          </a> */}
           <p>{description}</p>
         </div>
       )}
@@ -53,9 +59,6 @@ function Club() {
               <Reason key={reason.title} title={reason.title} description={reason.description} />
             ))}
           </ul>
-          {/* {ClubData.map((reason) => (
-            <Reason key={reason.title} title={reason.title} description={reason.description} />
-          ))} */}
         </article>
         <h3 className="cb-club-city">Tu club de Boxeo en Cáceres</h3>
         <article className="cb-club-federation">

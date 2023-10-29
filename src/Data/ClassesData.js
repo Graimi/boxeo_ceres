@@ -40,7 +40,7 @@ export const ClassesData = [
   {
     Class: 'BOXEO RECREATIVO',
     Description:
-      'Actividad deportiva dirigida a adolescentes y adultos, con un enfoque en el control del contacto',
+      'Actividad dirigida a adolescentes y adultos, con un enfoque en el control del contacto',
     Contact: 'CONTACTO CONTROLADO',
     BackgroundImage:
       'url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1695739166/Ceres%20Box/adv_a6kfxf.jpg)',
