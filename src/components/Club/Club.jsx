@@ -46,7 +46,7 @@ function Club() {
         <div className="cb-club-title">
           <h2>Boxeo</h2>
           <img
-            src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697285740/Ceres%20Box/ring_background_eptqzx.png"
+            src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1698702234/Ceres%20Box/Ceres_Box_Website_wgpdlf.png"
             alt="ring"
           />
           <h2>Ceres</h2>

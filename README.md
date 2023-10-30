@@ -64,7 +64,7 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 - [✅] Probar una idea en Canva para mejorar el diseño.
 - [✅] Decidir como diseñar el título.
 - [✅] Agregar un más a los li con after.
-- [] Decidir que efecto `hover` añadir.
+- [✅] Decidir que efecto `hover` añadir.
 
 ---
 
@@ -82,7 +82,7 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 
 ---
 
-### ✅ Tarifas
+### Tarifas
 - [✅] Estilo del texto.
 - [✅] Decidir si utilizar un color amarillo pastel u otro.
 

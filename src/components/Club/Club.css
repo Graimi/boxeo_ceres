@@ -23,7 +23,7 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   color: var(--cb-color-white-light);
-  filter: drop-shadow(0 0 7px var(--cb-color-yellow));
+  filter: drop-shadow(0 0 10px #cac007);
 }
 
 /* Ponemos el último texto al frente */
@@ -76,8 +76,6 @@
   gap: 5px;
   align-items: center;
   white-space: nowrap;
-  /* font-family: var(--cb-typography-heading);
-  font-weight: 400; */
   letter-spacing: 0.5px;
 }
 
