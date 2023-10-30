@@ -79,24 +79,27 @@
   letter-spacing: 0.5px;
 }
 
+/* Estilamos las imágenes de más */
 .cb-club-reason-title img {
-width: var(--cb-img-mini);
-height: fit-content;
+  width: var(--cb-img-mini);
+  height: fit-content;
 }
 
+/* Estilos para la card en hover */
 .cb-club-reason-card {
   display: none;
-  flex-direction: column;
   position: fixed;
+  flex-direction: column;
   align-items: center;
   width: 350px;
   padding: var(--cb-gap-card);
-  transform: translate(-15%, 0%);
   border-radius: var(--cb-radius-general);
   background-color: var(--cb-color-white-light);
   box-shadow: var(--cb-box-shadow-grey);
+  transform: translate(-15%, 0%);
 }
 
+/* Estilos para el título de la card en hover */
 .cb-club-reason-card p:first-child {
   width: min-content;
   gap: var(--cb-gap-card);
@@ -106,33 +109,34 @@ height: fit-content;
   border-bottom: 2px solid var(--cb-color-yellow);
 }
 
+/* Estilo para el resto de texto */
 .cb-club-reason-card p:last-child {
   padding-top: 10px;
 }
 
-/* El efecto hover */
+/* Efecto hover */
 .cb-club-reason:hover {
-  /* background-color: lightgray; */
   transform: translatey(10px);
-  transform: scale(1.1);
   transition: all 0.3s;
 }
 
+/* Aparecemos la card hover */
 .cb-club-reason:hover .cb-club-reason-card {
   display: flex;
-  /* width: fit-content; */
-  /* position: fixed; */
 }
 
+/* Estilamos la frase de la ciudad */
 .cb-club-city {
   font-weight: var(--cb-weight-p);
   font-style: italic;
 }
 
+/* Damos estilo a la parte de los logos */
 .cb-club-federation {
   display: flex;
 }
 
+/* Damos tamaño a los logos */
 .cb-club-federation img {
   width: 100px;
 }
@@ -145,19 +149,18 @@ height: fit-content;
     align-items: center;
   }
 
+  /* Cambiamos el estilo del título para dar el efecto de superposición */
   .cb-club-title {
     flex-direction: column;
     justify-content: center;
-    /* max-width: 50%; */
-    font-size: 70px;
   }
 
   /* Estilo de la imagen del ring */
   .cb-club-title img {
     position: absolute;
+    width: 350px;
     left: 50%;
     transform: translateX(-50%);
-    width: 350px;
   }
 
   /* Centramos los elementos de la lista */
@@ -165,8 +168,9 @@ height: fit-content;
     justify-content: center;
   }
 
+  /* Reducimos el tamaño de las card */
   .cb-club-reason-card {
     width: 250px;
-    zoom: 80%;
+    zoom: 90%;
   }
 }

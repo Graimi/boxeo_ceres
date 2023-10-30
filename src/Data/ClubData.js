@@ -18,7 +18,7 @@ const ClubData = [
   {
     title: 'Todas las edades',
     description:
-      'Todo el público es bienvenido, desde niños hasta adultos mayores. El boxeo es un deporte que se puede practicar a cualquier edad, siempre que se haga con precaución y siguiendo las indicaciones de los expertos. El boxeo es una actividad divertida y saludable que mejora la coordinación, la fuerza y la autoestima.'
+      'Todo el público es bienvenido, desde niños hasta adultos. El boxeo es una actividad divertida y saludable que mejora la coordinación, la fuerza y la autoestima. Se recomienda actuar con precaución y seguir las indicaciones de los expertos'
   },
   {
     title: 'Equipamiento de calidad',
