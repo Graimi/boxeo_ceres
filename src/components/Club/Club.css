@@ -40,10 +40,15 @@
   z-index: 1;
 }
 
+.cb-club-info {
+  display: flex;
+}
+
 /* Estilamos el bloque de las razones */
 .cb-club-reasons {
   display: flex;
-  max-width: 50vh;
+  flex-direction: column;
+  align-items: flex-start;
   gap: var(--cb-gap-container);
 }
 
@@ -52,6 +57,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 60vh;
   gap: 10px;
   z-index: 2;
 }
@@ -59,6 +65,7 @@
 /* Estilamos cada razón */
 .cb-club-reason {
   display: flex;
+  /* position: relative; */
   flex-direction: column;
   justify-content: center;
   padding: var(--cb-padding-cta);
@@ -88,15 +95,18 @@
 /* Estilos para la card en hover */
 .cb-club-reason-card {
   display: none;
-  position: fixed;
+  top: 145%;
+  right: 5%;
+  z-index: 3;
   flex-direction: column;
   align-items: center;
-  width: 350px;
+  width: 250px;
+  height: min-content;
   padding: var(--cb-gap-card);
+  gap: 5px;
   border-radius: var(--cb-radius-general);
   background-color: var(--cb-color-white-light);
   box-shadow: var(--cb-box-shadow-grey);
-  transform: translate(-15%, 0%);
 }
 
 /* Estilos para el título de la card en hover */
@@ -116,13 +126,13 @@
 
 /* Efecto hover */
 .cb-club-reason:hover {
-  transform: translatey(10px);
+  box-shadow: var(--cb-box-shadow-pastel-yellow);
   transition: all 0.3s;
 }
 
 /* Aparecemos la card hover */
 .cb-club-reason:hover .cb-club-reason-card {
-  display: flex;
+  /* display: flex; */
 }
 
 /* Estilamos la frase de la ciudad */
@@ -142,7 +152,7 @@
 }
 
 /* REST DISPLAY */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   /* Cambiamos las propiedades para el efecto visual buscando en la sección */
   .cb-club-section {
     width: 100%;
@@ -163,6 +173,11 @@
     transform: translateX(-50%);
   }
 
+  /* Alinemaos los datos */
+  .cb-club-reasons {
+    align-items: center;
+  }
+
   /* Centramos los elementos de la lista */
   .cb-club-reasons-list {
     justify-content: center;
@@ -171,6 +186,11 @@
   /* Reducimos el tamaño de las card */
   .cb-club-reason-card {
     width: 250px;
-    zoom: 90%;
+    position: absolute;
+    /* zoom: 90%; */
+    top: 165%;
+    left: 50vh;
+    /* transform: translateX(50vh); */
+    margin: auto;
   }
 }

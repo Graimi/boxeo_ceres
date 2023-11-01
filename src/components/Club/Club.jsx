@@ -1,44 +1,93 @@
+// import './Club.css';
+// import React, { useState } from 'react';
+// import ClubData from '../../Data/ClubData';
+
+// // Función que genera los elementos de las razones
+// function Reason({ title, description }) {
+//   // El estado que indica si el ratón está sobre el elemento o no
+//   const [hovered, setHovered] = useState(false);
+
+//   // La función que cambia el estado al entrar o salir el ratón
+//   const handleHover = (value) => {
+//     setHovered(value);
+//   };
+
+//   return (
+//     <li
+//       className="cb-club-reason"
+//       onMouseEnter={() => handleHover(true)}
+//       onMouseLeave={() => handleHover(false)}
+//     >
+//       <div className="cb-club-reason-title">
+//         <p>{title}</p>
+//         <img
+//           src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1698602159/Ceres%20Box/agregar_razlvc.png"
+//           alt="Más"
+//         />
+//       </div>
+//       {hovered && (
+//         <div className="cb-club-reason-card">
+//           <p>{title}</p>
+//           {/* <a href="" onClick={() => handleHover(false)}>
+//             <img src="" alt="" />
+//           </a> */}
+//           <p>{description}</p>
+//         </div>
+//       )}
+//     </li>
+//   );
+// }
+
+// function Club() {
+//   return (
+//     <div className="cb-club cb-page-shared" id="club">
+//       <h1>El Club</h1>
+//       <section className="cb-club-section">
+//         <div className="cb-club-title">
+//           <h2>Boxeo</h2>
+//           <img
+//             src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1698702234/Ceres%20Box/Ceres_Box_Website_wgpdlf.png"
+//             alt="ring"
+//           />
+//           <h2>Ceres</h2>
+//         </div>
+//         <article className="cb-club-reasons">
+//           <ul className="cb-club-reasons-list">
+//             {ClubData.map((reason) => (
+//               <Reason key={reason.title} title={reason.title} description={reason.description} />
+//             ))}
+//           </ul>
+//         </article>
+//         <h3 className="cb-club-city">Tu club de Boxeo en Cáceres</h3>
+//         <article className="cb-club-federation">
+//           <a href="https://www.feboxeo.es/" target="_blank" rel="noreferrer">
+//             <img
+//               src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697210715/Ceres%20Box/image-removebg-preview_1_t7mv2k.png"
+//               alt="Federación Española de Boxeo"
+//             />
+//           </a>
+//           <a href="https://fexboxeo.es/" target="_blank" rel="noreferrer">
+//             <img
+//               src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697210716/Ceres%20Box/image-removebg-preview_o8runu.png"
+//               alt="Federación Extremeña de Boxeo"
+//             />
+//           </a>
+//         </article>
+//       </section>
+//     </div>
+//   );
+// }
+
+// export default Club;
+
 import './Club.css';
 import React, { useState } from 'react';
 import ClubData from '../../Data/ClubData';
 
-// Función que genera los elementos de las razones
-function Reason({ title, description }) {
-  // El estado que indica si el ratón está sobre el elemento o no
-  const [hovered, setHovered] = useState(false);
-
-  // La función que cambia el estado al entrar o salir el ratón
-  const handleHover = (value) => {
-    setHovered(value);
-  };
-
-  return (
-    <li
-      className="cb-club-reason"
-      onMouseEnter={() => handleHover(true)}
-      onMouseLeave={() => handleHover(false)}
-    >
-      <div className="cb-club-reason-title">
-        <p>{title}</p>
-        <img
-          src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1698602159/Ceres%20Box/agregar_razlvc.png"
-          alt="Más"
-        />
-      </div>
-      {hovered && (
-        <div className="cb-club-reason-card">
-          <p>{title}</p>
-          {/* <a href="" onClick={() => handleHover(false)}>
-            <img src="" alt="" />
-          </a> */}
-          <p>{description}</p>
-        </div>
-      )}
-    </li>
-  );
-}
-
 function Club() {
+  const [hoveredTitle, setHoveredTitle] = useState('');
+  const [hoveredDescription, setHoveredDescription] = useState('');
+
   return (
     <div className="cb-club cb-page-shared" id="club">
       <h1>El Club</h1>
@@ -51,28 +100,53 @@ function Club() {
           />
           <h2>Ceres</h2>
         </div>
-        <article className="cb-club-reasons">
-          <ul className="cb-club-reasons-list">
-            {ClubData.map((reason) => (
-              <Reason key={reason.title} title={reason.title} description={reason.description} />
-            ))}
-          </ul>
-        </article>
-        <h3 className="cb-club-city">Tu club de Boxeo en Cáceres</h3>
-        <article className="cb-club-federation">
-          <a href="https://www.feboxeo.es/" target="_blank" rel="noreferrer">
-            <img
-              src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697210715/Ceres%20Box/image-removebg-preview_1_t7mv2k.png"
-              alt="Federación Española de Boxeo"
-            />
-          </a>
-          <a href="https://fexboxeo.es/" target="_blank" rel="noreferrer">
-            <img
-              src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697210716/Ceres%20Box/image-removebg-preview_o8runu.png"
-              alt="Federación Extremeña de Boxeo"
-            />
-          </a>
-        </article>
+        <div className="cb-club-info">
+          <article className="cb-club-reasons">
+            <ul className="cb-club-reasons-list">
+              {ClubData.map((reason) => (
+                <li
+                  className="cb-club-reason"
+                  onMouseEnter={() => {
+                    setHoveredTitle(reason.title);
+                    setHoveredDescription(reason.description);
+                  }}
+                  onMouseLeave={() => {
+                    setHoveredTitle('');
+                    setHoveredDescription('');
+                  }}
+                >
+                  <div className="cb-club-reason-title">
+                    <p>{reason.title}</p>
+                    <img
+                      src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1698602159/Ceres%20Box/agregar_razlvc.png"
+                      alt="Más"
+                    />
+                  </div>
+                </li>
+              ))}
+            </ul>
+            <h3 className="cb-club-city">Tu club de Boxeo en Cáceres</h3>
+            <article className="cb-club-federation">
+              <a href="https://www.feboxeo.es/" target="_blank" rel="noreferrer">
+                <img
+                  src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697210715/Ceres%20Box/image-removebg-preview_1_t7mv2k.png"
+                  alt="Federación Española de Boxeo"
+                />
+              </a>
+              <a href="https://fexboxeo.es/" target="_blank" rel="noreferrer">
+                <img
+                  src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1697210716/Ceres%20Box/image-removebg-preview_o8runu.png"
+                  alt="Federación Extremeña de Boxeo"
+                />
+              </a>
+            </article>
+          </article>
+          <div className="cb-club-reason-card" style={{ display: hoveredTitle ? 'flex' : 'none' }}>
+            <p>{hoveredTitle}</p>
+            <p>{hoveredDescription}</p>
+            <img src="" alt="" />
+          </div>
+        </div>
       </section>
     </div>
   );
