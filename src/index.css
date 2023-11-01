@@ -190,6 +190,13 @@ select {
   font: inherit;
 }
 
+button {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -209,7 +216,6 @@ input[type='number']::-webkit-outer-spin-button {
 /* Damos un padding mayor al título de cada página */
 .cb-page-shared h1 {
   padding-bottom: 15px;
-
 }
 
 /* Estilos para el CTA */

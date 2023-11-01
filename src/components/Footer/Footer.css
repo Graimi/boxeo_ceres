@@ -23,12 +23,11 @@
   justify-content: center;
   justify-items: center;
   align-items: center;
-  /* border-bottom: var(--cb-color-yellow) 1.6px solid; */
 }
 
+/* Estilos para la parte de la web */
 .cb-footer-website {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   grid-template-columns: repeat(1, 20fr 1fr 20fr);
   align-items: center;
   justify-items: center;
@@ -37,7 +36,9 @@
 
 /* Damos un tamaño mínimo a la clase */
 .cb-footer-company {
-  min-width: 200px;
+  width: fit-content;
+  white-space: nowrap;
+  font-family: var(--cb-typography-heading);
 }
 
 /* Estilos individuales de los grupos ubicación, teléfono e instagram */
@@ -54,30 +55,34 @@
 
 /* Estilo del logo */
 .cb-company-name {
-  font-family: var(--cb-typography-logo);
-  font-size: var(--cb-typography-h3);
+  padding: 5px;
+  font-family: var(--cb-typography-heading);
+  font-size: 35px;
+  letter-spacing: 2px;
   -webkit-text-stroke: var(--cb-text-stroke-yellow);
   color: transparent;
 }
 
 /* Estilo del eslogan */
 .cb-company-slogan {
+  padding: 10px;
   background-color: var(--cb-color-yellow);
-  padding: 5px;
+  font-size: 30px;
   border-radius: var(--cb-radius-general);
   text-align: center;
-  font-family: var(--cb-typography-logo);
+  font-family: var(--cb-typography-heading);
 }
 
+/* Estilo para remacar el diseñador */
 .cb-footer-designer {
   border-radius: 15px;
   width: fit-content;
   padding: var(--cb-padding-card);
   box-shadow: var(--cb-box-shadow-yellow);
-  /* border: 1.5px solid var(--cb-color-pastel-yellow); */
   animation: rotateShadow 2s linear infinite;
 }
 
+/* Estilos para rotar el shadow */
 @keyframes rotateShadow {
   0% {
     box-shadow: -5px 0 25px 0 rgba(255, 223, 0, 0.5);
@@ -124,7 +129,7 @@
 }
 
 /* TABLET DISPLAY */
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 768px) {
   /* ✅ */
   /* Se cambia el display del footer para adapatarlo a tablet */
   .cb-footer-website {
@@ -164,7 +169,7 @@
 }
 
 /* MOBILE DISPLAY */
-@media screen and (max-width: 23.5rem) {
+@media screen and (max-width: 376px) {
   .cb-footer-contact {
     flex-direction: column;
   }

@@ -183,14 +183,12 @@
     justify-content: center;
   }
 
-  /* Reducimos el tamaño de las card */
+  /* Reorganizamos las cards */
   .cb-club-reason-card {
-    width: 250px;
+    width: 300px;
     position: absolute;
-    /* zoom: 90%; */
     top: 165%;
-    left: 50vh;
-    /* transform: translateX(50vh); */
+    left: 3vh;
     margin: auto;
   }
 }
