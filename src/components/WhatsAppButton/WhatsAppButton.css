@@ -1,0 +1,27 @@
+/* Diseños generales */
+.cb-button-whatsApp {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  height: var(--cb-img-medium);
+  width: var(--cb-img-medium);
+  border-radius: 50%;
+  box-shadow: 0.48px 0.48px 6.4px rgb(60 60 60 / 40%);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* HOVER -> Efecto aumento */
+.cb-button-whatsApp:hover {
+  transform: scale(1.1);
+}
+
+/* REST DISPLAY */
+@media screen and (max-width: 768px) {
+  /* Diseños para el resto de vistas */
+  .cb-button-whatsApp {
+    bottom: 30px;
+    left: 30px;
+    zoom: 80%;
+  }
+}

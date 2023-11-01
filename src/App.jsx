@@ -8,6 +8,7 @@ import Schedule from './components/Schedule/Schedule';
 import Classes from './components/Classes/Classes';
 import Rates from './components/Rates/Rates';
 import Club from './components/Club/Club';
+import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Schedule />
       <Rates />
       <Contact />
+      <WhatsAppButton />
       <Footer />
     </div>
   );
