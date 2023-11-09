@@ -1,6 +1,7 @@
 import './Contact.css';
 import React from 'react';
 import MapComponent from '../Map/Map';
+import { messageApi } from '../../Data/ClubData';
 
 function Contact() {
   return (
@@ -11,7 +12,7 @@ function Contact() {
           <h3>
             ¿Te gustaría probar? <br /> Reserva tu primera <br /> clase gratis
           </h3>
-          <a href="" target="_blank" rel="noreferrer">
+          <a href={messageApi} target="_blank" rel="noreferrer">
             <h3 className="cta">Reserva</h3>
           </a>
         </article>

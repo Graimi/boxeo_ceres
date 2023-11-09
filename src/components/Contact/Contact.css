@@ -10,10 +10,6 @@
   gap: var(--cb-gap-container);
 }
 
-.cb-contact-section article {
- /* max-width: 400px; */
-}
-
 .cb-contact-info {
   display: flex;
   flex-direction: column;

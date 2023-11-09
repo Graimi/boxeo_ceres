@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import { messageApi } from '../../Data/ClubData';
 
 function Hero() {
   return (
@@ -10,7 +11,7 @@ function Hero() {
         alt="logo del gimnasio"
       />
       <h1 className="cb-hero-description">SE TU MEJOR VERSIÓN</h1>
-      <a href="#body">
+      <a href={messageApi} target="_blank" rel="noopener noreferrer">
         <h3 className="cta">Inscríbete</h3>
       </a>
       <img

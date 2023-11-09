@@ -130,11 +130,6 @@
   transition: all 0.3s;
 }
 
-/* Aparecemos la card hover */
-.cb-club-reason:hover .cb-club-reason-card {
-  /* display: flex; */
-}
-
 /* Estilamos la frase de la ciudad */
 .cb-club-city {
   font-weight: var(--cb-weight-p);

@@ -20,13 +20,6 @@ function MapComponent() {
         <Marker position={center} animation={window.google.maps.Animation.DROP} />
       </GoogleMap>
     );
-  // return isLoaded ? (
-  //   <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
-  //     <Marker position={center} animation={window.google.maps.Animation.DROP} />
-  //   </GoogleMap>
-  // ) : (
-  //   <></>
-  // );
 }
 
 export default React.memo(MapComponent);

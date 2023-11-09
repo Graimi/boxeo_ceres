@@ -1,3 +1,5 @@
+export const messageApi = 'https://api.whatsapp.com/send?phone=34605895354';
+
 // Los datos de los títulos y las descripciones
 const ClubData = [
   {

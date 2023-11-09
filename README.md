@@ -10,8 +10,7 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 
 ### General
 - [] Ver porque no se ve correctamente la fuente collegue
-- [] Describir código
-- [] Poner una barra divisoria entre apartados
+- [✅] Describir código
 - [] Cambiar a section los article si corresponde
 - [] Actualizar información de trabajo en el proyecto portfolio
 - [✅] Hacer favicon de igual tamaño
@@ -20,7 +19,7 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 ### MEDIAS QUERIES
 
 #### Navbar
-- [] Revisar
+- [✅] Revisar
 
 #### Hero
 - [✅] Hacer
@@ -38,7 +37,7 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 - [✅] Hacer
 
 #### Contacto
-- [] Hacer
+- [✅] Hacer
 
 #### Footer
 - [✅] Hecho
@@ -55,7 +54,7 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 
 ### Hero
 - [✅] Ver si es adecuado utilizar un tipo de letra hueca en lugar de uno brillante.
-- [] Inscríbete a misma dirección que wp
+- [✅] Inscríbete a misma dirección que wp
 - [✅] Hacer zoom en medias.
 
 ---
@@ -85,23 +84,22 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 ### Tarifas
 - [✅] Estilo del texto.
 - [✅] Decidir si utilizar un color amarillo pastel u otro.
+- [] Descuentos sin porcentaje
 
 ---
 
 ### Contacto
-- [] Agregar un enlace para WhatsApp.
-- [] Enlazar la sección de contacto con un mapa.
-- [?] Organizar la sección de contacto en una rejilla 50/50.
-- [?] Agregar una galería de imágenes.
+- [✅] Agregar un enlace para WhatsApp.
+- [✅] Enlazar la sección de contacto con un mapa.
 
 ---
 
 ### Footer
-- [] Ver si es posible dar un estilo diferenciador a mi parte.
+- [✅] Ver si es posible dar un estilo diferenciador a mi parte.
 - [✅] Añadir clases a las imágenes.
 
 ---
 
 ### WhatsApp
-- [] Añadir botón
-- [] Información de destino correcta
+- [✅] Añadir botón
+- [✅] Información de destino correcta
