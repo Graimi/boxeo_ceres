@@ -1,7 +1,7 @@
+/* Indicaciones para obtener la fuente */
 @font-face {
-  font-family: 'Collegue'; /* Nombre de la fuente */
-  src: url('College_Block_2.0.otf') format('opentype'); /* Ruta al archivo OTF */
-  /* Puedes incluir más formatos de fuente si deseas agregar compatibilidad con navegadores diferentes */
+  font-family: 'Collegue';
+  src: url('College_Block_2.0.otf') format('opentype');
 }
 
 :root {

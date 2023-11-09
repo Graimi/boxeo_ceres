@@ -21,7 +21,7 @@
 /* Diseños para poner el nombre del logo hueco */
 .cb-header-logo {
   font-family: var(--cb-typography-logo);
-  font-family: var(--cb-typography-heading);
+  /* font-family: var(--cb-typography-heading); */
   color: var(--cb-color-white);
 }
 
