@@ -130,7 +130,6 @@
 
 /* TABLET DISPLAY */
 @media screen and (max-width: 768px) {
-  /* ✅ */
   /* Se cambia el display del footer para adapatarlo a tablet */
   .cb-footer-website {
     display: flex;

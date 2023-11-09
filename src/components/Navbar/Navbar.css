@@ -20,8 +20,7 @@
 
 /* Diseños para poner el nombre del logo hueco */
 .cb-header-logo {
-  font-family: var(--cb-typography-logo);
-  /* font-family: var(--cb-typography-heading); */
+  font-family: var(--cb-typography-heading);
   color: var(--cb-color-white);
 }
 
@@ -72,7 +71,6 @@
 
 /* TABLET DISPLAY */
 @media screen and (min-width: 376px) and (max-width: 768px) {
-  /* ✅ */
   /* Se cambia el display del header para adapatarlo a tablet */
   .cb-header {
     display: block;
@@ -113,7 +111,6 @@
 
 /* MOBILE DISPLAY */
 @media screen and (max-width: 376px) {
-  /* ✅ */
   /* Se cambia la dirección del header para adapatarlo a movil */
   .cb-header {
     flex-direction: column;
