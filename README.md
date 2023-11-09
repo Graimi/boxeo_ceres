@@ -9,7 +9,6 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 ## Tareas
 
 ### General
-- [] Ver porque no se ve correctamente la fuente collegue
 - [] Describir código
 - [] Cambiar a section los article si corresponde
 - [] Actualizar información de trabajo en el proyecto portfolio
@@ -86,7 +85,7 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 ### Tarifas
 - [✅] Estilo del texto.
 - [✅] Decidir si utilizar un color amarillo pastel u otro.
-- [] Descuentos sin porcentaje
+- [✅] Descuentos sin porcentaje
 
 ---
 

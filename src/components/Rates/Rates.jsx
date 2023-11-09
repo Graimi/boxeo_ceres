@@ -52,18 +52,19 @@ function Rates() {
             <tbody>
               <tr>
                 <td>Tráete un amigo</td>
-                <td>X</td>
+                <td></td>
               </tr>
               <tr>
                 <td>Universitarios</td>
-                <td>X</td>
+                <td></td>
               </tr>
               <tr>
                 <td>Permanencia trimestral</td>
-                <td>X</td>
+                <td></td>
               </tr>
             </tbody>
           </table>
+          <p className="cb-rates-discount-info">Pregunta por los descuentos in situ</p>
         </article>
       </section>
     </div>

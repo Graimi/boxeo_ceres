@@ -93,6 +93,12 @@
   font-style: italic;
 }
 
+.cb-rates-discount-info {
+  padding-top: var(--cb-padding-card);
+  border-top: 1px solid var(--cb-color-black);
+  font-style: italic;
+}
+
 /* REST DISPLAY */
 @media screen and (max-width: 768px) {
   /* Wrap automático */
