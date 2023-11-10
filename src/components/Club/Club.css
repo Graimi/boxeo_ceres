@@ -65,7 +65,6 @@
 /* Estilamos cada razón */
 .cb-club-reason {
   display: flex;
-  /* position: relative; */
   flex-direction: column;
   justify-content: center;
   padding: var(--cb-padding-cta);
@@ -80,7 +79,7 @@
 /* Estilamos el título de cada razón */
 .cb-club-reason-title {
   display: flex;
-  gap: 5px;
+  gap: var(--cb-gap-cta);
   align-items: center;
   white-space: nowrap;
   letter-spacing: 0.5px;
@@ -103,7 +102,7 @@
   width: 250px;
   height: min-content;
   padding: var(--cb-gap-card);
-  gap: 5px;
+  gap: var(--cb-gap-cta);
   border-radius: var(--cb-radius-general);
   background-color: var(--cb-color-white-light);
   box-shadow: var(--cb-box-shadow-grey);
