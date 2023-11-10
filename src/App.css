@@ -22,7 +22,7 @@ body {
   display: flex;
   place-items: center;
   min-height: 100vh;
-  min-height: 100svh;
+  /* min-height: 100svh; */
   background-color: var(--cb-color-white);
   text-rendering: optimizeSpeed;
   line-height: 1.5;

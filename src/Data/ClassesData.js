@@ -1,3 +1,4 @@
+// Función para recoger los datos de las clases
 export const ClassesData = [
   {
     Class: 'BOXEO EDUCATIVO INFANTIL',
@@ -9,6 +10,7 @@ export const ClassesData = [
     Color: 'var(--cb-color-pastel-blue)',
     OpacColor: 'var(--cb-color-opac-blue)'
   },
+  // Dejamos esta plantilla por si vuelven las clases solo de mujeres
   // {
   //   Class: 'ONLY WOMAN',
   //   Description: 'Clase exclusivamente destinada a mujeres',

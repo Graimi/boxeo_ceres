@@ -15,7 +15,7 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 - [✅] Hacer favicon de igual tamaño
 - [✅] Hacer diseño bonito de los CTA
 - [✅] Solventar vista href de menus en views
-- [] Solventar vista hero mobile view
+- [✅] Solventar vista hero mobile view
 
 ### MEDIAS QUERIES
 

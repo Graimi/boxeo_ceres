@@ -45,6 +45,7 @@ function ImportClasses() {
   ));
 }
 
+// Función general para las clases
 function Classes() {
   return (
     <div className="cb-classes cb-page-shared" id="classes">

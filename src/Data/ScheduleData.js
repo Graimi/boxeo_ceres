@@ -2,8 +2,8 @@
 export const ScheduleDays = ['L', 'M', 'X', 'J', 'V'];
 
 // Añadimos los datos del calendario
-// Si hay que añadir algún texto más a alguno usar ::after
 export const ScheduleData = [
+  // Plantilla para añadir más
   // {
   //   hour: '8:00',
   //   classes: ['Boxeo Recreativo', '12 de Saco', 'Boxeo Recreativo', 'Functional Boxing']

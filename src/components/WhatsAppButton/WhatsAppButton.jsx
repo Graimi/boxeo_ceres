@@ -2,6 +2,7 @@ import React from 'react';
 import './WhatsAppButton.css';
 import { messageApi } from '../../Data/ClubData';
 
+// Función para crear el botón de WhatsApp
 function WhatsAppButton() {
   return (
     <a href={messageApi} className="cb-button-whatsApp" target="_blank" rel="noopener noreferrer">
