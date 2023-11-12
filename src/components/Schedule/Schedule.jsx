@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-
 import './Schedule.css';
 import React from 'react';
 import { ScheduleDays, ScheduleData } from '../../Data/ScheduleData';
@@ -25,6 +24,7 @@ function ImportClasses() {
   ));
 }
 
+// Función para añadir el horario
 function Schedule() {
   return (
     <div className="cb-schedule cb-page-shared" id="schedule">

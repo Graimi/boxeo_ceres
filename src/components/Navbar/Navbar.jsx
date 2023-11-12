@@ -1,13 +1,16 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-to-interactive-role */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import './Navbar.css';
-
 import React, { useEffect, useState } from 'react';
 
+// Función para añadir la barra de navegación y el header
 function Header() {
+  // Comprobamos si la navbar está en estado visible o no
   const [isNavbarVisible, setIsNavbarVisible] = useState(false);
+  // Comprobamos si la navbar en su respectiva view está abierta o cerrada
   const [navbarOpen, setNavbarOpen] = useState(false);
 
+  // Cambiamos el fondo de la navbar según la posición de la página
   const handleNavbarVisibility = () => {
     if (window.scrollY > 10) {
       setIsNavbarVisible(true);
@@ -16,6 +19,7 @@ function Header() {
     }
   };
 
+  // Controlamos el scroll de la página para cambiar la visibilidad de la navbar
   useEffect(() => {
     window.addEventListener('scroll', handleNavbarVisibility);
     return () => {
@@ -23,11 +27,12 @@ function Header() {
     };
   }, []);
 
-  // Función para cambiar el icono
+  // Función para cambiar el icono según la navbar esté abierta o cerrada
   const toggleNavbar = () => {
     setNavbarOpen(!navbarOpen);
   };
 
+  // Vinculamos la tecla enter para abrir o cerrar la navbar
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
       toggleNavbar();
@@ -41,6 +46,7 @@ function Header() {
     toggleNavbar();
   };
 
+  // Codigo para crear la navbar
   return (
     <div className={`cb-header ${isNavbarVisible || navbarOpen ? 'visible' : ''}`}>
       <a href="#hero">
@@ -58,7 +64,6 @@ function Header() {
         {navbarOpen ? 'close' : 'menu'}
       </label>
       <input type="checkbox" name="cb-hamburguer" className="cb-hamburguer" id="hamburger" />
-      {/* NAVIGATOR */}
       <nav className="cb-navbar">
         <ul className="cb-navbar-list">
           <li>

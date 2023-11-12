@@ -2,6 +2,7 @@ import React from 'react';
 import './Hero.css';
 import { messageApi } from '../../Data/ClubData';
 
+// Función para añadir el espacio del hero
 function Hero() {
   return (
     <div className="cb-hero">

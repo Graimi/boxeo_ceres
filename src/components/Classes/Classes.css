@@ -110,7 +110,7 @@
   background-size: 320px;
 }
 
-/* Estilos para tablet y móvil */
+/* REST DISPLAY */
 @media screen and (min-width: 0px) and (max-width: 768px) {
   /* Reducimos el gap */
   .cb-cards {

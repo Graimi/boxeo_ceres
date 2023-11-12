@@ -2,15 +2,46 @@ import './Club.css';
 import React, { useState } from 'react';
 import ClubData from '../../Data/ClubData';
 
+// Función para llamar a los datos de la lista de razones
+function ClubReasonList({ reasons, setHoveredTitle, setHoveredDescription, handleResetClick }) {
+  return (
+    <ul className="cb-club-reasons-list">
+      {reasons.map((reason) => (
+        <li
+          key={reason.title}
+          className="cb-club-reason"
+          onMouseEnter={() => {
+            setHoveredTitle(reason.title);
+            setHoveredDescription(reason.description);
+          }}
+          onMouseLeave={handleResetClick}
+        >
+          <div className="cb-club-reason-title">
+            <p>{reason.title}</p>
+            <img
+              src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1698602159/Ceres%20Box/agregar_razlvc.png"
+              alt="Más"
+            />
+          </div>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+// Función para crear el componente Club
 function Club() {
+  // Funciones para identificar el hover
   const [hoveredTitle, setHoveredTitle] = useState('');
   const [hoveredDescription, setHoveredDescription] = useState('');
 
+  // Reseteamos los estados del hover
   const handleResetClick = () => {
     setHoveredTitle('');
     setHoveredDescription('');
   };
 
+  // Código para el Club
   return (
     <div className="cb-club cb-page-shared" id="club">
       <h1>El Club</h1>
@@ -25,28 +56,12 @@ function Club() {
         </div>
         <div className="cb-club-info">
           <article className="cb-club-reasons">
-            <ul className="cb-club-reasons-list">
-              {ClubData.map((reason) => (
-                <li
-                  className="cb-club-reason"
-                  onMouseEnter={() => {
-                    setHoveredTitle(reason.title);
-                    setHoveredDescription(reason.description);
-                  }}
-                  onMouseLeave={() => {
-                    handleResetClick();
-                  }}
-                >
-                  <div className="cb-club-reason-title">
-                    <p>{reason.title}</p>
-                    <img
-                      src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1698602159/Ceres%20Box/agregar_razlvc.png"
-                      alt="Más"
-                    />
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <ClubReasonList
+              reasons={ClubData}
+              setHoveredTitle={setHoveredTitle}
+              setHoveredDescription={setHoveredDescription}
+              handleResetClick={handleResetClick}
+            />
             <h3 className="cb-club-city">Tu club de Boxeo en Cáceres</h3>
             <article className="cb-club-federation">
               <a href="https://www.feboxeo.es/" target="_blank" rel="noreferrer">

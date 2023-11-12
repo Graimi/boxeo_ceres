@@ -1,15 +1,15 @@
+/* Estilos generales */
 .cb-contact-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-wrap: wrap; */
-  /* flex-direction: column; */
   flex-flow: row wrap;
   flex-flow: wrap;
   padding: var(--cb-padding-container);
   gap: var(--cb-gap-container);
 }
 
+/* Estilos de la información */
 .cb-contact-info {
   display: flex;
   flex-direction: column;

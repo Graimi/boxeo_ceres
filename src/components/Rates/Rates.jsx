@@ -1,6 +1,7 @@
 import './Rates.css';
 import React from 'react';
 
+// Función para añadir el elemento de los precios y descuentos
 function Rates() {
   return (
     <div className="cb-rates cb-page-shared" id="rates">

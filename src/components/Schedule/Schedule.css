@@ -26,7 +26,7 @@
   text-align: center;
   font-family: var(--cb-typography-body);
   font-weight: var(--cb-weight-h3);
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   border-radius: var(--cb-radius-general);
@@ -71,7 +71,6 @@
 .cb-schedule-leyend p {
   padding: var(--cb-padding-card);
   border-radius: var(--cb-radius-general);
-  /* font-size: 18px; */
   font-weight: var(--cb-weight-h3);
 }
 

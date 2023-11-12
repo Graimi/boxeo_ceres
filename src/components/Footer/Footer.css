@@ -7,14 +7,14 @@
   align-items: center;
   width: 100%;
   padding: 40px;
-  gap: 30px;
+  gap: 40px;
   background-color: var(--cb-color-black);
 }
 
 /* Estilos para el texto del footer */
 .cb-footer p {
   color: var(--cb-color-yellow);
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /* Estilos para las secciones */
@@ -57,7 +57,7 @@
 .cb-company-name {
   padding: 5px;
   font-family: var(--cb-typography-heading);
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: 2px;
   -webkit-text-stroke: var(--cb-text-stroke-yellow);
   color: transparent;
@@ -67,15 +67,24 @@
 .cb-company-slogan {
   padding: 10px;
   background-color: var(--cb-color-yellow);
-  font-size: 30px;
+  font-size: 25px;
   border-radius: var(--cb-radius-general);
   text-align: center;
   font-family: var(--cb-typography-heading);
 }
 
+/* Padding de los iconos del footer */
+.cb-footer-img,
+.cb-contact-phone,
+.cb-footer-location,
+.cb-contact-instagram {
+  padding: 8px;
+  gap: 10px;
+}
+
 /* Estilo para remacar el diseñador */
 .cb-footer-designer {
-  border-radius: 15px;
+  border-radius: 10px;
   width: fit-content;
   padding: var(--cb-padding-card);
   box-shadow: var(--cb-box-shadow-yellow);
@@ -101,34 +110,29 @@
   }
 }
 
-.cb-footer-designer p {
-  font-size: 12px;
-}
-
-.cb-footer-designer p a {
-  font-weight: 500;
-  color: var(--cb-color-yellow);
-}
-
+/* Distribución de la parte del diseñador */
 .cb-footer-designer div {
   display: flex;
   justify-content: center;
 }
 
+/* Tamaño de las imágenes del diseñador */
 .cb-footer-designer div img {
   width: 18px;
 }
 
-/* Padding de los iconos del footer */
-.cb-footer-img,
-.cb-contact-phone,
-.cb-footer-location,
-.cb-contact-instagram {
-  padding: 8px;
-  gap: 10px;
+/* Estilos para el texto del diseñador */
+.cb-footer-designer p {
+  font-size: 12px;
 }
 
-/* TABLET DISPLAY */
+/* Estilos para el enlace */
+.cb-footer-designer p a {
+  font-weight: var(--cb-weight-h3);
+  color: var(--cb-color-yellow);
+}
+
+/* REST DISPLAY */
 @media screen and (max-width: 768px) {
   /* Se cambia el display del footer para adapatarlo a tablet */
   .cb-footer-website {
@@ -143,10 +147,12 @@
     order: 1;
   }
 
+  /* Cambiamos la distribución */
   .cb-footer-contact {
     display: flex;
   }
 
+  /* Centramos los textos */
   .cb-footer-location div,
   .cb-footer-location div p {
     text-align: center;
@@ -158,10 +164,12 @@
     padding-bottom: 40px;
   }
 
+  /* Cambiamos el orden de la visualización */
   .cb-footer-contact {
     order: 2;
   }
 
+  /* Cambiamos el orden de las imágenes */
   .cb-footer-img {
     flex-direction: column;
   }
@@ -169,6 +177,7 @@
 
 /* MOBILE DISPLAY */
 @media screen and (max-width: 376px) {
+  /* Cambiamos el orden de la información de contacto */
   .cb-footer-contact {
     flex-direction: column;
   }

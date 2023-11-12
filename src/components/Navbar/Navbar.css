@@ -1,3 +1,4 @@
+/* Fijamos el color para nav cuando es visible el fondo */
 .visible {
   background-color: var(--cb-color-black);
 }
@@ -30,11 +31,13 @@
   display: none;
 }
 
+/* Diseños para el icono de la hamburguesa */
 .cb-hamburguer-label {
   color: var(--cb-color-white);
   cursor: pointer;
 }
 
+/* Seleccionamos el icono de la hamburguesa */
 .material-symbols-outlined {
   font-variation-settings:
     'FILL' 0,
@@ -61,7 +64,6 @@
 
 .cb-navbar a {
   transition: all cubic-bezier(0.75, 5, 0.165, 1);
-  /* -webkit-text-stroke: var(--cb-text-stroke-white); */
 }
 
 .cb-navbar a:hover {
@@ -74,7 +76,6 @@
   /* Se cambia el display del header para adapatarlo a tablet */
   .cb-header {
     display: block;
-    /* min-height: 5vh; */
     padding: var(--cb-padding-container);
   }
 

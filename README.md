@@ -9,13 +9,15 @@ Crear una landing page para el gimnasio Boxeo Ceres en Cáceres
 ## Tareas
 
 ### General
-- [] Describir código
-- [] Cambiar a section los article si corresponde
-- [] Actualizar información de trabajo en el proyecto portfolio
+- [✅] Cambiar a section los article si corresponde
 - [✅] Hacer favicon de igual tamaño
 - [✅] Hacer diseño bonito de los CTA
 - [✅] Solventar vista href de menus en views
 - [✅] Solventar vista hero mobile view
+- [✅] Código CSS check
+- [✅] Código Data check
+- [] Código React check
+- [] Actualizar información de trabajo en el proyecto portfolio
 
 ### MEDIAS QUERIES
 

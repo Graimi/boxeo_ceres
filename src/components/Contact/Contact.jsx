@@ -3,6 +3,7 @@ import React from 'react';
 import MapComponent from '../Map/Map';
 import { messageApi } from '../../Data/ClubData';
 
+// Función para añadir el apartado del contacto
 function Contact() {
   return (
     <div className="cb-contact cb-page-shared" id="contact">

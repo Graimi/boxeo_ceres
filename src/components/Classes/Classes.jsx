@@ -50,9 +50,9 @@ function Classes() {
   return (
     <div className="cb-classes cb-page-shared" id="classes">
       <h1>CLASES</h1>
-      <article className="cb-cards">
+      <section className="cb-cards">
         <ImportClasses />
-      </article>
+      </section>
     </div>
   );
 }
