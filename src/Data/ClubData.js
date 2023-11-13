@@ -6,7 +6,7 @@ const ClubData = [
   {
     title: 'Kike de Manuel',
     description:
-      'Profesor del gimnasio. Preparador nacional titulado por la Federación ¿Española? de Boxeo titulado ÚnicBoxeo Olímpico en Cáceres'
+      'Profesor del gimnasio Preparador nacional titulado por la Federación Española de Boxeo'
   },
   {
     title: 'Respeto mutuo',
